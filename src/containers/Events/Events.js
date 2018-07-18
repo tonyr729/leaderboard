@@ -4,7 +4,7 @@ import './Events.css';
 class Events extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="events">
         <h1>CHECK OUT ALL THESE EVENTS!!!</h1>
       </div>
     )
