@@ -9,7 +9,9 @@ import './App.css';
 class App extends Component {
 
   async componentDidMount() {
-    const response = await fetch('/api/v1/events');
+    const response = await fetch('https://leaderboard-byob.herokuapp.com/api/v1/events', {
+      "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWNtZWxsb3dAdHVyaW5nLmlvIiwiYXBwTmFtZSI6IkxlYWRlciBCb2FyZCIsImlhdCI6MTUzMjAzNjk4MSwiZXhwIjoxNTMyMjA5NzgxLCJqdGkiOiJhZG1pbiJ9.YV_xWYC8mQg0TQzYQT6_jSKSs0dIIeScA4ta8BMIBCE"
+    });
     const data = await response.json();
     this.props.addAllEvents(data.events);
   }
