@@ -9,8 +9,13 @@ import './App.css';
 class App extends Component {
 
   async componentDidMount() {
+    const key = await fetch('https://leaderboard-byob.herokuapp.com/authenticate', {
+      method: 'POST',
+      email: 'ericmellow@turing.io',
+      appName: 'Leader Board'
+    });
     const response = await fetch('https://leaderboard-byob.herokuapp.com/api/v1/events', {
-      "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVyaWNtZWxsb3dAdHVyaW5nLmlvIiwiYXBwTmFtZSI6IkxlYWRlciBCb2FyZCIsImlhdCI6MTUzMjAzNjk4MSwiZXhwIjoxNTMyMjA5NzgxLCJqdGkiOiJhZG1pbiJ9.YV_xWYC8mQg0TQzYQT6_jSKSs0dIIeScA4ta8BMIBCE"
+      "authorization": key
     });
     const data = await response.json();
     this.props.addAllEvents(data.events);
