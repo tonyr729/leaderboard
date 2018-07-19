@@ -8,9 +8,10 @@ import './App.css';
 
 class App extends Component {
 
-  componentDidMount() {
-    const events = ['event 1', 'event 2', 'event 3', ];
-    this.props.addAllEvents(events);
+  async componentDidMount() {
+    const response = await fetch('/api/v1/events');
+    const data = await response.json();
+    this.props.addAllEvents(data.events);
   }
   render() {
     return (
