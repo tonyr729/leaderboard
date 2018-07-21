@@ -4,4 +4,26 @@
     h1 {
       font-size: 2rem;
     }
+    .results-container {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      .result {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        background-color: white;
+        h1 {
+          color: #666666;
+        }
+        h4 {
+          color: #666666;
+        }
+        .h4-result {
+          color: #84b8fc;
+        }
+      }
+    }
   }

@@ -55,15 +55,15 @@ class Events extends Component {
           <h1>{result.name}</h1>
           <div className="run1">
             <h4>Run 1</h4>
-            <h4>{result.run_1}</h4>
+            <h4 className="h4-result">{result.run_1}</h4>
           </div>
           <div className="run2">
             <h4>Run 2</h4>
-            <h4>{result.run_2}</h4>
+            <h4 className="h4-result">{result.run_2}</h4>
           </div>
           <div className="run3">
             <h4>Run 3</h4>
-            <h4>{result.run_3}</h4>
+            <h4 className="h4-result">{result.run_3}</h4>
           </div>
         </div>
       )
