@@ -71,7 +71,7 @@ class Events extends Component {
 
     return (
       <div className="events">
-        <h2>Leaderboard<span>for</span></h2>
+        <h2>Leaderboard<span> for</span></h2>
         <div className="event-div">
           <h1>Tahoe Invitational</h1>
           <select>

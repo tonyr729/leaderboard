@@ -1,13 +1,38 @@
 .events {
-    text-align: center;
     height: 100%; 
     h1 {
       font-size: 2rem;
     }
+    h2 {
+      margin: 30px 20px 20px 75px;
+    font-weight: 500;
+    font-size: 2rem;
+    }
+    span {
+      color: #666666;
+    font-weight: 300;
+    }
+    .event-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        margin: 10px;
+        font-size: 3rem;
+      }
+      select {
+        font-size: 1.5rem;
+        background-color: #82b7fe;
+        width: 150px;
+        color: white;
+        height: 50px;
+      }
+    }
     .results-container {
-      height: 575px;
+      height: 77vh;
       overflow-y: scroll;
       margin: 10px auto;
+      text-align: center;
       .result {
         display: flex;
         width: 100%;
