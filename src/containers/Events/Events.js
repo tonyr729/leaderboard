@@ -7,11 +7,12 @@ class Events extends Component {
     super();
     this.state ={
       input: '' 
-    }
+    };
   };
 
   componentDidMount(){
-    this.changeValues()
+    this.changeValues();
+    this.getResults();
   }
 
   handleInput = (event) => {
@@ -19,6 +20,12 @@ class Events extends Component {
     this.setState({
       [name]: value
     });
+  }
+
+  getResults = async () => {
+    const url = '/api/v1/events/1/division/8/results';
+    const response = await fetch(url);
+    const results = await response.json();
   }
   
   changeValues = () => {
@@ -28,11 +35,18 @@ class Events extends Component {
   render() {
     return (
       <div className="events">
-        <h1>CHECK OUT ALL THESE EVENTS!!!</h1>
-        <input onChange={this.handleInput} name="input" value={this.state.input} className="change_input" type="text"/>
-        <button onClick={this.changeValues} className="change_button">Change Value</button>
+        <h2>Leaderboard<span>for</span></h2>
+        <div>
+          <h1>Tahoe Invitational</h1>
+          <select>
+            <option value="halfpipe" data-divisionid="8">Halfpipe</option>
+            <option value="big-air" data-divisionid="6">Big Air</option>
+          </select>
+        </div>
+        {/* <input onChange={this.handleInput} name="input" value={this.state.input} className="change_input" type="text"/>
+        <button onClick={this.changeValues} className="change_button">Change Value</button> */}
       </div>
-    )
+    );
   }
 }
 
