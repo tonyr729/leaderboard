@@ -74,8 +74,8 @@ class Admin extends Component {
   }
 }
 
-export const mapDispatchToProps = (dispatch) => ({
-  addAllEvents: (events) => dispatch(addEvents(events))
-});
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Admin));
+
+// export default withRouter(connect(mapStateToProps,)(Admin));
+
+export default Admin;

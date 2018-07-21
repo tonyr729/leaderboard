@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Route, withRouter, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Events from '../Events/Events';
 import Admin from '../Admin/Admin';
-import { addEvents } from '../../actions';
 import './App.css';
 
 class App extends Component {
