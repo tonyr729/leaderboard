@@ -10,9 +10,9 @@ class Events extends Component {
     }
   };
 
-  // componentDidMount(){
-  //   subscribeToTimer((err, timestamp) => console.log(timestamp))
-  // }
+  componentDidMount(){
+    subscribeToTimer((err, timestamp) => console.log(timestamp))
+  }
 
   handleInput = (event) => {
     const {name, value} = event.target;

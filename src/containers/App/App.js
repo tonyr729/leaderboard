@@ -23,7 +23,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        REACT YO FACE!
         <Sidebar />
         <section className="mainContainer" >
           <Switch>
