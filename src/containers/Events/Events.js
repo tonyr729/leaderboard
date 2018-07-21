@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { subscribeToChange } from '../../timer';
+import { addResults } from '../../actions';
+import { connect } from 'react-redux';
 import './Events.css';
 
 class Events extends Component {
@@ -26,17 +28,19 @@ class Events extends Component {
     const url = '/api/v1/events/1/division/8/results';
     const response = await fetch(url);
     const data = await response.json();
-    const results = data.results.map(async result => {
+    const unresolvedResults = data.results.map(async result => {
       const rider = await this.getRider(result.rider_id);
-      console.log(rider[0].name)
-    })
+      return Object.assign(result, {name: rider[0].name});
+    });
+    const results = await Promise.all(unresolvedResults);
+    this.props.addAllResults(results);
   }
 
   getRider = async (riderId) => {
-    const url = `/api/v1/riders/${riderId}`
-    const response = await fetch(url)
-    const data = await response.json()
-    return data.rider
+    const url = `/api/v1/riders/${riderId}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    return data.rider;
   }
   
   changeValues = () => {
@@ -61,4 +65,8 @@ class Events extends Component {
   }
 }
 
-export default Events;
+export const mapDispatchToProps = (dispatch) => ({
+  addAllResults: (results) => dispatch(addResults(results))
+});
+
+export default connect(null, mapDispatchToProps)(Events);
