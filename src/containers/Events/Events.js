@@ -11,7 +11,7 @@ class Events extends Component {
   };
 
   componentDidMount(){
-    subscribeToTimer((err, timestamp) => console.log(timestamp))
+    this.changeValues()
   }
 
   handleInput = (event) => {
