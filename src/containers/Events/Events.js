@@ -72,18 +72,16 @@ class Events extends Component {
     return (
       <div className="events">
         <h2>Leaderboard<span>for</span></h2>
-        <div>
+        <div className="event-div">
           <h1>Tahoe Invitational</h1>
           <select>
             <option value="halfpipe" data-divisionid="8">Halfpipe</option>
             <option value="big-air" data-divisionid="6">Big Air</option>
           </select>
-          <div className="results-container">
-          {results}
-          </div>
         </div>
-        {/* <input onChange={this.handleInput} name="input" value={this.state.input} className="change_input" type="text"/>
-        <button onClick={this.changeValues} className="change_button">Change Value</button> */}
+        <div className="results-container">
+          {results}
+        </div>
       </div>
     );
   }

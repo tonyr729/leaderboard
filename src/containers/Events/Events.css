@@ -4,16 +4,17 @@
   .events h1 {
     font-size: 2rem; }
   .events .results-container {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto; }
+    height: 575px;
+    overflow-y: scroll;
+    margin: 10px auto; }
     .events .results-container .result {
       display: flex;
       width: 100%;
       justify-content: space-evenly;
-      background-color: white; }
+      background-color: white;
+      width: 75%;
+      margin: 10px auto;
+      box-shadow: 2px 2px 10px lightgrey; }
       .events .results-container .result h1 {
         color: #666666; }
       .events .results-container .result h4 {
