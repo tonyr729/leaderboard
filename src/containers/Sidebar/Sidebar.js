@@ -4,7 +4,7 @@ import './Sidebar.css';
 class Sidebar extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="sidebar">
         <h1>Leaderboard</h1>
         <section className="main">
           <h3>Main</h3>

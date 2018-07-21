@@ -1,2 +1,8 @@
-.events {
-  background-color: pink; }
+.mainContainer {
+      width: 80vw;
+    height: 100vh;
+    background-color: #756e6f94;}
+
+.mainContainer .events {
+  text-align: center;
+  height: 100%; }

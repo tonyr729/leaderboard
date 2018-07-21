@@ -7,9 +7,9 @@ class Events extends Component {
     super();
   };
 
-  // componentDidMount(){
-  //   subscribeToTimer((err, timestamp) => console.log(timestamp))
-  // }
+  componentDidMount(){
+    subscribeToTimer((err, timestamp) => console.log(timestamp))
+  }
 
   render() {
     return (
