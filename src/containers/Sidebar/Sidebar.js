@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
 class Sidebar extends Component {
@@ -12,7 +13,9 @@ class Sidebar extends Component {
           <button>Riders</button>
           <button>Media</button>
         </section>
-        <button>Admin Login</button>
+        <NavLink exact to='/Admin' className='nav' activeClassName='selected'>
+          <button>Admin Login</button>
+        </NavLink>      
       </div>
     )
   }
