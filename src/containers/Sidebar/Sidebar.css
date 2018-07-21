@@ -2,22 +2,17 @@
   height: 100vh;
   background-color: cornflowerblue;
   width: 20vw;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center; }
-    .sidebar h1{
-      font-size: 1.5rem
-    }
-
-  .main{
+  .sidebar .main {
     display: flex;
     flex-direction: column;
-    width: 80%;
-  }
-    .main button {
+    width: 80%; }
+    .sidebar .main button {
       margin: 15px;
       text-align: start;
       font-size: 1rem;
       border: none;
-      background: none;
-    }
+      background: none; }

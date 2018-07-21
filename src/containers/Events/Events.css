@@ -1,8 +1,5 @@
-.mainContainer {
-      width: 80vw;
-    height: 100vh;
-    background-color: #756e6f94;}
-
-.mainContainer .events {
+.events {
   text-align: center;
   height: 100%; }
+  .events h1 {
+    font-size: 2rem; }
