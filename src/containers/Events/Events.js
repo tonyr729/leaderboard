@@ -25,7 +25,18 @@ class Events extends Component {
   getResults = async () => {
     const url = '/api/v1/events/1/division/8/results';
     const response = await fetch(url);
-    const results = await response.json();
+    const data = await response.json();
+    const results = data.results.map(async result => {
+      const rider = await this.getRider(result.rider_id);
+      console.log(rider[0].name)
+    })
+  }
+
+  getRider = async (riderId) => {
+    const url = `/api/v1/riders/${riderId}`
+    const response = await fetch(url)
+    const data = await response.json()
+    return data.rider
   }
   
   changeValues = () => {
