@@ -48,25 +48,51 @@ class Events extends Component {
   }
 
   render() {
+    const results = this.props.results.map(result => {
+      return (
+        <div className="result" id={result.id} key={result.id}>
+          <img src="" alt=""/>
+          <h1>{result.name}</h1>
+          <div className="run1">
+            <h4>Run 1</h4>
+            <h4 className="h4-result">{result.run_1}</h4>
+          </div>
+          <div className="run2">
+            <h4>Run 2</h4>
+            <h4 className="h4-result">{result.run_2}</h4>
+          </div>
+          <div className="run3">
+            <h4>Run 3</h4>
+            <h4 className="h4-result">{result.run_3}</h4>
+          </div>
+        </div>
+      )
+    })
+
     return (
       <div className="events">
-        <h2>Leaderboard<span>for</span></h2>
-        <div>
+        <h2>Leaderboard<span> for</span></h2>
+        <div className="event-div">
           <h1>Tahoe Invitational</h1>
           <select>
             <option value="halfpipe" data-divisionid="8">Halfpipe</option>
             <option value="big-air" data-divisionid="6">Big Air</option>
           </select>
         </div>
-        {/* <input onChange={this.handleInput} name="input" value={this.state.input} className="change_input" type="text"/>
-        <button onClick={this.changeValues} className="change_button">Change Value</button> */}
+        <div className="results-container">
+          {results}
+        </div>
       </div>
     );
   }
 }
 
+export const mapStateToProps = (state) => ({
+  results: state.results
+})
+
 export const mapDispatchToProps = (dispatch) => ({
   addAllResults: (results) => dispatch(addResults(results))
 });
 
-export default connect(null, mapDispatchToProps)(Events);
+export default connect(mapStateToProps, mapDispatchToProps)(Events);

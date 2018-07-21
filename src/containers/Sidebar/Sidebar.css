@@ -1,6 +1,8 @@
 .sidebar {
   height: 100vh;
-  background-color: cornflowerblue;
+  background-color: #352c4b;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
   width: 20vw;
   display: -ms-flexbox;
   display: flex;
@@ -15,4 +17,5 @@
       text-align: start;
       font-size: 1rem;
       border: none;
-      background: none; }
+      background: none;
+      color: white; }
