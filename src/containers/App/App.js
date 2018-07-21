@@ -3,6 +3,8 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Sidebar from '../Sidebar/Sidebar';
 import Events from '../Events/Events';
+import Admin from '../Admin/Admin';
+import { addEvents } from '../../actions';
 import './App.css';
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
         <section className="mainContainer" >
           <Switch>
             <Route exact path='/' component={Events} />
+            <Route exact path='/Admin' component={Admin} />
           </Switch>
         </section>
       </div>
