@@ -1,4 +1,4 @@
-export const addEvents = (events) => ({
-  type: 'ADD_EVENTS',
-  events
+export const addResults = (results) => ({
+  type: 'ADD_RESULTS',
+  results
 });

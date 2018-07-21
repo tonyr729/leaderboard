@@ -3,7 +3,6 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Sidebar from '../Sidebar/Sidebar';
 import Events from '../Events/Events';
-import { addEvents } from '../../actions';
 import './App.css';
 
 class App extends Component {
@@ -18,7 +17,6 @@ class App extends Component {
       "authorization": key
     });
     const data = await response.json();
-    this.props.addAllEvents(data.events);
   }
   render() {
     return (
@@ -34,8 +32,5 @@ class App extends Component {
   }
 }
 
-export const mapDispatchToProps = (dispatch) => ({
-  addAllEvents: (events) => dispatch(addEvents(events))
-});
 
-export default withRouter(connect(null, mapDispatchToProps)(App));
+export default App;
