@@ -24,7 +24,7 @@ class Admin extends Component {
   }
 
   getRiders = async () => {
-    const url = '/api/v1/riders';
+    const url = 'https://leaderboard-byob.herokuapp.com/api/v1/riders';
     const response = await fetch(url);
     const data = await response.json();
     this.props.addAllRiders(data.riders);
@@ -41,7 +41,7 @@ class Admin extends Component {
   }
 
   sendResultToDb = async (results) => {
-    const url = `/api/v1/events/${results.event_id}/divisions/${results.division_id}/riders/${results.rider_id}`;
+    const url = `https://leaderboard-byob.herokuapp.com/api/v1/events/${results.event_id}/divisions/${results.division_id}/riders/${results.rider_id}`;
     const response = await fetch(url, {
       method: 'PATCH',
       headers: {
@@ -59,8 +59,9 @@ class Admin extends Component {
 
   handleChange = (event) => {
     const { id, value } = event.target;
+    const intValue = parseInt(value);
     this.setState({
-      [id]: value
+      [id]: intValue
     });
   }
 
