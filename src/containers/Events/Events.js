@@ -27,10 +27,11 @@ class Events extends Component {
   getResults = async () => {
     const url = '/api/v1/events/1/division/8/results';
     const response = await fetch(url);
-    const data = await response.json();
-    const unresolvedResults = data.results.map(async result => {
+    const riderData = await response.json();
+    const unresolvedResults = riderData.results.map(async result => {
       const rider = await this.getRider(result.rider_id);
-      return Object.assign(result, {name: rider[0].name});
+      console.log(rider)
+      return Object.assign(result, {name: rider[0].name, image: rider[0].img});
     });
     const results = await Promise.all(unresolvedResults);
     this.props.addAllResults(results);
@@ -39,8 +40,8 @@ class Events extends Component {
   getRider = async (riderId) => {
     const url = `/api/v1/riders/${riderId}`;
     const response = await fetch(url);
-    const data = await response.json();
-    return data.rider;
+    const riderData = await response.json();
+    return riderData.rider;
   }
   
   changeValues = () => {
@@ -48,10 +49,11 @@ class Events extends Component {
   }
 
   render() {
-    const results = this.props.results.map(result => {
+    const results = this.props.results.map((result, index) => {
       return (
         <div className="result" id={result.id} key={result.id}>
-          <img src="" alt=""/>
+          <h1>{index+1}</h1>
+          <img src={result.image} alt="flag"/>
           <h1>{result.name}</h1>
           <div className="run1">
             <h4>Run 1</h4>
