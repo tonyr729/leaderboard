@@ -3,6 +3,11 @@ export const addResults = (results) => ({
   results
 });
 
+export const updateResult = (results) => ({
+  type: 'UPDATE_RESULT',
+  results
+});
+
 export const addRiders = (riders) => ({
   type: 'ADD_RIDERS',
   riders

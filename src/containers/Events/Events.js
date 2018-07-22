@@ -1,27 +1,17 @@
 import React, { Component } from 'react';
 import { subscribeToChange } from '../../timer';
-import { addResults } from '../../actions';
+import { addResults, updateResult } from '../../actions';
 import { connect } from 'react-redux';
 import './Events.css';
 
 class Events extends Component {
   constructor() {
     super();
-    this.state ={
-      input: '' 
-    };
-  };
+  }
 
   componentDidMount(){
     this.changeValues();
     this.getResults();
-  }
-
-  handleInput = (event) => {
-    const {name, value} = event.target;
-    this.setState({
-      [name]: value
-    });
   }
 
   getResults = async () => {
@@ -30,7 +20,7 @@ class Events extends Component {
     const riderData = await response.json();
     const unresolvedResults = riderData.results.map(async result => {
       const rider = await this.getRider(result.rider_id);
-      console.log(rider)
+      console.log(rider);
       return Object.assign(result, {name: rider[0].name, image: rider[0].img});
     });
     const results = await Promise.all(unresolvedResults);
@@ -45,7 +35,17 @@ class Events extends Component {
   }
   
   changeValues = () => {
-    subscribeToChange((error, changeAfter) => console.log(changeAfter), this.state.input);
+    subscribeToChange((error, changeAfter) => this.storeNewResult(changeAfter));
+  }
+
+  storeNewResult = (newResult) => {
+    const cleanedResults = this.props.results.filter(result => {
+      return result.rider_id !== newResult.rider_id &&
+             result.event_id !== newResult.event_id &&
+             result.division_id !== newResult.division_id;
+    });
+    const updatedResults = cleanedResults.push(newResult);
+    this.props.updateResults(updatedResults);
   }
 
   render() {
@@ -68,8 +68,8 @@ class Events extends Component {
             <h4 className="h4-result">{result.run_3}</h4>
           </div>
         </div>
-      )
-    })
+      );
+    });
 
     return (
       <div className="events">
@@ -91,10 +91,11 @@ class Events extends Component {
 
 export const mapStateToProps = (state) => ({
   results: state.results
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
-  addAllResults: (results) => dispatch(addResults(results))
+  addAllResults: (results) => dispatch(addResults(results)),
+  updateResults: (results) => dispatch(updateResult(results))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Events);
