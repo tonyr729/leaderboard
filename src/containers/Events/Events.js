@@ -7,20 +7,22 @@ import './Events.css';
 class Events extends Component {
   constructor() {
     super();
+    this.state ={
+      lastUpdated: 0
+    };
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.changeValues();
     this.getResults();
   }
 
   getResults = async () => {
-    const url = '/api/v1/events/1/division/8/results';
+    const url = 'https://leaderboard-byob.herokuapp.com/api/v1/events/1/division/8/results';
     const response = await fetch(url);
     const riderData = await response.json();
     const unresolvedResults = riderData.results.map(async result => {
       const rider = await this.getRider(result.rider_id);
-      console.log(rider);
       return Object.assign(result, {name: rider[0].name, image: rider[0].img});
     });
     const results = await Promise.all(unresolvedResults);
@@ -28,7 +30,7 @@ class Events extends Component {
   }
 
   getRider = async (riderId) => {
-    const url = `/api/v1/riders/${riderId}`;
+    const url = `https://leaderboard-byob.herokuapp.com/api/v1/riders/${riderId}`;
     const response = await fetch(url);
     const riderData = await response.json();
     return riderData.rider;
@@ -39,13 +41,31 @@ class Events extends Component {
   }
 
   storeNewResult = (newResult) => {
-    const cleanedResults = this.props.results.filter(result => {
-      return result.rider_id !== newResult.rider_id &&
-             result.event_id !== newResult.event_id &&
-             result.division_id !== newResult.division_id;
-    });
-    const updatedResults = cleanedResults.push(newResult);
-    this.props.updateResults(updatedResults);
+    if (newResult) {
+      const updatedResults = this.changeScore(newResult);
+      this.props.updateResults(updatedResults);
+      this.setState({
+        lastUpdated: Date.now()
+      })
+    }
+  }
+
+  changeScore = (newResult) => {
+    const updatedResults = this.props.results.map(result => {
+      if (
+        result.rider_id === newResult.rider_id &&
+        result.event_id === newResult.event_id &&
+        result.division_id === newResult.division_id
+      ) {
+        console.log('MATCH MOTHER FUCKER!!!')
+        const { run_1, run_2, run_3 } = newResult;
+        !run_1 || (result.run_1 = run_1);
+        !run_2 || (result.run_2 = run_2);
+        !run_3 || (result.run_3 = run_3);
+      }
+      return result;
+    })
+    return updatedResults;
   }
 
   render() {
