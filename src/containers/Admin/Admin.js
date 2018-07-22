@@ -8,12 +8,12 @@ class Admin extends Component {
   constructor() {
     super();
     this.state = {
-      event: '',
-      division: '',
-      rider: '',
-      runOne: '',
-      runTwo: '',
-      runThree: ''
+      event_id: '',
+      division_id: '',
+      rider_id: '',
+      run_1: null,
+      run_2: null,
+      run_3: null
     }
   };
 
@@ -31,11 +31,25 @@ class Admin extends Component {
   listRiders = () => {
     const ridersList = this.props.riders.map(rider => {
       return (
-        <option id="rider" value={rider.id}>{rider.name}</option>
+        <option id="rider_id" value={rider.id}>{rider.name}</option>
       );
     });
 
     return ridersList;
+  }
+
+  sendResults = async (results) => {
+    const url = `/api/v1/events/${results.event_id}/divisions/${results.division_id}/riders/${results.rider_id}`;
+    console.log(results)
+    const response = await fetch(url, {
+      method: 'PATCH',
+      headers: {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      body: JSON.stringify({result: results})
+    });
+    // const data = response.json()
+    console.log(response)
   }
 
   handleChange = (event) => {
@@ -48,8 +62,7 @@ class Admin extends Component {
 
   submitChanges = (event) => {
     event.preventDefault();
-    console.log(this.state)
-
+    this.sendResults(this.state)
     //SEND STATE AS REQUEST BODY FOR PATCH ENDPOINT
   };
  
@@ -60,7 +73,7 @@ class Admin extends Component {
           <label htmlFor="rider-names" className="choose-event">
             Choose Event
             <select onChange={this.handleChange} 
-                    id="event" 
+                    id="event_id" 
                     className="event-names" 
                     value={this.state.event} >
               <option value="">Choose a Event</option>
@@ -70,18 +83,18 @@ class Admin extends Component {
           <label htmlFor="division-names" className="choose-division">
             Choose Division
             <select onChange={this.handleChange} 
-                    id="division" 
+                    id="division_id" 
                     className="division-names" 
                     value={this.state.division} >
               <option value="">Choose a Division</option>
-              <option name="event" value="3">Womens Halfpipe</option>
-              <option name="event" value="8">Mens Halfpipe</option>
+              <option value="3">Womens Halfpipe</option>
+              <option value="8">Mens Halfpipe</option>
             </select>
           </label>
           <label htmlFor="rider-names" className="choose-rider">
             Choose Rider
             <select onChange={this.handleChange} 
-                    id="rider" 
+                    id="rider_id" 
                     className="rider-names" 
                     value={this.state.value} >
               <option value="">Choose a Rider</option>
@@ -94,7 +107,7 @@ class Admin extends Component {
               <input type="text" 
                 onChange={this.handleChange}
                 value={this.state.runOne}
-                id="runOne"
+                id="run_1"
                 className='admin-input'/>
             </label>
             <label className='runtwo-label'>
@@ -102,7 +115,7 @@ class Admin extends Component {
               <input type="text" 
                 onChange={this.handleChange}
                 value={this.state.runTwo}
-                id="runTwo"
+                id="run_2"
                 className='admin-input'/>
             </label>
             <label className='runthree-label'>
@@ -110,7 +123,7 @@ class Admin extends Component {
               <input type="text" 
                 onChange={this.handleChange}
                 value={this.state.runThree}
-                id="runThree"
+                id="run_3"
                 className='admin-input'/>
             </label>
             <input type="submit" value="Update" className="form-submit" />
