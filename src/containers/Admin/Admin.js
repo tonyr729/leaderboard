@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { addRiders } from '../../actions';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { subscribeToChange } from '../../timer';
 import './Admin.css';
 
 class Admin extends Component {
@@ -19,6 +20,7 @@ class Admin extends Component {
 
   componentDidMount() {
     this.getRiders();
+    this.socketSend();
   }
 
   getRiders = async () => {
@@ -38,9 +40,8 @@ class Admin extends Component {
     return ridersList;
   }
 
-  sendResults = async (results) => {
+  sendResultToDb = async (results) => {
     const url = `/api/v1/events/${results.event_id}/divisions/${results.division_id}/riders/${results.rider_id}`;
-    console.log(results)
     const response = await fetch(url, {
       method: 'PATCH',
       headers: {
@@ -48,13 +49,16 @@ class Admin extends Component {
       },
       body: JSON.stringify({result: results})
     });
-    // const data = response.json()
-    console.log(response)
+    const message = response.json().status;
+    return message;
   }
+
+  sendResultToSocket = (results) => {
+    subscribeToChange((error, changeAfter) => console.log(changeAfter), results);
+  };
 
   handleChange = (event) => {
     const { id, value } = event.target;
-    console.log(id)
     this.setState({
       [id]: value
     });
@@ -62,8 +66,8 @@ class Admin extends Component {
 
   submitChanges = (event) => {
     event.preventDefault();
-    this.sendResults(this.state)
-    //SEND STATE AS REQUEST BODY FOR PATCH ENDPOINT
+    this.sendResultToDb(this.state)
+    this.sendResultToSocket(this.state)
   };
  
   render() {
