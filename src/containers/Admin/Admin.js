@@ -20,7 +20,7 @@ class Admin extends Component {
 
   componentDidMount() {
     this.getRiders();
-    this.socketSend();
+    this.sendResultToSocket();
   }
 
   getRiders = async () => {
