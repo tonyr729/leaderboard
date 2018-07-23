@@ -47,7 +47,7 @@ class Events extends Component {
       this.props.updateResults(updatedResults);
       this.setState({
         lastUpdated: Date.now()
-      })
+      });
     }
   }
 
@@ -64,8 +64,18 @@ class Events extends Component {
         !run_3 || (result.run_3 = run_3);
       }
       return result;
-    })
+    });
     return updatedResults;
+  }
+
+  getScore = (result) => {
+    if (result.run_1 && result.run_2 && result.run_3) {
+      return (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+    } else if (result.run_1 && result.run_2 && !result.run_3) {
+      return (parseInt(result.run_1) + parseInt(result.run_2));
+    } else {
+      return parseInt(result.run_1);
+    }
   }
 
   render() {
@@ -86,6 +96,10 @@ class Events extends Component {
           <div className="run3">
             <h4>Run 3</h4>
             <h4 className="h4-result">{result.run_3}</h4>
+          </div>
+          <div className="final-score">
+            <h4>FINAL</h4>
+            <h4 className="final-result">{this.getScore(result)}</h4>
           </div>
         </div>
       );
