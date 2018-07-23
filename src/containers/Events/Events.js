@@ -85,11 +85,14 @@ class Events extends Component {
 
   getScore = (result) => {
     if (result.run_1 && result.run_2 && result.run_3) {
-      return (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+      const score = (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+      return Math.round( score * 10 ) / 10;
     } else if (result.run_1 && result.run_2 && !result.run_3) {
-      return (parseInt(result.run_1) + parseInt(result.run_2))/2;
+      const score = (parseInt(result.run_1) + parseInt(result.run_2))/2;
+      return Math.round(score * 10) / 10;
     } else {
-      return parseInt(result.run_1);
+      const score = parseInt(result.run_1);
+      return Math.round(score * 10) / 10;
     }
   }
 
