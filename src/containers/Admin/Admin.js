@@ -75,7 +75,7 @@ class Admin extends Component {
     return (
       <div className="admin">
         <div className="admin-update">
-          <label htmlFor="rider-names" className="choose-event">
+          <label htmlFor="event-names" className="choose-event">
             Choose Event
             <select onChange={this.handleChange} 
                     id="event_id" 
