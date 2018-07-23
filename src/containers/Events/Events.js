@@ -44,11 +44,26 @@ class Events extends Component {
   storeNewResult = (newResult) => {
     if (newResult) {
       const updatedResults = this.changeScore(newResult);
-      this.props.updateResults(updatedResults);
+      const newResults = this.orderResults(updatedResults);
+      this.props.updateResults(newResults);
       this.setState({
         lastUpdated: Date.now()
       });
     }
+  }
+
+  orderResults = (updatedResults) => {
+    const newResults = updatedResults.map(result => {
+      if (result.run_1 && result.run_2 && result.run_3) {
+        result.final =  (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+      } else if (result.run_1 && result.run_2 && !result.run_3) {
+        result.final = (parseInt(result.run_1) + parseInt(result.run_2))/2;
+      } else {
+        result.final = parseInt(result.run_1);
+      }
+      return result;
+    });
+    return newResults.sort((a, b) => b.final - a.final);
   }
 
   changeScore = (newResult) => {
@@ -72,7 +87,7 @@ class Events extends Component {
     if (result.run_1 && result.run_2 && result.run_3) {
       return (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
     } else if (result.run_1 && result.run_2 && !result.run_3) {
-      return (parseInt(result.run_1) + parseInt(result.run_2));
+      return (parseInt(result.run_1) + parseInt(result.run_2))/2;
     } else {
       return parseInt(result.run_1);
     }
