@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { subscribeToChange } from '../../timer';
 import { addResults, updateResult } from '../../actions';
+import FlipMove from 'react-flip-move';
 import { connect } from 'react-redux';
 import './Events.css';
 
@@ -57,7 +58,6 @@ class Events extends Component {
         result.event_id === newResult.event_id &&
         result.division_id === newResult.division_id
       ) {
-        console.log('MATCH MOTHER FUCKER!!!')
         const { run_1, run_2, run_3 } = newResult;
         !run_1 || (result.run_1 = run_1);
         !run_2 || (result.run_2 = run_2);
@@ -102,7 +102,9 @@ class Events extends Component {
           </select>
         </div>
         <div className="results-container">
-          {results}
+          <FlipMove>
+            {results}
+          </FlipMove>
         </div>
       </div>
     );
