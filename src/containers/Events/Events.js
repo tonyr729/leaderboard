@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { subscribeToChange } from '../../timer';
 import { addResults, updateResult } from '../../actions';
+import FlipMove from 'react-flip-move';
 import { connect } from 'react-redux';
 import './Events.css';
 
@@ -26,7 +27,8 @@ class Events extends Component {
       return Object.assign(result, {name: rider[0].name, image: rider[0].img});
     });
     const results = await Promise.all(unresolvedResults);
-    this.props.addAllResults(results);
+    const orderedResults = this.orderResults(results);
+    this.props.addAllResults(orderedResults);
   }
 
   getRider = async (riderId) => {
@@ -43,11 +45,26 @@ class Events extends Component {
   storeNewResult = (newResult) => {
     if (newResult) {
       const updatedResults = this.changeScore(newResult);
-      this.props.updateResults(updatedResults);
+      const newResults = this.orderResults(updatedResults);
+      this.props.updateResults(newResults);
       this.setState({
         lastUpdated: Date.now()
-      })
+      });
     }
+  }
+
+  orderResults = (updatedResults) => {
+    const newResults = updatedResults.map(result => {
+      if (result.run_1 && result.run_2 && result.run_3) {
+        result.final =  (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+      } else if (result.run_1 && result.run_2 && !result.run_3) {
+        result.final = (parseInt(result.run_1) + parseInt(result.run_2))/2;
+      } else {
+        result.final = parseInt(result.run_1);
+      }
+      return result;
+    });
+    return newResults.sort((a, b) => b.final - a.final);
   }
 
   changeScore = (newResult) => {
@@ -57,15 +74,27 @@ class Events extends Component {
         result.event_id === newResult.event_id &&
         result.division_id === newResult.division_id
       ) {
-        console.log('MATCH MOTHER FUCKER!!!')
         const { run_1, run_2, run_3 } = newResult;
         !run_1 || (result.run_1 = run_1);
         !run_2 || (result.run_2 = run_2);
         !run_3 || (result.run_3 = run_3);
       }
       return result;
-    })
+    });
     return updatedResults;
+  }
+
+  getScore = (result) => {
+    if (result.run_1 && result.run_2 && result.run_3) {
+      const score = (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+      return Math.round( score * 10 ) / 10;
+    } else if (result.run_1 && result.run_2 && !result.run_3) {
+      const score = (parseInt(result.run_1) + parseInt(result.run_2))/2;
+      return Math.round(score * 10) / 10;
+    } else {
+      const score = parseInt(result.run_1);
+      return Math.round(score * 10) / 10;
+    }
   }
 
   render() {
@@ -87,6 +116,10 @@ class Events extends Component {
             <h4>Run 3</h4>
             <h4 className="h4-result">{result.run_3}</h4>
           </div>
+          <div className="final-score">
+            <h4>FINAL</h4>
+            <h4 className="final-result">{this.getScore(result)}</h4>
+          </div>
         </div>
       );
     });
@@ -102,7 +135,9 @@ class Events extends Component {
           </select>
         </div>
         <div className="results-container">
-          {results}
+          <FlipMove duration={600}>
+            {results}
+          </FlipMove>
         </div>
       </div>
     );
