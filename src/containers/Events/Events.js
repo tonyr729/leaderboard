@@ -27,7 +27,8 @@ class Events extends Component {
       return Object.assign(result, {name: rider[0].name, image: rider[0].img});
     });
     const results = await Promise.all(unresolvedResults);
-    this.props.addAllResults(results);
+    const orderedResults = this.orderResults(results);
+    this.props.addAllResults(orderedResults);
   }
 
   getRider = async (riderId) => {
