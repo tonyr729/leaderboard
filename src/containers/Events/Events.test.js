@@ -20,8 +20,7 @@ describe('Events', () => {
     let wrapper;
     beforeEach(() => {
       const mockResults = [
-        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' },
-        { event_id: 1, division_id: 3, rider_id: 2, run_1: '90', run_2: '93', run_3: '88', final: '2' }
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
       ];
       const mockAddAllResults = jest.fn();
       wrapper = shallow(<Events 
@@ -67,8 +66,7 @@ describe('Events', () => {
     let wrapper;
     beforeEach(() => {
       const mockResults = [
-        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' },
-        { event_id: 1, division_id: 3, rider_id: 2, run_1: '90', run_2: '93', run_3: '88', final: '2' }
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
       ];
       wrapper = shallow(<Events
         results={mockResults}
@@ -96,5 +94,70 @@ describe('Events', () => {
       expect(result).toEqual(expected);
     });
   });
+
+  describe('storeNewResult', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      const mockUpdateResults = jest.fn();
+      wrapper = shallow(<Events
+        results={mockResults}
+        updateResults={mockUpdateResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should call changeScore', () => {
+      wrapper.changeScore = jest.fn;
+      const mockResult = {
+        rider_id: 25,
+        event_id: 1,
+        division_id: 8,
+        run_1: 96,
+        run_2: 97,
+        run_3: 95
+      };
+      const spy = jest.spyOn(wrapper.instance(), 'changeScore');
+
+      wrapper.instance().storeNewResult(mockResult);
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it('should call orderResults', () => {
+      wrapper.changeScore = jest.fn;
+      const mockResult = {
+        rider_id: 25,
+        event_id: 1,
+        division_id: 8,
+        run_1: 96,
+        run_2: 97,
+        run_3: 95
+      };
+      const spy = jest.spyOn(wrapper.instance(), 'orderResults');
+
+      wrapper.instance().storeNewResult(mockResult);
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it('should call updateResults', () => {
+      wrapper.changeScore = jest.fn;
+      const mockResult = {
+        rider_id: 25,
+        event_id: 1,
+        division_id: 8,
+        run_1: 96,
+        run_2: 97,
+        run_3: 95
+      };
+      const spy = jest.spyOn(wrapper.instance().props, 'updateResults');
+
+      wrapper.instance().storeNewResult(mockResult);
+      expect(spy).toHaveBeenCalled();
+    });
+  });
+
+
+
 
 });
