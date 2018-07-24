@@ -63,6 +63,38 @@ describe('Events', () => {
     });
   });
 
+  describe('getRider', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' },
+        { event_id: 1, division_id: 3, rider_id: 2, run_1: '90', run_2: '93', run_3: '88', final: '2' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
 
+    it('should call fetch with the correct arguments', async () => {
+      const expectedUrl = 'https://leaderboard-byob.herokuapp.com/api/v1/riders/23';
+      const spy = jest.spyOn(window, 'fetch');
+
+      await wrapper.instance().getRider(23);
+      expect(spy).toHaveBeenCalledWith(expectedUrl);
+    });
+
+    it('should return the correct rider data', async () => {
+      const expected = [{
+        country: "CAN",
+        gender: "womens",
+        id: 23,
+        img: "https://stillimg.olympic.org/flags/1x1/340x340/can.png?interpolation=lanczos-none&resize=45:45",
+        name: "Calynn IRWIN"
+      }];
+
+      const result = await wrapper.instance().getRider(23);
+      expect(result).toEqual(expected);
+    });
+  });
 
 });
