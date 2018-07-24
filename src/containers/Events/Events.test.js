@@ -155,6 +155,19 @@ describe('Events', () => {
       wrapper.instance().storeNewResult(mockResult);
       expect(spy).toHaveBeenCalled();
     });
+
+    it('should not do anything if the result does not have a value', () => {
+      wrapper.changeScore = jest.fn;
+      const mockResult = '';
+      const spy1 = jest.spyOn(wrapper.instance(), 'changeScore');
+      const spy2 = jest.spyOn(wrapper.instance().props, 'updateResults');
+      const spy3 = jest.spyOn(wrapper.instance(), 'orderResults');
+
+      wrapper.instance().storeNewResult(mockResult);
+      expect(spy1).not.toHaveBeenCalled();
+      expect(spy2).not.toHaveBeenCalled();
+      expect(spy3).not.toHaveBeenCalled();
+    });
   });
 
 
