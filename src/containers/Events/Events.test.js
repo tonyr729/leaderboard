@@ -28,7 +28,6 @@ describe('Events', () => {
         addAllResults={mockAddAllResults}
         results={mockResults}
       />, { disableLifecycleMethods: true });
-      // window.fetch = jest.fn().mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(mockResults), status: 200 }));
       wrapper.orderResults = jest.fn();
     });
 
@@ -51,6 +50,13 @@ describe('Events', () => {
     it('should call orderResults', async () => {
       wrapper.orderResults = jest.fn();
       const spy = jest.spyOn(wrapper.instance(), 'orderResults');
+
+      await wrapper.instance().getResults();
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it('should call addAllResults', async () => {
+      const spy = jest.spyOn(wrapper.instance().props, 'addAllResults');
 
       await wrapper.instance().getResults();
       expect(spy).toHaveBeenCalled();
