@@ -305,6 +305,38 @@ describe('Events', () => {
     });
   });
 
+  describe('getScore', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should return the same score if there is only one result', () => {
+      const mockResult = { run_1: 90}
+
+      const result = wrapper.instance().getScore(mockResult)
+      expect(result).toEqual(90)
+    });
+
+    it('should return the average score if there are only two scores', () => {
+      const mockResult = { run_1: 100, run_2: 90 }
+
+      const result = wrapper.instance().getScore(mockResult)
+      expect(result).toEqual(95)
+    });
+
+    it('should return the average score if there are three scores', () => {
+      const mockResult = { run_1: 90, run_2: 92, run_3: 94 }
+
+      const result = wrapper.instance().getScore(mockResult)
+      expect(result).toEqual(92)
+    });
+  });
 
 
 
