@@ -230,6 +230,81 @@ describe('Events', () => {
     });
   });
 
+  describe('changeScore', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should return an array with updated results', () => {
+      const mockResult = {
+        rider_id: 1,
+        event_id: 1,
+        division_id: 3,
+        run_1: 96
+      }
+      const expected = { 
+        event_id: 1, 
+        division_id: 3, 
+        rider_id: 1, 
+        run_1: 96, 
+        run_2: '88', 
+        run_3: '90', 
+        final: '1' 
+      }
+
+      const result = wrapper.instance().changeScore(mockResult)
+      expect(result[0]).toEqual(expected)
+    });
+
+    it('should be able to change any result', () => {
+      const mockResult = {
+        rider_id: 1,
+        event_id: 1,
+        division_id: 3,
+        run_3: 96
+      }
+      const expected = {
+        event_id: 1,
+        division_id: 3,
+        rider_id: 1,
+        run_1: '93',
+        run_2: '88',
+        run_3: 96,
+        final: '1'
+      }
+
+      const result = wrapper.instance().changeScore(mockResult)
+      expect(result[0]).toEqual(expected)
+    });
+
+    it('should not change a result if there is not an exact match', () => {
+      const mockResult = {
+        rider_id: 2,
+        event_id: 1,
+        division_id: 3,
+        run_3: 96
+      }
+      const expected = {
+        event_id: 1,
+        division_id: 3,
+        rider_id: 1,
+        run_1: '93',
+        run_2: '88',
+        run_3: '90',
+        final: '1'
+      }
+
+      const result = wrapper.instance().changeScore(mockResult)
+      expect(result[0]).toEqual(expected)
+    });
+  });
+
 
 
 
