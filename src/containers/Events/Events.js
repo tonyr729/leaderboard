@@ -5,7 +5,7 @@ import FlipMove from 'react-flip-move';
 import { connect } from 'react-redux';
 import './Events.css';
 
-class Events extends Component {
+export class Events extends Component {
   constructor() {
     super();
     this.state ={

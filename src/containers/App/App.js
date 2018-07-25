@@ -8,15 +8,7 @@ import './App.css';
 class App extends Component {
 
   async componentDidMount() {
-    // const key = await fetch('https://leaderboard-byob.herokuapp.com/authenticate', {
-    //   method: 'POST',
-    //   email: 'ericmellow@turing.io',
-    //   appName: 'Leader Board'
-    // });
-    // const response = await fetch('https://leaderboard-byob.herokuapp.com/api/v1/events', {
-    //   "authorization": key
-    // });
-    // const data = await response.json();
+  
   }
   render() {
     return (
