@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .sidebar__title-logo {
+    width: 90%;
+    margin-top: 1rem;
+  }
   .main {
     display: flex;
     flex-direction: column;
