@@ -358,4 +358,31 @@ describe('Events', () => {
     });
   });
 
+  describe('mapDispatchToProps', () => {
+
+    it('should call dispatch with the correct params on addResults', () => {
+      const mockDispatch = jest.fn();
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      const mockAction = {
+        type: 'ADD_RESULTS'
+      };
+      mappedProps.addAllResults();
+
+      expect(mockDispatch).toHaveBeenCalledWith(mockAction);
+    });
+
+    it('should call dispatch with the correct params on updateResult', () => {
+      const mockDispatch = jest.fn();
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      const mockAction = {
+        type: 'UPDATE_RESULT'
+      };
+
+      mappedProps.updateResults();
+
+      expect(mockDispatch).toHaveBeenCalledWith(mockAction);
+    });
+
+  });
+
 });
