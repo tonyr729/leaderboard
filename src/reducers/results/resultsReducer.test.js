@@ -6,8 +6,30 @@ describe('resultsReducer', () => {
 
   beforeEach(() => {
     mockResults = [
-      { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' },
-      { event_id: 1, division_id: 3, rider_id: 2, run_1: '90', run_2: '93', run_3: '88', final: '2' }
+      {
+        id: 26,
+        event_id: 1,
+        division_id: 8,
+        rider_id: 26,
+        run_1: "100",
+        run_2: "100",
+        run_3: "99",
+        final: 99.6,
+        name: "Ayumu HIRANO",
+        image: "https://stillimg.olympic.org/flags/1x1/340x340/jpn.png?interpolation=lanczos-none&resize=45:45"
+      },
+      { 
+        id: 30,
+        event_id: 1,
+        division_id: 8,
+        rider_id: 30,
+        run_1: "80",
+        run_2: "100",
+        run_3: "99",
+        final: 93,
+        name: "Chase JOSEY",
+        image: "https://stillimg.olympic.org/flags/1x1/340x340/usa.png?interpolation=lanczos-none&resize=45:45"
+      }
     ];
     mockState = [];
   });
