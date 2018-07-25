@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { Events } from "./Events";
+import { Events, mapDispatchToProps, mapStateToProps } from "./Events";
 
 describe('Events', () => {
   let wrapper;
@@ -338,6 +338,24 @@ describe('Events', () => {
     });
   });
 
+  describe('mapStateToProps', () => {
 
+    it('should map results to props', () => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      const mockState = {
+        results: mockResults,
+        fakeStuff: 'I am just here to make sure this test is legit.',
+        testStuff: 402
+      };
+      const expected = {
+        results: mockResults
+      }
+
+      const mappedProps = mapStateToProps(mockState);
+      expect(mappedProps).toEqual(expected);
+    });
+  });
 
 });
