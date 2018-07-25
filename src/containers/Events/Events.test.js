@@ -170,6 +170,66 @@ describe('Events', () => {
     });
   });
 
+  describe('orderResults', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should order the results from largest to smallest final score with three run values', () => {
+      const initialResults = [
+        { run_1: 90, run_2: 90, run_3: 90, final: 0 },
+        { run_1: 95, run_2: 95, run_3: 95, final: 0 },
+        { run_1: 92, run_2: 92, run_3: 92, final: 0 }
+      ];
+      const expected = [
+        { run_1: 95, run_2: 95, run_3: 95, final: 95 },
+        { run_1: 92, run_2: 92, run_3: 92, final: 92 },
+        { run_1: 90, run_2: 90, run_3: 90, final: 90 }
+      ];
+
+      const result = wrapper.instance().orderResults(initialResults);
+      expect(result).toEqual(expected)
+    });
+
+    it('should order the results from largest to smallest final score with two run values', () => {
+      const initialResults = [
+        { run_1: 90, run_2: 90, run_3: 0, final: 0 },
+        { run_1: 95, run_2: 95, run_3: 0, final: 0 },
+        { run_1: 92, run_2: 92, run_3: 0, final: 0 }
+      ];
+      const expected = [
+        { run_1: 95, run_2: 95, run_3: 0, final: 95 },
+        { run_1: 92, run_2: 92, run_3: 0, final: 92 },
+        { run_1: 90, run_2: 90, run_3: 0, final: 90 }
+      ];
+
+      const result = wrapper.instance().orderResults(initialResults);
+      expect(result).toEqual(expected)
+    });
+
+    it('should order the results from largest to smallest final score with only one run value', () => {
+      const initialResults = [
+        { run_1: 90, run_2: 0, run_3: 0, final: 0 },
+        { run_1: 95, run_2: 0, run_3: 0, final: 0 },
+        { run_1: 92, run_2: 0, run_3: 0, final: 0 }
+      ];
+      const expected = [
+        { run_1: 95, run_2: 0, run_3: 0, final: 95 },
+        { run_1: 92, run_2: 0, run_3: 0, final: 92 },
+        { run_1: 90, run_2: 0, run_3: 0, final: 90 }
+      ];
+
+      const result = wrapper.instance().orderResults(initialResults);
+      expect(result).toEqual(expected)
+    });
+  });
+
 
 
 
