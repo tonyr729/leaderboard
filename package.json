@@ -27,6 +27,13 @@
     "eject": "react-scripts eject",
     "eslint": "./node_modules/eslint/bin/eslint.js ./src/*.js"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/reducers/index.js"
+    ]
+  },
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
