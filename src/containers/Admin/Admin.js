@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { subscribeToChange } from '../../timer';
 import './Admin.css';
 
-class Admin extends Component {
+export class Admin extends Component {
   constructor() {
     super();
     this.state = {
