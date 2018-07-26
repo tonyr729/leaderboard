@@ -100,6 +100,7 @@ export class Events extends Component {
   render() {
     const results = this.props.results.map((result, index) => {
       return (
+        <div>
         <div className="result" id={result.id} key={result.id}>
           <h1>{index+1}</h1>
           <img src={result.image} alt="flag"/>
@@ -120,6 +121,8 @@ export class Events extends Component {
             <h4>FINAL</h4>
             <h4 className="final-result">{this.getScore(result)}</h4>
           </div>
+        </div>
+          <iframe src="https://player.vimeo.com/video/281738494" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       );
     });
