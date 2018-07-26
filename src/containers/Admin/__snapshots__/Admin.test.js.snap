@@ -1,0 +1,1610 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Admin should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Admin
+    results={
+        Array [
+            Object {
+              "division_id": 3,
+              "event_id": 1,
+              "final": "1",
+              "rider_id": 1,
+              "run_1": "93",
+              "run_2": "88",
+              "run_3": "90",
+            },
+            Object {
+              "division_id": 3,
+              "event_id": 1,
+              "final": "2",
+              "rider_id": 2,
+              "run_1": "90",
+              "run_2": "93",
+              "run_3": "88",
+            },
+          ]
+    }
+    riders={
+        Array [
+            Object {
+              "country": "USA",
+              "gender": "male",
+              "id": 1,
+              "image": "awesome.jpg",
+              "name": "tony",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="admin-update"
+>
+          <label
+                    className="choose-event"
+                    htmlFor="event-names"
+          >
+                    Choose Event
+                    <select
+                              className="event-names"
+                              id="event_id"
+                              onChange={[Function]}
+                              value={undefined}
+                    >
+                              <option
+                                        value=""
+                              >
+                                        Choose a Event
+                              </option>
+                              <option
+                                        value="1"
+                              >
+                                        Olympics
+                              </option>
+                    </select>
+          </label>
+          <label
+                    className="choose-division"
+                    htmlFor="division-names"
+          >
+                    Choose Division
+                    <select
+                              className="division-names"
+                              id="division_id"
+                              onChange={[Function]}
+                              value={undefined}
+                    >
+                              <option
+                                        value=""
+                              >
+                                        Choose a Division
+                              </option>
+                              <option
+                                        value="3"
+                              >
+                                        Womens Halfpipe
+                              </option>
+                              <option
+                                        value="8"
+                              >
+                                        Mens Halfpipe
+                              </option>
+                    </select>
+          </label>
+          <label
+                    className="choose-rider"
+                    htmlFor="rider-names"
+          >
+                    Choose Rider
+                    <select
+                              className="rider-names"
+                              id="rider_id"
+                              onChange={[Function]}
+                              value={undefined}
+                    >
+                              <option
+                                        value=""
+                              >
+                                        Choose a Rider
+                              </option>
+                              <option
+                                        id="rider_id"
+                                        value={1}
+                              >
+                                        tony
+                              </option>
+                    </select>
+          </label>
+          <form
+                    id="updateForm"
+                    onSubmit={[Function]}
+          >
+                    <label
+                              className="runone-label"
+                    >
+                              Run 1:
+                              <input
+                                        className="admin-input"
+                                        id="run_1"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value={undefined}
+                              />
+                    </label>
+                    <label
+                              className="runtwo-label"
+                    >
+                              Run 2:
+                              <input
+                                        className="admin-input"
+                                        id="run_2"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value={undefined}
+                              />
+                    </label>
+                    <label
+                              className="runthree-label"
+                    >
+                              Run 3:
+                              <input
+                                        className="admin-input"
+                                        id="run_3"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value={undefined}
+                              />
+                    </label>
+                    <input
+                              className="form-submit"
+                              type="submit"
+                              value="Update"
+                    />
+          </form>
+</div>,
+        <div
+          className="add-media"
+>
+          <p
+                    className="coming-soon"
+          >
+                    Feature Coming Soon
+          </p>
+</div>,
+      ],
+      "className": "admin",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="choose-event"
+              htmlFor="event-names"
+>
+              Choose Event
+              <select
+                            className="event-names"
+                            id="event_id"
+                            onChange={[Function]}
+                            value={undefined}
+              >
+                            <option
+                                          value=""
+                            >
+                                          Choose a Event
+                            </option>
+                            <option
+                                          value="1"
+                            >
+                                          Olympics
+                            </option>
+              </select>
+</label>,
+            <label
+              className="choose-division"
+              htmlFor="division-names"
+>
+              Choose Division
+              <select
+                            className="division-names"
+                            id="division_id"
+                            onChange={[Function]}
+                            value={undefined}
+              >
+                            <option
+                                          value=""
+                            >
+                                          Choose a Division
+                            </option>
+                            <option
+                                          value="3"
+                            >
+                                          Womens Halfpipe
+                            </option>
+                            <option
+                                          value="8"
+                            >
+                                          Mens Halfpipe
+                            </option>
+              </select>
+</label>,
+            <label
+              className="choose-rider"
+              htmlFor="rider-names"
+>
+              Choose Rider
+              <select
+                            className="rider-names"
+                            id="rider_id"
+                            onChange={[Function]}
+                            value={undefined}
+              >
+                            <option
+                                          value=""
+                            >
+                                          Choose a Rider
+                            </option>
+                            <option
+                                          id="rider_id"
+                                          value={1}
+                            >
+                                          tony
+                            </option>
+              </select>
+</label>,
+            <form
+              id="updateForm"
+              onSubmit={[Function]}
+>
+              <label
+                            className="runone-label"
+              >
+                            Run 1:
+                            <input
+                                          className="admin-input"
+                                          id="run_1"
+                                          onChange={[Function]}
+                                          type="text"
+                                          value={undefined}
+                            />
+              </label>
+              <label
+                            className="runtwo-label"
+              >
+                            Run 2:
+                            <input
+                                          className="admin-input"
+                                          id="run_2"
+                                          onChange={[Function]}
+                                          type="text"
+                                          value={undefined}
+                            />
+              </label>
+              <label
+                            className="runthree-label"
+              >
+                            Run 3:
+                            <input
+                                          className="admin-input"
+                                          id="run_3"
+                                          onChange={[Function]}
+                                          type="text"
+                                          value={undefined}
+                            />
+              </label>
+              <input
+                            className="form-submit"
+                            type="submit"
+                            value="Update"
+              />
+</form>,
+          ],
+          "className": "admin-update",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Choose Event",
+                <select
+                  className="event-names"
+                  id="event_id"
+                  onChange={[Function]}
+                  value={undefined}
+>
+                  <option
+                                    value=""
+                  >
+                                    Choose a Event
+                  </option>
+                  <option
+                                    value="1"
+                  >
+                                    Olympics
+                  </option>
+</select>,
+              ],
+              "className": "choose-event",
+              "htmlFor": "event-names",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Choose Event",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value=""
+>
+                      Choose a Event
+</option>,
+                    <option
+                      value="1"
+>
+                      Olympics
+</option>,
+                  ],
+                  "className": "event-names",
+                  "id": "event_id",
+                  "onChange": [Function],
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Choose a Event",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": "Choose a Event",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Olympics",
+                      "value": "1",
+                    },
+                    "ref": null,
+                    "rendered": "Olympics",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Choose Division",
+                <select
+                  className="division-names"
+                  id="division_id"
+                  onChange={[Function]}
+                  value={undefined}
+>
+                  <option
+                                    value=""
+                  >
+                                    Choose a Division
+                  </option>
+                  <option
+                                    value="3"
+                  >
+                                    Womens Halfpipe
+                  </option>
+                  <option
+                                    value="8"
+                  >
+                                    Mens Halfpipe
+                  </option>
+</select>,
+              ],
+              "className": "choose-division",
+              "htmlFor": "division-names",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Choose Division",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value=""
+>
+                      Choose a Division
+</option>,
+                    <option
+                      value="3"
+>
+                      Womens Halfpipe
+</option>,
+                    <option
+                      value="8"
+>
+                      Mens Halfpipe
+</option>,
+                  ],
+                  "className": "division-names",
+                  "id": "division_id",
+                  "onChange": [Function],
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Choose a Division",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": "Choose a Division",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Womens Halfpipe",
+                      "value": "3",
+                    },
+                    "ref": null,
+                    "rendered": "Womens Halfpipe",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Mens Halfpipe",
+                      "value": "8",
+                    },
+                    "ref": null,
+                    "rendered": "Mens Halfpipe",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Choose Rider",
+                <select
+                  className="rider-names"
+                  id="rider_id"
+                  onChange={[Function]}
+                  value={undefined}
+>
+                  <option
+                                    value=""
+                  >
+                                    Choose a Rider
+                  </option>
+                  <option
+                                    id="rider_id"
+                                    value={1}
+                  >
+                                    tony
+                  </option>
+</select>,
+              ],
+              "className": "choose-rider",
+              "htmlFor": "rider-names",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Choose Rider",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value=""
+>
+                      Choose a Rider
+</option>,
+                    Array [
+                      <option
+                        id="rider_id"
+                        value={1}
+>
+                        tony
+</option>,
+                    ],
+                  ],
+                  "className": "rider-names",
+                  "id": "rider_id",
+                  "onChange": [Function],
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Choose a Rider",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": "Choose a Rider",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "tony",
+                      "id": "rider_id",
+                      "value": 1,
+                    },
+                    "ref": null,
+                    "rendered": "tony",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <label
+                  className="runone-label"
+>
+                  Run 1:
+                  <input
+                                    className="admin-input"
+                                    id="run_1"
+                                    onChange={[Function]}
+                                    type="text"
+                                    value={undefined}
+                  />
+</label>,
+                <label
+                  className="runtwo-label"
+>
+                  Run 2:
+                  <input
+                                    className="admin-input"
+                                    id="run_2"
+                                    onChange={[Function]}
+                                    type="text"
+                                    value={undefined}
+                  />
+</label>,
+                <label
+                  className="runthree-label"
+>
+                  Run 3:
+                  <input
+                                    className="admin-input"
+                                    id="run_3"
+                                    onChange={[Function]}
+                                    type="text"
+                                    value={undefined}
+                  />
+</label>,
+                <input
+                  className="form-submit"
+                  type="submit"
+                  value="Update"
+/>,
+              ],
+              "id": "updateForm",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Run 1:",
+                    <input
+                      className="admin-input"
+                      id="run_1"
+                      onChange={[Function]}
+                      type="text"
+                      value={undefined}
+/>,
+                  ],
+                  "className": "runone-label",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Run 1:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "admin-input",
+                      "id": "run_1",
+                      "onChange": [Function],
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Run 2:",
+                    <input
+                      className="admin-input"
+                      id="run_2"
+                      onChange={[Function]}
+                      type="text"
+                      value={undefined}
+/>,
+                  ],
+                  "className": "runtwo-label",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Run 2:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "admin-input",
+                      "id": "run_2",
+                      "onChange": [Function],
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Run 3:",
+                    <input
+                      className="admin-input"
+                      id="run_3"
+                      onChange={[Function]}
+                      type="text"
+                      value={undefined}
+/>,
+                  ],
+                  "className": "runthree-label",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Run 3:",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "admin-input",
+                      "id": "run_3",
+                      "onChange": [Function],
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "form-submit",
+                  "type": "submit",
+                  "value": "Update",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "form",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p
+            className="coming-soon"
+>
+            Feature Coming Soon
+</p>,
+          "className": "add-media",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Feature Coming Soon",
+            "className": "coming-soon",
+          },
+          "ref": null,
+          "rendered": "Feature Coming Soon",
+          "type": "p",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="admin-update"
+>
+            <label
+                        className="choose-event"
+                        htmlFor="event-names"
+            >
+                        Choose Event
+                        <select
+                                    className="event-names"
+                                    id="event_id"
+                                    onChange={[Function]}
+                                    value={undefined}
+                        >
+                                    <option
+                                                value=""
+                                    >
+                                                Choose a Event
+                                    </option>
+                                    <option
+                                                value="1"
+                                    >
+                                                Olympics
+                                    </option>
+                        </select>
+            </label>
+            <label
+                        className="choose-division"
+                        htmlFor="division-names"
+            >
+                        Choose Division
+                        <select
+                                    className="division-names"
+                                    id="division_id"
+                                    onChange={[Function]}
+                                    value={undefined}
+                        >
+                                    <option
+                                                value=""
+                                    >
+                                                Choose a Division
+                                    </option>
+                                    <option
+                                                value="3"
+                                    >
+                                                Womens Halfpipe
+                                    </option>
+                                    <option
+                                                value="8"
+                                    >
+                                                Mens Halfpipe
+                                    </option>
+                        </select>
+            </label>
+            <label
+                        className="choose-rider"
+                        htmlFor="rider-names"
+            >
+                        Choose Rider
+                        <select
+                                    className="rider-names"
+                                    id="rider_id"
+                                    onChange={[Function]}
+                                    value={undefined}
+                        >
+                                    <option
+                                                value=""
+                                    >
+                                                Choose a Rider
+                                    </option>
+                                    <option
+                                                id="rider_id"
+                                                value={1}
+                                    >
+                                                tony
+                                    </option>
+                        </select>
+            </label>
+            <form
+                        id="updateForm"
+                        onSubmit={[Function]}
+            >
+                        <label
+                                    className="runone-label"
+                        >
+                                    Run 1:
+                                    <input
+                                                className="admin-input"
+                                                id="run_1"
+                                                onChange={[Function]}
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </label>
+                        <label
+                                    className="runtwo-label"
+                        >
+                                    Run 2:
+                                    <input
+                                                className="admin-input"
+                                                id="run_2"
+                                                onChange={[Function]}
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </label>
+                        <label
+                                    className="runthree-label"
+                        >
+                                    Run 3:
+                                    <input
+                                                className="admin-input"
+                                                id="run_3"
+                                                onChange={[Function]}
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </label>
+                        <input
+                                    className="form-submit"
+                                    type="submit"
+                                    value="Update"
+                        />
+            </form>
+</div>,
+          <div
+            className="add-media"
+>
+            <p
+                        className="coming-soon"
+            >
+                        Feature Coming Soon
+            </p>
+</div>,
+        ],
+        "className": "admin",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="choose-event"
+                htmlFor="event-names"
+>
+                Choose Event
+                <select
+                                className="event-names"
+                                id="event_id"
+                                onChange={[Function]}
+                                value={undefined}
+                >
+                                <option
+                                                value=""
+                                >
+                                                Choose a Event
+                                </option>
+                                <option
+                                                value="1"
+                                >
+                                                Olympics
+                                </option>
+                </select>
+</label>,
+              <label
+                className="choose-division"
+                htmlFor="division-names"
+>
+                Choose Division
+                <select
+                                className="division-names"
+                                id="division_id"
+                                onChange={[Function]}
+                                value={undefined}
+                >
+                                <option
+                                                value=""
+                                >
+                                                Choose a Division
+                                </option>
+                                <option
+                                                value="3"
+                                >
+                                                Womens Halfpipe
+                                </option>
+                                <option
+                                                value="8"
+                                >
+                                                Mens Halfpipe
+                                </option>
+                </select>
+</label>,
+              <label
+                className="choose-rider"
+                htmlFor="rider-names"
+>
+                Choose Rider
+                <select
+                                className="rider-names"
+                                id="rider_id"
+                                onChange={[Function]}
+                                value={undefined}
+                >
+                                <option
+                                                value=""
+                                >
+                                                Choose a Rider
+                                </option>
+                                <option
+                                                id="rider_id"
+                                                value={1}
+                                >
+                                                tony
+                                </option>
+                </select>
+</label>,
+              <form
+                id="updateForm"
+                onSubmit={[Function]}
+>
+                <label
+                                className="runone-label"
+                >
+                                Run 1:
+                                <input
+                                                className="admin-input"
+                                                id="run_1"
+                                                onChange={[Function]}
+                                                type="text"
+                                                value={undefined}
+                                />
+                </label>
+                <label
+                                className="runtwo-label"
+                >
+                                Run 2:
+                                <input
+                                                className="admin-input"
+                                                id="run_2"
+                                                onChange={[Function]}
+                                                type="text"
+                                                value={undefined}
+                                />
+                </label>
+                <label
+                                className="runthree-label"
+                >
+                                Run 3:
+                                <input
+                                                className="admin-input"
+                                                id="run_3"
+                                                onChange={[Function]}
+                                                type="text"
+                                                value={undefined}
+                                />
+                </label>
+                <input
+                                className="form-submit"
+                                type="submit"
+                                value="Update"
+                />
+</form>,
+            ],
+            "className": "admin-update",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Choose Event",
+                  <select
+                    className="event-names"
+                    id="event_id"
+                    onChange={[Function]}
+                    value={undefined}
+>
+                    <option
+                                        value=""
+                    >
+                                        Choose a Event
+                    </option>
+                    <option
+                                        value="1"
+                    >
+                                        Olympics
+                    </option>
+</select>,
+                ],
+                "className": "choose-event",
+                "htmlFor": "event-names",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Choose Event",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value=""
+>
+                        Choose a Event
+</option>,
+                      <option
+                        value="1"
+>
+                        Olympics
+</option>,
+                    ],
+                    "className": "event-names",
+                    "id": "event_id",
+                    "onChange": [Function],
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Choose a Event",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": "Choose a Event",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Olympics",
+                        "value": "1",
+                      },
+                      "ref": null,
+                      "rendered": "Olympics",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Choose Division",
+                  <select
+                    className="division-names"
+                    id="division_id"
+                    onChange={[Function]}
+                    value={undefined}
+>
+                    <option
+                                        value=""
+                    >
+                                        Choose a Division
+                    </option>
+                    <option
+                                        value="3"
+                    >
+                                        Womens Halfpipe
+                    </option>
+                    <option
+                                        value="8"
+                    >
+                                        Mens Halfpipe
+                    </option>
+</select>,
+                ],
+                "className": "choose-division",
+                "htmlFor": "division-names",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Choose Division",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value=""
+>
+                        Choose a Division
+</option>,
+                      <option
+                        value="3"
+>
+                        Womens Halfpipe
+</option>,
+                      <option
+                        value="8"
+>
+                        Mens Halfpipe
+</option>,
+                    ],
+                    "className": "division-names",
+                    "id": "division_id",
+                    "onChange": [Function],
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Choose a Division",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": "Choose a Division",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Womens Halfpipe",
+                        "value": "3",
+                      },
+                      "ref": null,
+                      "rendered": "Womens Halfpipe",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Mens Halfpipe",
+                        "value": "8",
+                      },
+                      "ref": null,
+                      "rendered": "Mens Halfpipe",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Choose Rider",
+                  <select
+                    className="rider-names"
+                    id="rider_id"
+                    onChange={[Function]}
+                    value={undefined}
+>
+                    <option
+                                        value=""
+                    >
+                                        Choose a Rider
+                    </option>
+                    <option
+                                        id="rider_id"
+                                        value={1}
+                    >
+                                        tony
+                    </option>
+</select>,
+                ],
+                "className": "choose-rider",
+                "htmlFor": "rider-names",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Choose Rider",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value=""
+>
+                        Choose a Rider
+</option>,
+                      Array [
+                        <option
+                          id="rider_id"
+                          value={1}
+>
+                          tony
+</option>,
+                      ],
+                    ],
+                    "className": "rider-names",
+                    "id": "rider_id",
+                    "onChange": [Function],
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Choose a Rider",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": "Choose a Rider",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "tony",
+                        "id": "rider_id",
+                        "value": 1,
+                      },
+                      "ref": null,
+                      "rendered": "tony",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    className="runone-label"
+>
+                    Run 1:
+                    <input
+                                        className="admin-input"
+                                        id="run_1"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value={undefined}
+                    />
+</label>,
+                  <label
+                    className="runtwo-label"
+>
+                    Run 2:
+                    <input
+                                        className="admin-input"
+                                        id="run_2"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value={undefined}
+                    />
+</label>,
+                  <label
+                    className="runthree-label"
+>
+                    Run 3:
+                    <input
+                                        className="admin-input"
+                                        id="run_3"
+                                        onChange={[Function]}
+                                        type="text"
+                                        value={undefined}
+                    />
+</label>,
+                  <input
+                    className="form-submit"
+                    type="submit"
+                    value="Update"
+/>,
+                ],
+                "id": "updateForm",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Run 1:",
+                      <input
+                        className="admin-input"
+                        id="run_1"
+                        onChange={[Function]}
+                        type="text"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "runone-label",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Run 1:",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "admin-input",
+                        "id": "run_1",
+                        "onChange": [Function],
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Run 2:",
+                      <input
+                        className="admin-input"
+                        id="run_2"
+                        onChange={[Function]}
+                        type="text"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "runtwo-label",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Run 2:",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "admin-input",
+                        "id": "run_2",
+                        "onChange": [Function],
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Run 3:",
+                      <input
+                        className="admin-input"
+                        id="run_3"
+                        onChange={[Function]}
+                        type="text"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "runthree-label",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Run 3:",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "admin-input",
+                        "id": "run_3",
+                        "onChange": [Function],
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-submit",
+                    "type": "submit",
+                    "value": "Update",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "form",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p
+              className="coming-soon"
+>
+              Feature Coming Soon
+</p>,
+            "className": "add-media",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Feature Coming Soon",
+              "className": "coming-soon",
+            },
+            "ref": null,
+            "rendered": "Feature Coming Soon",
+            "type": "p",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
