@@ -1,49 +1,51 @@
-.events {
-  height: 100%; }
-  .events h1 {
-    font-size: 2rem; }
-  .events h2 {
-    margin: 30px 20px 20px 75px;
-    font-weight: 500;
-    font-size: 2rem; }
-  .events span {
-    color: #666666;
-    font-weight: 300; }
-  .events .event-div {
+.events h1 {
+  font-size: 2rem; }
+
+.events h2 {
+  margin: 30px 20px 20px 75px;
+  font-weight: 500;
+  font-size: 2rem; }
+
+.events span {
+  color: #666666;
+  font-weight: 300; }
+
+.events .event-div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .events .event-div h1 {
+    margin: 10px;
+    font-size: 3rem; }
+  .events .event-div select {
+    font-size: 1.5rem;
+    background-color: #82b7fe;
+    width: 150px;
+    color: white;
+    height: 50px; }
+
+.events .results-container {
+  height: 77vh;
+  overflow-y: scroll;
+  margin: 10px auto;
+  text-align: center; }
+  .events .results-container .result {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center; }
-    .events .event-div h1 {
-      margin: 10px;
-      font-size: 3rem; }
-    .events .event-div select {
-      font-size: 1.5rem;
-      background-color: #82b7fe;
-      width: 150px;
-      color: white;
-      height: 50px; }
-  .events .results-container {
-    height: 77vh;
-    overflow-y: scroll;
+    background-color: white;
+    width: 75%;
     margin: 10px auto;
-    text-align: center; }
-    .events .results-container .result {
-      display: flex;
-      width: 100%;
-      justify-content: space-evenly;
-      align-items: center;
-      background-color: white;
-      width: 75%;
-      margin: 10px auto;
-      box-shadow: 2px 2px 10px lightgrey; }
-      .events .results-container .result h1 {
-        color: #666666; }
-      .events .results-container .result h4 {
-        color: #666666; }
-      .events .results-container .result img {
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        box-shadow: 3px 3px 8px #666666; }
-      .events .results-container .result .h4-result {
-        color: #84b8fc; }
+    box-shadow: 2px 2px 10px lightgrey; }
+    .events .results-container .result h1 {
+      color: #666666; }
+    .events .results-container .result h4 {
+      color: #666666; }
+    .events .results-container .result img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 3px 3px 8px #666666; }
+    .events .results-container .result .h4-result {
+      color: #84b8fc; }
