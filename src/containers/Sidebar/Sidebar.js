@@ -15,7 +15,7 @@ class Sidebar extends Component {
           <button>Media</button>
         </section>
         <NavLink exact to='/Admin' className='nav' activeClassName='selected'>
-          <button>Admin Login</button>
+          <button id="admin">Admin Login</button>
         </NavLink>      
       </div>
     )
