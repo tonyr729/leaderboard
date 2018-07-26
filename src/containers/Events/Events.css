@@ -2,9 +2,10 @@
   font-size: 2rem; }
 
 .events h2 {
-  margin: 30px 20px 20px 75px;
+  margin: 30px auto 20px auto;
   font-weight: 500;
-  font-size: 2rem; }
+  font-size: 2rem;
+  width: 75%; }
 
 .events span {
   color: #666666;
@@ -13,7 +14,8 @@
 .events .event-div {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  width: 77%;
+  margin: 0 auto; }
   .events .event-div h1 {
     margin: 10px;
     font-size: 3rem; }
