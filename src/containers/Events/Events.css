@@ -11,6 +11,9 @@
   color: #666666;
   font-weight: 300; }
 
+.events iframe {
+  display: none; }
+
 .events .event-div {
   display: flex;
   align-items: center;
