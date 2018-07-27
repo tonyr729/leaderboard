@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { resultsReducer } from './results/resultsReducer';
-import { ridersReducer } from './ridersReducer';
+import { ridersReducer } from './riders/ridersReducer';
 
 export const rootReducer = combineReducers({
   results: resultsReducer,
