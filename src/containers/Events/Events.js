@@ -56,11 +56,11 @@ export class Events extends Component {
   orderResults = (updatedResults) => {
     const newResults = updatedResults.map(result => {
       if (result.run_1 && result.run_2 && result.run_3) {
-        result.final =  (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+        result.final =  (parseInt(result.run_1, 10) + parseInt(result.run_2, 10) + parseInt(result.run_3, 10)) / 3;
       } else if (result.run_1 && result.run_2 && !result.run_3) {
-        result.final = (parseInt(result.run_1) + parseInt(result.run_2))/2;
+        result.final = (parseInt(result.run_1, 10) + parseInt(result.run_2, 10))/2;
       } else {
-        result.final = parseInt(result.run_1);
+        result.final = parseInt(result.run_1, 10);
       }
       return result;
     });
@@ -86,13 +86,13 @@ export class Events extends Component {
 
   getScore = (result) => {
     if (result.run_1 && result.run_2 && result.run_3) {
-      const score = (parseInt(result.run_1) + parseInt(result.run_2) + parseInt(result.run_3)) / 3;
+      const score = (parseInt(result.run_1, 10) + parseInt(result.run_2, 10) + parseInt(result.run_3, 10)) / 3;
       return Math.round( score * 10 ) / 10;
     } else if (result.run_1 && result.run_2 && !result.run_3) {
-      const score = (parseInt(result.run_1) + parseInt(result.run_2))/2;
+      const score = (parseInt(result.run_1, 10) + parseInt(result.run_2, 10))/2;
       return Math.round(score * 10) / 10;
     } else {
-      const score = parseInt(result.run_1);
+      const score = parseInt(result.run_1, 10);
       return Math.round(score * 10) / 10;
     }
   }

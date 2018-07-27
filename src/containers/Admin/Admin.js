@@ -59,7 +59,7 @@ export class Admin extends Component {
 
   handleChange = (event) => {
     const { id, value } = event.target;
-    const intValue = parseInt(value);
+    const intValue = parseInt(value, 10);
     this.setState({
       [id]: intValue
     });
