@@ -2,7 +2,6 @@
   height: 100vh;
   background-color: #352c4b;
   color: white;
-  border-radius: 0px 15px 15px 0px;
   width: 20vw;
   display: -ms-flexbox;
   display: flex;
@@ -11,10 +10,22 @@
   .sidebar .sidebar__title-logo {
     width: 90%;
     margin-top: 1rem; }
+  .sidebar #admin {
+    height: 50px;
+    width: 20vw;
+    position: fixed;
+    bottom: 0;
+    font-size: 2rem;
+    left: 0;
+    background-color: #5275a7;
+    padding: 0;
+    color: white;
+    border: 0; }
   .sidebar .main {
     display: flex;
     flex-direction: column;
-    width: 80%; }
+    width: 80%;
+    margin-top: 50px; }
     .sidebar .main button {
       margin: 15px;
       text-align: start;
