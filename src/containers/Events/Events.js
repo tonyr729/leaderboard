@@ -130,8 +130,8 @@ export class Events extends Component {
         <div className="event-div">
           <h1>Tahoe Invitational</h1>
           <select>
-            <option value="halfpipe" data-divisionid="8">Halfpipe</option>
-            <option value="big-air" data-divisionid="6">Big Air</option>
+            <option value="halfpipe" data-divisionid="8">Mens Big Air</option>
+            <option value="big-air" data-divisionid="6">Womens Big Air</option>
           </select>
         </div>
         <div className="results-container">
