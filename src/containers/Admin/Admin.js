@@ -114,14 +114,15 @@ export class Admin extends Component {
                   onChange={this.handleChange}
                   value={this.state.runOne}
                   id="run_1"
-                  className='admin-input'/>
+                  className='admin-input'
+                  placeholder="Score"/>
               </label>
               <label className='runone-label'>
-                Run 1 Media URL:
                 <input type="text"
                   onChange={this.handleChange}
                   value={this.state.runOne}
-                  id='media-url' />
+                  id='media-url'
+                  placeholder="Media URL" />
               </label>
             </div>
             <div>
@@ -131,14 +132,15 @@ export class Admin extends Component {
                   onChange={this.handleChange}
                   value={this.state.runTwo}
                   id="run_2"
-                  className='admin-input'/>
+                  className='admin-input'
+                  placeholder="Score"/>
               </label>
               <label className='runone-label'>
-                Run 2 Media URL:
                 <input type="text"
                   onChange={this.handleChange}
                   value={this.state.runOne}
-                  id='media-url' />
+                  id='media-url' 
+                  placeholder="Media URL"/>
               </label>
             </div>
             <div>
@@ -148,14 +150,15 @@ export class Admin extends Component {
                   onChange={this.handleChange}
                   value={this.state.runThree}
                   id="run_3"
-                  className='admin-input'/>
+                  className='admin-input'
+                  placeholder="Score"/>
               </label>
               <label className='runone-label'>
-                Run 3 Media URL:
                 <input type="text"
                   onChange={this.handleChange}
                   value={this.state.runOne}
-                  id='media-url' />
+                  id='media-url'
+                  placeholder="Media URL" />
               </label>
             </div>
             <input type="submit" value="Update" className="form-submit" />
