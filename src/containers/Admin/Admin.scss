@@ -29,6 +29,12 @@ form {
     font-size: 2rem;
     text-align: center;
   }
+  #url-input {
+    width: 27rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 .form-submit {

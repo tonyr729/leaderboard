@@ -121,7 +121,7 @@ export class Admin extends Component {
                 onChange={this.handleChange}
                 value={this.state.runOne}
                 id="media1"
-                className='url-input' />
+                id='url-input' />
             </label>
             <label className='runtwo-label'>
               Run 2:
@@ -137,7 +137,7 @@ export class Admin extends Component {
                 onChange={this.handleChange}
                 value={this.state.runOne}
                 id="media2"
-                className='url-input' />
+                id='url-input' />
             </label>
             <label className='runthree-label'>
               Run 3:
@@ -153,7 +153,7 @@ export class Admin extends Component {
                 onChange={this.handleChange}
                 value={this.state.runOne}
                 id="media3"
-                className='url-input' />
+                id='url-input' />
             </label>
             <input type="submit" value="Update" className="form-submit" />
           </form>
