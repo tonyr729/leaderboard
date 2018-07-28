@@ -7,7 +7,7 @@ import './SidebarFull.css';
 const SidebarFull = () => {
   return (
     <div className="sidebar-full">
-      <img className="sidebar__title-logo"src={titleLogo} alt="title logo"/>
+      <img className="sidebar__title"src={titleLogo} alt="title logo"/>
       <section className="sidebar__section-main">
         <h3>Main</h3>
         <button><i className="icon-chart-bar"></i> Events</button>
@@ -22,7 +22,7 @@ const SidebarFull = () => {
         <button disabled><i className="icon-youtube-play"></i> Add Media</button>
       </section>
       <NavLink exact to='/Admin' className='nav' activeClassName='selected'>
-        <button id="sidebar__btn-admin">Admin Login</button>
+        <button className="sidebar__btn-admin">Admin Login</button>
       </NavLink> 
     </div>
   )
