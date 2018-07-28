@@ -1,7 +1,8 @@
 deploy:
-    provider: heroku
-    api_key: 
-    app: leaderboard-co
-    skip_cleanup: true
+  provider: heroku
+  api_key:
+    secure: s4kWVIqxPtrlsHDNboXsuggb4Qj1mWaBw/0m2DbnFtFUH3th3P2CftG2ynHPhQZGScxMXmfiZ611gVlzUius/DcT40N0fEEGAM/++MftmkDtO+zWlVbcCCjsk7x7AmJCTzX23psqsMrq5ztxsXu68xbIbzlI3RzXMGhSDEdG3Gv9/grt20dftXUMqnCj2H8XttjinbyoPHH594WrGEIq2n+E+t5SBQ3/g074IiJW61gYqgBoHc7RxjQyzUzKpuOdeefELnvt4sMULaEwzMBIdQZbX0EtOanlOxzgUygWnvCPAuXlCGp0dbjW2LpUmyNu543TuqGphPMH9cEfT/wnm3/JYQPKE6W5v1HmikQvrXXNYzuoVqWgmk30JWxcFzF3CP4yMlMumNC6qSqXkqdS1oTXDU+6pcj1rSndX4X1zfBGXP34pUIOb4LZ67FWd7KpEAjLtHEG96K4sw9qz3XevcPDiSOthMBgIesVMP+vO8XU8T6o/LKeduLcA/WUE5kFWUw2ezCY1xiSpjrrfR3rdlXH1y3rWUL2MsN1cvmrYr4NUhlOE6mIvgJTec4JM6WXlmvf9elB26OMkR4U8q8baq253lDBC8o6OdH3+2hwE5GG+GItFecsmjbIgLdD+lb+igT+d23GF0VMj5Zl/qQRV7X+zi1931LWKgZtsE8hYfo=
+  app: leaderboard-co
+  skip_cleanup: true
 notifications:
   email: false
