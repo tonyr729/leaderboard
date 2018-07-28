@@ -1,7 +1,6 @@
 
 deploy:
   provider: surge
-  project: ./build/
   domain: leaderboard-co.surge.sh  
   skip_cleanup: true
 notifications:
