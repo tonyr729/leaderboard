@@ -1,6 +1,6 @@
 deploy:
-  provider: surge
-  domain: http://leaderboard-co.surge.sh/  
+  provider: heroku
+  domain: https://leaderboard-co.herokuapp.com  
   skip_cleanup: true
 notifications:
   email: false
