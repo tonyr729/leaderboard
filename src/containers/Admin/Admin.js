@@ -107,54 +107,57 @@ export class Admin extends Component {
             </select>
           </label>
           <form id="updateForm" onSubmit={this.submitChanges}>
-            <label className='runone-label'>
-              Run 1:
-              <input type="text" 
-                onChange={this.handleChange}
-                value={this.state.runOne}
-                id="run_1"
-                className='admin-input'/>
-            </label>
-            <label className='runone-label'>
-              Run 1 Media URL:
-              <input type="text"
-                onChange={this.handleChange}
-                value={this.state.runOne}
-                id="media1"
-                id='url-input' />
-            </label>
-            <label className='runtwo-label'>
-              Run 2:
-              <input type="text" 
-                onChange={this.handleChange}
-                value={this.state.runTwo}
-                id="run_2"
-                className='admin-input'/>
-            </label>
-            <label className='runone-label'>
-              Run 2 Media URL:
-              <input type="text"
-                onChange={this.handleChange}
-                value={this.state.runOne}
-                id="media2"
-                id='url-input' />
-            </label>
-            <label className='runthree-label'>
-              Run 3:
-              <input type="text" 
-                onChange={this.handleChange}
-                value={this.state.runThree}
-                id="run_3"
-                className='admin-input'/>
-            </label>
-            <label className='runone-label'>
-              Run 3 Media URL:
-              <input type="text"
-                onChange={this.handleChange}
-                value={this.state.runOne}
-                id="media3"
-                id='url-input' />
-            </label>
+            <div>
+              <label className='runone-label'>
+                Run 1:
+                <input type="text" 
+                  onChange={this.handleChange}
+                  value={this.state.runOne}
+                  id="run_1"
+                  className='admin-input'/>
+              </label>
+              <label className='runone-label'>
+                Run 1 Media URL:
+                <input type="text"
+                  onChange={this.handleChange}
+                  value={this.state.runOne}
+                  id='media-url' />
+              </label>
+            </div>
+            <div>
+              <label className='runtwo-label'>
+                Run 2:
+                <input type="text" 
+                  onChange={this.handleChange}
+                  value={this.state.runTwo}
+                  id="run_2"
+                  className='admin-input'/>
+              </label>
+              <label className='runone-label'>
+                Run 2 Media URL:
+                <input type="text"
+                  onChange={this.handleChange}
+                  value={this.state.runOne}
+                  id='media-url' />
+              </label>
+            </div>
+            <div>
+              <label className='runthree-label'>
+                Run 3:
+                <input type="text" 
+                  onChange={this.handleChange}
+                  value={this.state.runThree}
+                  id="run_3"
+                  className='admin-input'/>
+              </label>
+              <label className='runone-label'>
+                Run 3 Media URL:
+                <input type="text"
+                  onChange={this.handleChange}
+                  value={this.state.runOne}
+                  id='media-url' />
+              </label>
+            </div>
             <input type="submit" value="Update" className="form-submit" />
           </form>
         </div>

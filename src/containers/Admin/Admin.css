@@ -25,7 +25,7 @@ form {
     width: 5rem;
     font-size: 2rem;
     text-align: center; }
-  form #url-input {
+  form #media-url {
     width: 27rem;
     text-overflow: ellipsis;
     overflow: hidden;
