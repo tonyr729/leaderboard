@@ -19,9 +19,6 @@ const SidebarCollapsed = () => {
         <button disabled><i className="icon-user"></i></button>
         <button disabled><i className="icon-youtube-play"></i></button>
       </section>
-      <NavLink exact to='/Admin' className='nav' activeClassName='selected'>
-        <button className="sidebar__btn-admin-min"><i className="icon-lock"></i></button>
-      </NavLink> 
     </div>
   )
 }

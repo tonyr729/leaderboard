@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import titleLogo from '../../assets/Leaderboard-Type-Logo-FLAT.svg';
 import '../../fontello/css/fontello.css';
 import './SidebarFull.css';
@@ -21,9 +20,6 @@ const SidebarFull = () => {
         <button disabled><i className="icon-user"></i> Add Riders</button>
         <button disabled><i className="icon-youtube-play"></i> Add Media</button>
       </section>
-      <NavLink exact to='/Admin' className='nav' activeClassName='selected'>
-        <button className="sidebar__btn-admin">Admin Login</button>
-      </NavLink> 
     </div>
   )
 }
