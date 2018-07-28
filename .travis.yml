@@ -1,4 +1,4 @@
-language: javascript
+language: node_js
 deploy:
   provider: heroku
   api_key:
@@ -7,3 +7,5 @@ deploy:
   skip_cleanup: true
 notifications:
   email: false
+script: 
+    - npm test
