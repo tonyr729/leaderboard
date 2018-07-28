@@ -13,18 +13,6 @@
     .sidebar-container .sidebar-full h3 {
       font-weight: 100;
       color: #fff; }
-    .sidebar-container .sidebar-full .sidebar__btn-admin {
-      height: 50px;
-      width: 20vw;
-      transition: width .5s ease-in-out;
-      position: fixed;
-      bottom: 0;
-      font-size: 2rem;
-      left: 0;
-      background-color: #5275a7;
-      padding: 0;
-      color: white;
-      border: 0; }
     .sidebar-container .sidebar-full section {
       display: flex;
       flex-direction: column;
