@@ -1,6 +1,6 @@
 deploy:
     provider: heroku
-    api_key: ...
+    api_key: 
     app: leaderboard-co
     skip_cleanup: true
 notifications:
