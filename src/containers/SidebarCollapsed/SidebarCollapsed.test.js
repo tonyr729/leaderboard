@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Sidebar from "./Sidebar";
+import SidebarCollapsed from "./SidebarCollapsed";
 
-describe('Sidebar', () => {
+describe('SidebarCollapsed', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Sidebar />);
+    const wrapper = shallow(<SidebarCollapsed />);
     expect(wrapper).toMatchSnapshot();
   });
 });
