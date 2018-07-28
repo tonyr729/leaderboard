@@ -135,7 +135,7 @@ export class Events extends Component {
           </select>
         </div>
         <div className="results-container">
-          <FlipMove duration={600}>
+          <FlipMove duration={750}>
             {results}
           </FlipMove>
         </div>
