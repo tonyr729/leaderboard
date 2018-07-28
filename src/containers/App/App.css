@@ -1,5 +1,5 @@
 .App {
   display: flex; }
   .App .mainContainer {
-    width: 80vw;
+    width: 100%;
     background-color: #f7f6f6; }

@@ -22,6 +22,19 @@ ShallowWrapper {
           className="sidebar"
 >
           <SidebarFull />
+          <NavLink
+                    activeClassName="selected"
+                    aria-current="page"
+                    className="nav"
+                    exact={true}
+                    to="/Admin"
+          >
+                    <button
+                              className="sidebar__btn-admin"
+                    >
+                              Admin Login
+                    </button>
+          </NavLink>
 </div>,
         <div
           className="sidebar__collapse-btn"
@@ -41,19 +54,67 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <SidebarFull />,
+          "children": Array [
+            <SidebarFull />,
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="nav"
+              exact={true}
+              to="/Admin"
+>
+              <button
+                            className="sidebar__btn-admin"
+              >
+                            Admin Login
+              </button>
+</NavLink>,
+          ],
           "className": "sidebar",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "selected",
+              "aria-current": "page",
+              "children": <button
+                className="sidebar__btn-admin"
+>
+                Admin Login
+</button>,
+              "className": "nav",
+              "exact": true,
+              "to": "/Admin",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Admin Login",
+                "className": "sidebar__btn-admin",
+              },
+              "ref": null,
+              "rendered": "Admin Login",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
         "type": "div",
       },
       Object {
@@ -96,6 +157,19 @@ ShallowWrapper {
             className="sidebar"
 >
             <SidebarFull />
+            <NavLink
+                        activeClassName="selected"
+                        aria-current="page"
+                        className="nav"
+                        exact={true}
+                        to="/Admin"
+            >
+                        <button
+                                    className="sidebar__btn-admin"
+                        >
+                                    Admin Login
+                        </button>
+            </NavLink>
 </div>,
           <div
             className="sidebar__collapse-btn"
@@ -115,19 +189,67 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <SidebarFull />,
+            "children": Array [
+              <SidebarFull />,
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="nav"
+                exact={true}
+                to="/Admin"
+>
+                <button
+                                className="sidebar__btn-admin"
+                >
+                                Admin Login
+                </button>
+</NavLink>,
+            ],
             "className": "sidebar",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected",
+                "aria-current": "page",
+                "children": <button
+                  className="sidebar__btn-admin"
+>
+                  Admin Login
+</button>,
+                "className": "nav",
+                "exact": true,
+                "to": "/Admin",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Admin Login",
+                  "className": "sidebar__btn-admin",
+                },
+                "ref": null,
+                "rendered": "Admin Login",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
           "type": "div",
         },
         Object {

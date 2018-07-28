@@ -7,7 +7,7 @@ import './SidebarCollapsed.css';
 const SidebarCollapsed = () => {
   return (
     <div className="sidebarrCollapsed">
-      <img className="sidebar__title-logo"src={iconLogo} alt="icon logo"/>
+      <img className="sidebar__logo"src={iconLogo} alt="icon logo"/>
       <section className="sidebar__section-main">
         <button><i className="icon-chart-bar"></i></button>
         <button><i className="icon-user"></i></button>
@@ -19,9 +19,6 @@ const SidebarCollapsed = () => {
         <button disabled><i className="icon-user"></i></button>
         <button disabled><i className="icon-youtube-play"></i></button>
       </section>
-      <NavLink exact to='/Admin' className='nav' activeClassName='selected'>
-        <button id="sidebar__btn-admin">A</button>
-      </NavLink> 
     </div>
   )
 }

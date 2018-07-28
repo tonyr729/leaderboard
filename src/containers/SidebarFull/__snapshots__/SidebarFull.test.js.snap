@@ -20,7 +20,7 @@ ShallowWrapper {
       "children": Array [
         <img
           alt="title logo"
-          className="sidebar__title-logo"
+          className="sidebar__title"
           src="Leaderboard-Type-Logo-FLAT.svg"
 />,
         <section
@@ -87,19 +87,6 @@ ShallowWrapper {
                      Add Media
           </button>
 </section>,
-        <NavLink
-          activeClassName="selected"
-          aria-current="page"
-          className="nav"
-          exact={true}
-          to="/Admin"
->
-          <button
-                    id="sidebar__btn-admin"
-          >
-                    Admin Login
-          </button>
-</NavLink>,
       ],
       "className": "sidebar-full",
     },
@@ -111,7 +98,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "alt": "title logo",
-          "className": "sidebar__title-logo",
+          "className": "sidebar__title",
           "src": "Leaderboard-Type-Logo-FLAT.svg",
         },
         "ref": null,
@@ -431,37 +418,6 @@ ShallowWrapper {
         ],
         "type": "section",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "selected",
-          "aria-current": "page",
-          "children": <button
-            id="sidebar__btn-admin"
->
-            Admin Login
-</button>,
-          "className": "nav",
-          "exact": true,
-          "to": "/Admin",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Admin Login",
-            "id": "sidebar__btn-admin",
-          },
-          "ref": null,
-          "rendered": "Admin Login",
-          "type": "button",
-        },
-        "type": [Function],
-      },
     ],
     "type": "div",
   },
@@ -474,7 +430,7 @@ ShallowWrapper {
         "children": Array [
           <img
             alt="title logo"
-            className="sidebar__title-logo"
+            className="sidebar__title"
             src="Leaderboard-Type-Logo-FLAT.svg"
 />,
           <section
@@ -541,19 +497,6 @@ ShallowWrapper {
                          Add Media
             </button>
 </section>,
-          <NavLink
-            activeClassName="selected"
-            aria-current="page"
-            className="nav"
-            exact={true}
-            to="/Admin"
->
-            <button
-                        id="sidebar__btn-admin"
-            >
-                        Admin Login
-            </button>
-</NavLink>,
         ],
         "className": "sidebar-full",
       },
@@ -565,7 +508,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "title logo",
-            "className": "sidebar__title-logo",
+            "className": "sidebar__title",
             "src": "Leaderboard-Type-Logo-FLAT.svg",
           },
           "ref": null,
@@ -884,37 +827,6 @@ ShallowWrapper {
             },
           ],
           "type": "section",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "selected",
-            "aria-current": "page",
-            "children": <button
-              id="sidebar__btn-admin"
->
-              Admin Login
-</button>,
-            "className": "nav",
-            "exact": true,
-            "to": "/Admin",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Admin Login",
-              "id": "sidebar__btn-admin",
-            },
-            "ref": null,
-            "rendered": "Admin Login",
-            "type": "button",
-          },
-          "type": [Function],
         },
       ],
       "type": "div",

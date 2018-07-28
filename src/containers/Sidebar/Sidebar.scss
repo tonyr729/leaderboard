@@ -8,14 +8,11 @@
     background-color: #142743;
     color: #bbb;
     width: 20vw;
+    transition: width .5s ease-in-out;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .sidebar__title-logo {
-      width: 80%;
-      margin-top: 1.5rem;
-    }
     h3 {
       font-weight: 100;
       color: #fff;
@@ -58,7 +55,21 @@
     }
   }
 
-  .sidebar-min {
+  .sidebar__btn-admin {
+    height: 50px;
+    width: 20vw;
+    transition: width .5s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    font-size: 2rem;
+    left: 0;
+    background-color: #5275a7;
+    padding: 0;
+    color: white;
+    border: 0;
+  }
+
+  .min {
     width: 4vw;
   }
 

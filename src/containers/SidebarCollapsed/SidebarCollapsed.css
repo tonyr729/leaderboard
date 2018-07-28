@@ -11,23 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .sidebar-container .sidebar .sidebar__title-logo {
-      width: 80%;
-      margin-top: 1.5rem; }
+    .sidebar-container .sidebar .sidebar__logo {
+      width: 60%;
+      margin: 1.5rem auto;
+      display: block; }
     .sidebar-container .sidebar h3 {
       font-weight: 100;
       color: #fff; }
-    .sidebar-container .sidebar .sidebar__btn-admin {
-      height: 50px;
-      width: 4vw;
-      position: fixed;
-      bottom: 0;
-      font-size: 2rem;
-      left: 0;
-      background-color: #5275a7;
-      padding: 0;
-      color: white;
-      border: 0; }
     .sidebar-container .sidebar section {
       display: flex;
       flex-direction: column;
