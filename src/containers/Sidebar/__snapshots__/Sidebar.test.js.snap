@@ -46,7 +46,9 @@ ShallowWrapper {
           exact={true}
           to="/Admin"
 >
-          <button>
+          <button
+                    id="admin"
+          >
                     Admin Login
           </button>
 </NavLink>,
@@ -145,7 +147,9 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "selected",
           "aria-current": "page",
-          "children": <button>
+          "children": <button
+            id="admin"
+>
             Admin Login
 </button>,
           "className": "nav",
@@ -159,6 +163,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Admin Login",
+            "id": "admin",
           },
           "ref": null,
           "rendered": "Admin Login",
@@ -204,7 +209,9 @@ ShallowWrapper {
             exact={true}
             to="/Admin"
 >
-            <button>
+            <button
+                        id="admin"
+            >
                         Admin Login
             </button>
 </NavLink>,
@@ -303,7 +310,9 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "selected",
             "aria-current": "page",
-            "children": <button>
+            "children": <button
+              id="admin"
+>
               Admin Login
 </button>,
             "className": "nav",
@@ -317,6 +326,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Admin Login",
+              "id": "admin",
             },
             "ref": null,
             "rendered": "Admin Login",
