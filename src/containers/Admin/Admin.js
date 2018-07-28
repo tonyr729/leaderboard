@@ -15,7 +15,7 @@ export class Admin extends Component {
       run_1: null,
       run_2: null,
       run_3: null
-    }
+    };
   };
 
   componentDidMount() {
@@ -67,8 +67,8 @@ export class Admin extends Component {
 
   submitChanges = (event) => {
     event.preventDefault();
-    this.sendResultToDb(this.state)
-    this.sendResultToSocket(this.state)
+    this.sendResultToDb(this.state);
+    this.sendResultToSocket(this.state);
   };
  
   render() {
@@ -77,20 +77,22 @@ export class Admin extends Component {
         <div className="admin-update">
           <label htmlFor="event-names" className="choose-event">
             Choose Event
-            <select onChange={this.handleChange} 
-                    id="event_id" 
-                    className="event-names" 
-                    value={this.state.event} >
+            <select 
+              onChange={this.handleChange} 
+              id="event_id" 
+              className="event-names" 
+              value={this.state.event} >
               <option value="">Choose a Event</option>
               <option value="1">Olympics</option>
             </select>
           </label>
           <label htmlFor="division-names" className="choose-division">
             Choose Division
-            <select onChange={this.handleChange} 
-                    id="division_id" 
-                    className="division-names" 
-                    value={this.state.division} >
+            <select 
+              onChange={this.handleChange} 
+              id="division_id" 
+              className="division-names" 
+              value={this.state.division} >
               <option value="">Choose a Division</option>
               <option value="3">Womens Halfpipe</option>
               <option value="8">Mens Halfpipe</option>
@@ -98,10 +100,11 @@ export class Admin extends Component {
           </label>
           <label htmlFor="rider-names" className="choose-rider">
             Choose Rider
-            <select onChange={this.handleChange} 
-                    id="rider_id" 
-                    className="rider-names" 
-                    value={this.state.value} >
+            <select 
+              onChange={this.handleChange} 
+              id="rider_id" 
+              className="rider-names" 
+              value={this.state.value} >
               <option value="">Choose a Rider</option>
               {this.listRiders()}
             </select>
