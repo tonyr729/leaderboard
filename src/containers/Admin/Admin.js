@@ -115,6 +115,14 @@ export class Admin extends Component {
                 id="run_1"
                 className='admin-input'/>
             </label>
+            <label className='runone-label'>
+              Run 1 Media URL:
+              <input type="text"
+                onChange={this.handleChange}
+                value={this.state.runOne}
+                id="media1"
+                className='url-input' />
+            </label>
             <label className='runtwo-label'>
               Run 2:
               <input type="text" 
@@ -123,6 +131,14 @@ export class Admin extends Component {
                 id="run_2"
                 className='admin-input'/>
             </label>
+            <label className='runone-label'>
+              Run 2 Media URL:
+              <input type="text"
+                onChange={this.handleChange}
+                value={this.state.runOne}
+                id="media2"
+                className='url-input' />
+            </label>
             <label className='runthree-label'>
               Run 3:
               <input type="text" 
@@ -130,6 +146,14 @@ export class Admin extends Component {
                 value={this.state.runThree}
                 id="run_3"
                 className='admin-input'/>
+            </label>
+            <label className='runone-label'>
+              Run 3 Media URL:
+              <input type="text"
+                onChange={this.handleChange}
+                value={this.state.runOne}
+                id="media3"
+                className='url-input' />
             </label>
             <input type="submit" value="Update" className="form-submit" />
           </form>
