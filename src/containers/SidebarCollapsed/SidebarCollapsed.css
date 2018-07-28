@@ -17,6 +17,17 @@
     .sidebar-container .sidebar h3 {
       font-weight: 100;
       color: #fff; }
+    .sidebar-container .sidebar .sidebar__btn-admin {
+      height: 50px;
+      width: 4vw;
+      position: fixed;
+      bottom: 0;
+      font-size: 2rem;
+      left: 0;
+      background-color: #5275a7;
+      padding: 0;
+      color: white;
+      border: 0; }
     .sidebar-container .sidebar section {
       display: flex;
       flex-direction: column;
@@ -42,9 +53,7 @@
       color: #bbbbbb3b; }
       .sidebar-container .sidebar .sidebar__section-admin button:disabled:hover {
         background: none; }
-  .sidebar-container .sidebar-min {
-    width: 4vw; }
-  .sidebar-container .sidebar__collapse-btn {
+  .sidebar-container .sidebard-collapse {
     padding-top: 1.5rem;
     font-size: 2rem;
     color: #6a98da;

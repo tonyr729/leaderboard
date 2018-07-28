@@ -1,0 +1,931 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidebarFull should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SidebarFull />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="title logo"
+          className="sidebar__title-logo"
+          src="Leaderboard-Type-Logo-FLAT.svg"
+/>,
+        <section
+          className="sidebar__section-main"
+>
+          <h3>
+                    Main
+          </h3>
+          <button>
+                    <i
+                              className="icon-chart-bar"
+                    />
+                     Events
+          </button>
+          <button>
+                    <i
+                              className="icon-user"
+                    />
+                     Riders
+          </button>
+          <button>
+                    <i
+                              className="icon-youtube-play"
+                    />
+                     Media
+          </button>
+</section>,
+        <section
+          className="sidebar__section-admin"
+>
+          <h3>
+                    Admin
+          </h3>
+          <button
+                    disabled={true}
+          >
+                    <i
+                              className="icon-plus"
+                    />
+                     Update Leaderboard
+          </button>
+          <button
+                    disabled={true}
+          >
+                    <i
+                              className="icon-chart-bar"
+                    />
+                     Create Event
+          </button>
+          <button
+                    disabled={true}
+          >
+                    <i
+                              className="icon-user"
+                    />
+                     Add Riders
+          </button>
+          <button
+                    disabled={true}
+          >
+                    <i
+                              className="icon-youtube-play"
+                    />
+                     Add Media
+          </button>
+</section>,
+        <NavLink
+          activeClassName="selected"
+          aria-current="page"
+          className="nav"
+          exact={true}
+          to="/Admin"
+>
+          <button
+                    id="sidebar__btn-admin"
+          >
+                    Admin Login
+          </button>
+</NavLink>,
+      ],
+      "className": "sidebar-full",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "title logo",
+          "className": "sidebar__title-logo",
+          "src": "Leaderboard-Type-Logo-FLAT.svg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Main
+</h3>,
+            <button>
+              <i
+                            className="icon-chart-bar"
+              />
+               Events
+</button>,
+            <button>
+              <i
+                            className="icon-user"
+              />
+               Riders
+</button>,
+            <button>
+              <i
+                            className="icon-youtube-play"
+              />
+               Media
+</button>,
+          ],
+          "className": "sidebar__section-main",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Main",
+            },
+            "ref": null,
+            "rendered": "Main",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-chart-bar"
+/>,
+                " Events",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-chart-bar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Events",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-user"
+/>,
+                " Riders",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-user",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Riders",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-youtube-play"
+/>,
+                " Media",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-youtube-play",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Media",
+            ],
+            "type": "button",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Admin
+</h3>,
+            <button
+              disabled={true}
+>
+              <i
+                            className="icon-plus"
+              />
+               Update Leaderboard
+</button>,
+            <button
+              disabled={true}
+>
+              <i
+                            className="icon-chart-bar"
+              />
+               Create Event
+</button>,
+            <button
+              disabled={true}
+>
+              <i
+                            className="icon-user"
+              />
+               Add Riders
+</button>,
+            <button
+              disabled={true}
+>
+              <i
+                            className="icon-youtube-play"
+              />
+               Add Media
+</button>,
+          ],
+          "className": "sidebar__section-admin",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Admin",
+            },
+            "ref": null,
+            "rendered": "Admin",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-plus"
+/>,
+                " Update Leaderboard",
+              ],
+              "disabled": true,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-plus",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Update Leaderboard",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-chart-bar"
+/>,
+                " Create Event",
+              ],
+              "disabled": true,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-chart-bar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Create Event",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-user"
+/>,
+                " Add Riders",
+              ],
+              "disabled": true,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-user",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Add Riders",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="icon-youtube-play"
+/>,
+                " Add Media",
+              ],
+              "disabled": true,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "icon-youtube-play",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Add Media",
+            ],
+            "type": "button",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "selected",
+          "aria-current": "page",
+          "children": <button
+            id="sidebar__btn-admin"
+>
+            Admin Login
+</button>,
+          "className": "nav",
+          "exact": true,
+          "to": "/Admin",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Admin Login",
+            "id": "sidebar__btn-admin",
+          },
+          "ref": null,
+          "rendered": "Admin Login",
+          "type": "button",
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="title logo"
+            className="sidebar__title-logo"
+            src="Leaderboard-Type-Logo-FLAT.svg"
+/>,
+          <section
+            className="sidebar__section-main"
+>
+            <h3>
+                        Main
+            </h3>
+            <button>
+                        <i
+                                    className="icon-chart-bar"
+                        />
+                         Events
+            </button>
+            <button>
+                        <i
+                                    className="icon-user"
+                        />
+                         Riders
+            </button>
+            <button>
+                        <i
+                                    className="icon-youtube-play"
+                        />
+                         Media
+            </button>
+</section>,
+          <section
+            className="sidebar__section-admin"
+>
+            <h3>
+                        Admin
+            </h3>
+            <button
+                        disabled={true}
+            >
+                        <i
+                                    className="icon-plus"
+                        />
+                         Update Leaderboard
+            </button>
+            <button
+                        disabled={true}
+            >
+                        <i
+                                    className="icon-chart-bar"
+                        />
+                         Create Event
+            </button>
+            <button
+                        disabled={true}
+            >
+                        <i
+                                    className="icon-user"
+                        />
+                         Add Riders
+            </button>
+            <button
+                        disabled={true}
+            >
+                        <i
+                                    className="icon-youtube-play"
+                        />
+                         Add Media
+            </button>
+</section>,
+          <NavLink
+            activeClassName="selected"
+            aria-current="page"
+            className="nav"
+            exact={true}
+            to="/Admin"
+>
+            <button
+                        id="sidebar__btn-admin"
+            >
+                        Admin Login
+            </button>
+</NavLink>,
+        ],
+        "className": "sidebar-full",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "title logo",
+            "className": "sidebar__title-logo",
+            "src": "Leaderboard-Type-Logo-FLAT.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Main
+</h3>,
+              <button>
+                <i
+                                className="icon-chart-bar"
+                />
+                 Events
+</button>,
+              <button>
+                <i
+                                className="icon-user"
+                />
+                 Riders
+</button>,
+              <button>
+                <i
+                                className="icon-youtube-play"
+                />
+                 Media
+</button>,
+            ],
+            "className": "sidebar__section-main",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Main",
+              },
+              "ref": null,
+              "rendered": "Main",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-chart-bar"
+/>,
+                  " Events",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-chart-bar",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Events",
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-user"
+/>,
+                  " Riders",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-user",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Riders",
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-youtube-play"
+/>,
+                  " Media",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-youtube-play",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Media",
+              ],
+              "type": "button",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Admin
+</h3>,
+              <button
+                disabled={true}
+>
+                <i
+                                className="icon-plus"
+                />
+                 Update Leaderboard
+</button>,
+              <button
+                disabled={true}
+>
+                <i
+                                className="icon-chart-bar"
+                />
+                 Create Event
+</button>,
+              <button
+                disabled={true}
+>
+                <i
+                                className="icon-user"
+                />
+                 Add Riders
+</button>,
+              <button
+                disabled={true}
+>
+                <i
+                                className="icon-youtube-play"
+                />
+                 Add Media
+</button>,
+            ],
+            "className": "sidebar__section-admin",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Admin",
+              },
+              "ref": null,
+              "rendered": "Admin",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-plus"
+/>,
+                  " Update Leaderboard",
+                ],
+                "disabled": true,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-plus",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Update Leaderboard",
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-chart-bar"
+/>,
+                  " Create Event",
+                ],
+                "disabled": true,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-chart-bar",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Create Event",
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-user"
+/>,
+                  " Add Riders",
+                ],
+                "disabled": true,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-user",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Add Riders",
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="icon-youtube-play"
+/>,
+                  " Add Media",
+                ],
+                "disabled": true,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "icon-youtube-play",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Add Media",
+              ],
+              "type": "button",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "selected",
+            "aria-current": "page",
+            "children": <button
+              id="sidebar__btn-admin"
+>
+              Admin Login
+</button>,
+            "className": "nav",
+            "exact": true,
+            "to": "/Admin",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Admin Login",
+              "id": "sidebar__btn-admin",
+            },
+            "ref": null,
+            "rendered": "Admin Login",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

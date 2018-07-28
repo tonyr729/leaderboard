@@ -2,27 +2,34 @@
   display: flex; }
   .sidebar-container .hidden {
     display: none; }
-  .sidebar-container .sidebar {
-    height: 100vh;
-    background-color: #142743;
-    color: #bbb;
-    width: 20vw;
+  .sidebar-container .sidebar-full {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .sidebar-container .sidebar .sidebar__title-logo {
+    .sidebar-container .sidebar-full .sidebar__title-logo {
       width: 80%;
       margin-top: 1.5rem; }
-    .sidebar-container .sidebar h3 {
+    .sidebar-container .sidebar-full h3 {
       font-weight: 100;
       color: #fff; }
-    .sidebar-container .sidebar section {
+    .sidebar-container .sidebar-full .sidebar__btn-admin {
+      height: 50px;
+      width: 20vw;
+      position: fixed;
+      bottom: 0;
+      font-size: 2rem;
+      left: 0;
+      background-color: #5275a7;
+      padding: 0;
+      color: white;
+      border: 0; }
+    .sidebar-container .sidebar-full section {
       display: flex;
       flex-direction: column;
       width: 80%;
       margin-top: 50px; }
-      .sidebar-container .sidebar section button {
+      .sidebar-container .sidebar-full section button {
         margin: .7rem 0;
         width: 100%;
         padding: 1rem;
@@ -33,18 +40,16 @@
         border-radius: .2rem;
         background: none;
         color: #bbb; }
-        .sidebar-container .sidebar section button:hover {
+        .sidebar-container .sidebar-full section button:hover {
           background: #6a98da;
           color: #fff; }
-    .sidebar-container .sidebar .sidebar__section-admin h3 {
+    .sidebar-container .sidebar-full .sidebar__section-admin h3 {
       color: #bbbbbb3b; }
-    .sidebar-container .sidebar .sidebar__section-admin button:disabled {
+    .sidebar-container .sidebar-full .sidebar__section-admin button:disabled {
       color: #bbbbbb3b; }
-      .sidebar-container .sidebar .sidebar__section-admin button:disabled:hover {
+      .sidebar-container .sidebar-full .sidebar__section-admin button:disabled:hover {
         background: none; }
-  .sidebar-container .sidebar-min {
-    width: 4vw; }
-  .sidebar-container .sidebar__collapse-btn {
+  .sidebar-container .sidebard-collapse {
     padding-top: 1.5rem;
     font-size: 2rem;
     color: #6a98da;

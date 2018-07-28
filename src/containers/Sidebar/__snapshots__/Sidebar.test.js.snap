@@ -18,42 +18,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <img
-          alt="title logo"
-          className="sidebar__title-logo"
-          src="Leaderboard-Type-Logo-FLAT.svg"
-/>,
-        <section
-          className="main"
+        <div
+          className="sidebar"
 >
-          <h3>
-                    Main
-          </h3>
-          <button>
-                    Events
-          </button>
-          <button>
-                    Riders
-          </button>
-          <button>
-                    Media
-          </button>
-</section>,
-        <NavLink
-          activeClassName="selected"
-          aria-current="page"
-          className="nav"
-          exact={true}
-          to="/Admin"
+          <SidebarFull />
+</div>,
+        <div
+          className="sidebar__collapse-btn"
 >
-          <button
-                    id="admin"
-          >
-                    Admin Login
-          </button>
-</NavLink>,
+          <i
+                    className="icon-left-dir"
+                    onClick={[Function]}
+          />
+</div>,
       ],
-      "className": "sidebar",
+      "className": "sidebar-container",
     },
     "ref": null,
     "rendered": Array [
@@ -62,99 +41,31 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "title logo",
-          "className": "sidebar__title-logo",
-          "src": "Leaderboard-Type-Logo-FLAT.svg",
+          "children": <SidebarFull />,
+          "className": "sidebar",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <h3>
-              Main
-</h3>,
-            <button>
-              Events
-</button>,
-            <button>
-              Riders
-</button>,
-            <button>
-              Media
-</button>,
-          ],
-          "className": "main",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Main",
-            },
-            "ref": null,
-            "rendered": "Main",
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Events",
-            },
-            "ref": null,
-            "rendered": "Events",
-            "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Riders",
-            },
-            "ref": null,
-            "rendered": "Riders",
-            "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Media",
-            },
-            "ref": null,
-            "rendered": "Media",
-            "type": "button",
-          },
-        ],
-        "type": "section",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "selected",
-          "aria-current": "page",
-          "children": <button
-            id="admin"
->
-            Admin Login
-</button>,
-          "className": "nav",
-          "exact": true,
-          "to": "/Admin",
+          "children": <i
+            className="icon-left-dir"
+            onClick={[Function]}
+/>,
+          "className": "sidebar__collapse-btn",
         },
         "ref": null,
         "rendered": Object {
@@ -162,14 +73,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Admin Login",
-            "id": "admin",
+            "className": "icon-left-dir",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Admin Login",
-          "type": "button",
+          "rendered": null,
+          "type": "i",
         },
-        "type": [Function],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -181,42 +92,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <img
-            alt="title logo"
-            className="sidebar__title-logo"
-            src="Leaderboard-Type-Logo-FLAT.svg"
-/>,
-          <section
-            className="main"
+          <div
+            className="sidebar"
 >
-            <h3>
-                        Main
-            </h3>
-            <button>
-                        Events
-            </button>
-            <button>
-                        Riders
-            </button>
-            <button>
-                        Media
-            </button>
-</section>,
-          <NavLink
-            activeClassName="selected"
-            aria-current="page"
-            className="nav"
-            exact={true}
-            to="/Admin"
+            <SidebarFull />
+</div>,
+          <div
+            className="sidebar__collapse-btn"
 >
-            <button
-                        id="admin"
-            >
-                        Admin Login
-            </button>
-</NavLink>,
+            <i
+                        className="icon-left-dir"
+                        onClick={[Function]}
+            />
+</div>,
         ],
-        "className": "sidebar",
+        "className": "sidebar-container",
       },
       "ref": null,
       "rendered": Array [
@@ -225,99 +115,31 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "title logo",
-            "className": "sidebar__title-logo",
-            "src": "Leaderboard-Type-Logo-FLAT.svg",
+            "children": <SidebarFull />,
+            "className": "sidebar",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <h3>
-                Main
-</h3>,
-              <button>
-                Events
-</button>,
-              <button>
-                Riders
-</button>,
-              <button>
-                Media
-</button>,
-            ],
-            "className": "main",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Main",
-              },
-              "ref": null,
-              "rendered": "Main",
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Events",
-              },
-              "ref": null,
-              "rendered": "Events",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Riders",
-              },
-              "ref": null,
-              "rendered": "Riders",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Media",
-              },
-              "ref": null,
-              "rendered": "Media",
-              "type": "button",
-            },
-          ],
-          "type": "section",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "selected",
-            "aria-current": "page",
-            "children": <button
-              id="admin"
->
-              Admin Login
-</button>,
-            "className": "nav",
-            "exact": true,
-            "to": "/Admin",
+            "children": <i
+              className="icon-left-dir"
+              onClick={[Function]}
+/>,
+            "className": "sidebar__collapse-btn",
           },
           "ref": null,
           "rendered": Object {
@@ -325,14 +147,14 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Admin Login",
-              "id": "admin",
+              "className": "icon-left-dir",
+              "onClick": [Function],
             },
             "ref": null,
-            "rendered": "Admin Login",
-            "type": "button",
+            "rendered": null,
+            "type": "i",
           },
-          "type": [Function],
+          "type": "div",
         },
       ],
       "type": "div",

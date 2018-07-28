@@ -3,7 +3,7 @@
   .hidden {
     display: none;
   }
-  .sidebar{
+  .sidebar {
     height: 100vh;
     background-color: #142743;
     color: #bbb;
@@ -21,6 +21,18 @@
       color: #fff;
     }
     
+    .sidebar__btn-admin {
+      height: 50px;
+      width: 4vw;
+      position: fixed;
+      bottom: 0;
+      font-size: 2rem;
+      left: 0;
+      background-color: #5275a7;
+      padding: 0;
+      color: white;
+      border: 0;
+    }
     section {
       display: flex;
       flex-direction: column;
@@ -57,12 +69,7 @@
       }
     }
   }
-
-  .sidebar-min {
-    width: 4vw;
-  }
-
-  .sidebar__collapse-btn {
+  .sidebard-collapse {
     padding-top: 1.5rem;
     font-size: 2rem;
     color: #6a98da;

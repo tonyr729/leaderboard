@@ -2,5 +2,4 @@
   display: flex; }
   .App .mainContainer {
     width: 80vw;
-    background-color: #f7f6f6;
-    z-index: -10; }
+    background-color: #f7f6f6; }
