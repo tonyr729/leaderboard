@@ -85,127 +85,149 @@ ShallowWrapper {
                     typeName="div"
                     verticalAlignment="top"
           >
-                    <div
-                              className="result"
-                              id={undefined}
-                    >
-                              <h1>
-                                        1
-                              </h1>
-                              <img
-                                        alt="flag"
-                                        src={undefined}
+                    <div>
+                              <div
+                                        className="result"
+                                        id={undefined}
+                              >
+                                        <h1>
+                                                  1
+                                        </h1>
+                                        <img
+                                                  alt="flag"
+                                                  src={undefined}
+                                        />
+                                        <h1 />
+                                        <div
+                                                  className="run1"
+                                        >
+                                                  <h4>
+                                                            Run 1
+                                                  </h4>
+                                                  <h4
+                                                            className="h4-result"
+                                                  >
+                                                            93
+                                                  </h4>
+                                        </div>
+                                        <div
+                                                  className="run2"
+                                        >
+                                                  <h4>
+                                                            Run 2
+                                                  </h4>
+                                                  <h4
+                                                            className="h4-result"
+                                                  >
+                                                            88
+                                                  </h4>
+                                        </div>
+                                        <div
+                                                  className="run3"
+                                        >
+                                                  <h4>
+                                                            Run 3
+                                                  </h4>
+                                                  <h4
+                                                            className="h4-result"
+                                                  >
+                                                            90
+                                                  </h4>
+                                        </div>
+                                        <div
+                                                  className="final-score"
+                                        >
+                                                  <h4>
+                                                            FINAL
+                                                  </h4>
+                                                  <h4
+                                                            className="final-result"
+                                                  >
+                                                            90.3
+                                                  </h4>
+                                        </div>
+                              </div>
+                              <iframe
+                                        allowFullScreen={true}
+                                        frameBorder="0"
+                                        height="360"
+                                        mozallowfullscreen={true}
+                                        src=""
+                                        webkitallowfullscreen={true}
+                                        width="640"
                               />
-                              <h1 />
-                              <div
-                                        className="run1"
-                              >
-                                        <h4>
-                                                  Run 1
-                                        </h4>
-                                        <h4
-                                                  className="h4-result"
-                                        >
-                                                  93
-                                        </h4>
-                              </div>
-                              <div
-                                        className="run2"
-                              >
-                                        <h4>
-                                                  Run 2
-                                        </h4>
-                                        <h4
-                                                  className="h4-result"
-                                        >
-                                                  88
-                                        </h4>
-                              </div>
-                              <div
-                                        className="run3"
-                              >
-                                        <h4>
-                                                  Run 3
-                                        </h4>
-                                        <h4
-                                                  className="h4-result"
-                                        >
-                                                  90
-                                        </h4>
-                              </div>
-                              <div
-                                        className="final-score"
-                              >
-                                        <h4>
-                                                  FINAL
-                                        </h4>
-                                        <h4
-                                                  className="final-result"
-                                        >
-                                                  90.3
-                                        </h4>
-                              </div>
                     </div>
-                    <div
-                              className="result"
-                              id={undefined}
-                    >
-                              <h1>
-                                        2
-                              </h1>
-                              <img
-                                        alt="flag"
-                                        src={undefined}
+                    <div>
+                              <div
+                                        className="result"
+                                        id={undefined}
+                              >
+                                        <h1>
+                                                  2
+                                        </h1>
+                                        <img
+                                                  alt="flag"
+                                                  src={undefined}
+                                        />
+                                        <h1 />
+                                        <div
+                                                  className="run1"
+                                        >
+                                                  <h4>
+                                                            Run 1
+                                                  </h4>
+                                                  <h4
+                                                            className="h4-result"
+                                                  >
+                                                            90
+                                                  </h4>
+                                        </div>
+                                        <div
+                                                  className="run2"
+                                        >
+                                                  <h4>
+                                                            Run 2
+                                                  </h4>
+                                                  <h4
+                                                            className="h4-result"
+                                                  >
+                                                            93
+                                                  </h4>
+                                        </div>
+                                        <div
+                                                  className="run3"
+                                        >
+                                                  <h4>
+                                                            Run 3
+                                                  </h4>
+                                                  <h4
+                                                            className="h4-result"
+                                                  >
+                                                            88
+                                                  </h4>
+                                        </div>
+                                        <div
+                                                  className="final-score"
+                                        >
+                                                  <h4>
+                                                            FINAL
+                                                  </h4>
+                                                  <h4
+                                                            className="final-result"
+                                                  >
+                                                            90.3
+                                                  </h4>
+                                        </div>
+                              </div>
+                              <iframe
+                                        allowFullScreen={true}
+                                        frameBorder="0"
+                                        height="360"
+                                        mozallowfullscreen={true}
+                                        src=""
+                                        webkitallowfullscreen={true}
+                                        width="640"
                               />
-                              <h1 />
-                              <div
-                                        className="run1"
-                              >
-                                        <h4>
-                                                  Run 1
-                                        </h4>
-                                        <h4
-                                                  className="h4-result"
-                                        >
-                                                  90
-                                        </h4>
-                              </div>
-                              <div
-                                        className="run2"
-                              >
-                                        <h4>
-                                                  Run 2
-                                        </h4>
-                                        <h4
-                                                  className="h4-result"
-                                        >
-                                                  93
-                                        </h4>
-                              </div>
-                              <div
-                                        className="run3"
-                              >
-                                        <h4>
-                                                  Run 3
-                                        </h4>
-                                        <h4
-                                                  className="h4-result"
-                                        >
-                                                  88
-                                        </h4>
-                              </div>
-                              <div
-                                        className="final-score"
-                              >
-                                        <h4>
-                                                  FINAL
-                                        </h4>
-                                        <h4
-                                                  className="final-result"
-                                        >
-                                                  90.3
-                                        </h4>
-                              </div>
                     </div>
           </FlipMovePropConverter>
 </div>,
@@ -355,127 +377,149 @@ ShallowWrapper {
             typeName="div"
             verticalAlignment="top"
 >
-            <div
-                        className="result"
-                        id={undefined}
-            >
-                        <h1>
-                                    1
-                        </h1>
-                        <img
-                                    alt="flag"
-                                    src={undefined}
+            <div>
+                        <div
+                                    className="result"
+                                    id={undefined}
+                        >
+                                    <h1>
+                                                1
+                                    </h1>
+                                    <img
+                                                alt="flag"
+                                                src={undefined}
+                                    />
+                                    <h1 />
+                                    <div
+                                                className="run1"
+                                    >
+                                                <h4>
+                                                            Run 1
+                                                </h4>
+                                                <h4
+                                                            className="h4-result"
+                                                >
+                                                            93
+                                                </h4>
+                                    </div>
+                                    <div
+                                                className="run2"
+                                    >
+                                                <h4>
+                                                            Run 2
+                                                </h4>
+                                                <h4
+                                                            className="h4-result"
+                                                >
+                                                            88
+                                                </h4>
+                                    </div>
+                                    <div
+                                                className="run3"
+                                    >
+                                                <h4>
+                                                            Run 3
+                                                </h4>
+                                                <h4
+                                                            className="h4-result"
+                                                >
+                                                            90
+                                                </h4>
+                                    </div>
+                                    <div
+                                                className="final-score"
+                                    >
+                                                <h4>
+                                                            FINAL
+                                                </h4>
+                                                <h4
+                                                            className="final-result"
+                                                >
+                                                            90.3
+                                                </h4>
+                                    </div>
+                        </div>
+                        <iframe
+                                    allowFullScreen={true}
+                                    frameBorder="0"
+                                    height="360"
+                                    mozallowfullscreen={true}
+                                    src=""
+                                    webkitallowfullscreen={true}
+                                    width="640"
                         />
-                        <h1 />
-                        <div
-                                    className="run1"
-                        >
-                                    <h4>
-                                                Run 1
-                                    </h4>
-                                    <h4
-                                                className="h4-result"
-                                    >
-                                                93
-                                    </h4>
-                        </div>
-                        <div
-                                    className="run2"
-                        >
-                                    <h4>
-                                                Run 2
-                                    </h4>
-                                    <h4
-                                                className="h4-result"
-                                    >
-                                                88
-                                    </h4>
-                        </div>
-                        <div
-                                    className="run3"
-                        >
-                                    <h4>
-                                                Run 3
-                                    </h4>
-                                    <h4
-                                                className="h4-result"
-                                    >
-                                                90
-                                    </h4>
-                        </div>
-                        <div
-                                    className="final-score"
-                        >
-                                    <h4>
-                                                FINAL
-                                    </h4>
-                                    <h4
-                                                className="final-result"
-                                    >
-                                                90.3
-                                    </h4>
-                        </div>
             </div>
-            <div
-                        className="result"
-                        id={undefined}
-            >
-                        <h1>
-                                    2
-                        </h1>
-                        <img
-                                    alt="flag"
-                                    src={undefined}
+            <div>
+                        <div
+                                    className="result"
+                                    id={undefined}
+                        >
+                                    <h1>
+                                                2
+                                    </h1>
+                                    <img
+                                                alt="flag"
+                                                src={undefined}
+                                    />
+                                    <h1 />
+                                    <div
+                                                className="run1"
+                                    >
+                                                <h4>
+                                                            Run 1
+                                                </h4>
+                                                <h4
+                                                            className="h4-result"
+                                                >
+                                                            90
+                                                </h4>
+                                    </div>
+                                    <div
+                                                className="run2"
+                                    >
+                                                <h4>
+                                                            Run 2
+                                                </h4>
+                                                <h4
+                                                            className="h4-result"
+                                                >
+                                                            93
+                                                </h4>
+                                    </div>
+                                    <div
+                                                className="run3"
+                                    >
+                                                <h4>
+                                                            Run 3
+                                                </h4>
+                                                <h4
+                                                            className="h4-result"
+                                                >
+                                                            88
+                                                </h4>
+                                    </div>
+                                    <div
+                                                className="final-score"
+                                    >
+                                                <h4>
+                                                            FINAL
+                                                </h4>
+                                                <h4
+                                                            className="final-result"
+                                                >
+                                                            90.3
+                                                </h4>
+                                    </div>
+                        </div>
+                        <iframe
+                                    allowFullScreen={true}
+                                    frameBorder="0"
+                                    height="360"
+                                    mozallowfullscreen={true}
+                                    src=""
+                                    webkitallowfullscreen={true}
+                                    width="640"
                         />
-                        <h1 />
-                        <div
-                                    className="run1"
-                        >
-                                    <h4>
-                                                Run 1
-                                    </h4>
-                                    <h4
-                                                className="h4-result"
-                                    >
-                                                90
-                                    </h4>
-                        </div>
-                        <div
-                                    className="run2"
-                        >
-                                    <h4>
-                                                Run 2
-                                    </h4>
-                                    <h4
-                                                className="h4-result"
-                                    >
-                                                93
-                                    </h4>
-                        </div>
-                        <div
-                                    className="run3"
-                        >
-                                    <h4>
-                                                Run 3
-                                    </h4>
-                                    <h4
-                                                className="h4-result"
-                                    >
-                                                88
-                                    </h4>
-                        </div>
-                        <div
-                                    className="final-score"
-                        >
-                                    <h4>
-                                                FINAL
-                                    </h4>
-                                    <h4
-                                                className="final-result"
-                                    >
-                                                90.3
-                                    </h4>
-                        </div>
             </div>
 </FlipMovePropConverter>,
           "className": "results-container",
@@ -487,127 +531,149 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <div
-                className="result"
-                id={undefined}
->
-                <h1>
-                                1
-                </h1>
-                <img
-                                alt="flag"
-                                src={undefined}
+              <div>
+                <div
+                                className="result"
+                                id={undefined}
+                >
+                                <h1>
+                                                1
+                                </h1>
+                                <img
+                                                alt="flag"
+                                                src={undefined}
+                                />
+                                <h1 />
+                                <div
+                                                className="run1"
+                                >
+                                                <h4>
+                                                                Run 1
+                                                </h4>
+                                                <h4
+                                                                className="h4-result"
+                                                >
+                                                                93
+                                                </h4>
+                                </div>
+                                <div
+                                                className="run2"
+                                >
+                                                <h4>
+                                                                Run 2
+                                                </h4>
+                                                <h4
+                                                                className="h4-result"
+                                                >
+                                                                88
+                                                </h4>
+                                </div>
+                                <div
+                                                className="run3"
+                                >
+                                                <h4>
+                                                                Run 3
+                                                </h4>
+                                                <h4
+                                                                className="h4-result"
+                                                >
+                                                                90
+                                                </h4>
+                                </div>
+                                <div
+                                                className="final-score"
+                                >
+                                                <h4>
+                                                                FINAL
+                                                </h4>
+                                                <h4
+                                                                className="final-result"
+                                                >
+                                                                90.3
+                                                </h4>
+                                </div>
+                </div>
+                <iframe
+                                allowFullScreen={true}
+                                frameBorder="0"
+                                height="360"
+                                mozallowfullscreen={true}
+                                src=""
+                                webkitallowfullscreen={true}
+                                width="640"
                 />
-                <h1 />
-                <div
-                                className="run1"
-                >
-                                <h4>
-                                                Run 1
-                                </h4>
-                                <h4
-                                                className="h4-result"
-                                >
-                                                93
-                                </h4>
-                </div>
-                <div
-                                className="run2"
-                >
-                                <h4>
-                                                Run 2
-                                </h4>
-                                <h4
-                                                className="h4-result"
-                                >
-                                                88
-                                </h4>
-                </div>
-                <div
-                                className="run3"
-                >
-                                <h4>
-                                                Run 3
-                                </h4>
-                                <h4
-                                                className="h4-result"
-                                >
-                                                90
-                                </h4>
-                </div>
-                <div
-                                className="final-score"
-                >
-                                <h4>
-                                                FINAL
-                                </h4>
-                                <h4
-                                                className="final-result"
-                                >
-                                                90.3
-                                </h4>
-                </div>
 </div>,
-              <div
-                className="result"
-                id={undefined}
->
-                <h1>
-                                2
-                </h1>
-                <img
-                                alt="flag"
-                                src={undefined}
+              <div>
+                <div
+                                className="result"
+                                id={undefined}
+                >
+                                <h1>
+                                                2
+                                </h1>
+                                <img
+                                                alt="flag"
+                                                src={undefined}
+                                />
+                                <h1 />
+                                <div
+                                                className="run1"
+                                >
+                                                <h4>
+                                                                Run 1
+                                                </h4>
+                                                <h4
+                                                                className="h4-result"
+                                                >
+                                                                90
+                                                </h4>
+                                </div>
+                                <div
+                                                className="run2"
+                                >
+                                                <h4>
+                                                                Run 2
+                                                </h4>
+                                                <h4
+                                                                className="h4-result"
+                                                >
+                                                                93
+                                                </h4>
+                                </div>
+                                <div
+                                                className="run3"
+                                >
+                                                <h4>
+                                                                Run 3
+                                                </h4>
+                                                <h4
+                                                                className="h4-result"
+                                                >
+                                                                88
+                                                </h4>
+                                </div>
+                                <div
+                                                className="final-score"
+                                >
+                                                <h4>
+                                                                FINAL
+                                                </h4>
+                                                <h4
+                                                                className="final-result"
+                                                >
+                                                                90.3
+                                                </h4>
+                                </div>
+                </div>
+                <iframe
+                                allowFullScreen={true}
+                                frameBorder="0"
+                                height="360"
+                                mozallowfullscreen={true}
+                                src=""
+                                webkitallowfullscreen={true}
+                                width="640"
                 />
-                <h1 />
-                <div
-                                className="run1"
-                >
-                                <h4>
-                                                Run 1
-                                </h4>
-                                <h4
-                                                className="h4-result"
-                                >
-                                                90
-                                </h4>
-                </div>
-                <div
-                                className="run2"
-                >
-                                <h4>
-                                                Run 2
-                                </h4>
-                                <h4
-                                                className="h4-result"
-                                >
-                                                93
-                                </h4>
-                </div>
-                <div
-                                className="run3"
-                >
-                                <h4>
-                                                Run 3
-                                </h4>
-                                <h4
-                                                className="h4-result"
-                                >
-                                                88
-                                </h4>
-                </div>
-                <div
-                                className="final-score"
-                >
-                                <h4>
-                                                FINAL
-                                </h4>
-                                <h4
-                                                className="final-result"
-                                >
-                                                90.3
-                                </h4>
-                </div>
 </div>,
             ],
             "delay": 0,
@@ -631,65 +697,77 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h1>
-                    1
-</h1>,
-                  <img
-                    alt="flag"
-                    src={undefined}
+                  <div
+                    className="result"
+                    id={undefined}
+>
+                    <h1>
+                                        1
+                    </h1>
+                    <img
+                                        alt="flag"
+                                        src={undefined}
+                    />
+                    <h1 />
+                    <div
+                                        className="run1"
+                    >
+                                        <h4>
+                                                            Run 1
+                                        </h4>
+                                        <h4
+                                                            className="h4-result"
+                                        >
+                                                            93
+                                        </h4>
+                    </div>
+                    <div
+                                        className="run2"
+                    >
+                                        <h4>
+                                                            Run 2
+                                        </h4>
+                                        <h4
+                                                            className="h4-result"
+                                        >
+                                                            88
+                                        </h4>
+                    </div>
+                    <div
+                                        className="run3"
+                    >
+                                        <h4>
+                                                            Run 3
+                                        </h4>
+                                        <h4
+                                                            className="h4-result"
+                                        >
+                                                            90
+                                        </h4>
+                    </div>
+                    <div
+                                        className="final-score"
+                    >
+                                        <h4>
+                                                            FINAL
+                                        </h4>
+                                        <h4
+                                                            className="final-result"
+                                        >
+                                                            90.3
+                                        </h4>
+                    </div>
+</div>,
+                  <iframe
+                    allowFullScreen={true}
+                    frameBorder="0"
+                    height="360"
+                    mozallowfullscreen={true}
+                    src=""
+                    webkitallowfullscreen={true}
+                    width="640"
 />,
-                  <h1 />,
-                  <div
-                    className="run1"
->
-                    <h4>
-                                        Run 1
-                    </h4>
-                    <h4
-                                        className="h4-result"
-                    >
-                                        93
-                    </h4>
-</div>,
-                  <div
-                    className="run2"
->
-                    <h4>
-                                        Run 2
-                    </h4>
-                    <h4
-                                        className="h4-result"
-                    >
-                                        88
-                    </h4>
-</div>,
-                  <div
-                    className="run3"
->
-                    <h4>
-                                        Run 3
-                    </h4>
-                    <h4
-                                        className="h4-result"
-                    >
-                                        90
-                    </h4>
-</div>,
-                  <div
-                    className="final-score"
->
-                    <h4>
-                                        FINAL
-                    </h4>
-                    <h4
-                                        className="final-result"
-                    >
-                                        90.3
-                    </h4>
-</div>,
                 ],
-                "className": "result",
-                "id": undefined,
               },
               "ref": null,
               "rendered": Array [
@@ -698,214 +776,302 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": 1,
+                    "children": Array [
+                      <h1>
+                        1
+</h1>,
+                      <img
+                        alt="flag"
+                        src={undefined}
+/>,
+                      <h1 />,
+                      <div
+                        className="run1"
+>
+                        <h4>
+                                                Run 1
+                        </h4>
+                        <h4
+                                                className="h4-result"
+                        >
+                                                93
+                        </h4>
+</div>,
+                      <div
+                        className="run2"
+>
+                        <h4>
+                                                Run 2
+                        </h4>
+                        <h4
+                                                className="h4-result"
+                        >
+                                                88
+                        </h4>
+</div>,
+                      <div
+                        className="run3"
+>
+                        <h4>
+                                                Run 3
+                        </h4>
+                        <h4
+                                                className="h4-result"
+                        >
+                                                90
+                        </h4>
+</div>,
+                      <div
+                        className="final-score"
+>
+                        <h4>
+                                                FINAL
+                        </h4>
+                        <h4
+                                                className="final-result"
+                        >
+                                                90.3
+                        </h4>
+</div>,
+                    ],
+                    "className": "result",
+                    "id": undefined,
                   },
                   "ref": null,
-                  "rendered": 1,
-                  "type": "h1",
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": 1,
+                      },
+                      "ref": null,
+                      "rendered": 1,
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "flag",
+                        "src": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            Run 1
+</h4>,
+                          <h4
+                            className="h4-result"
+>
+                            93
+</h4>,
+                        ],
+                        "className": "run1",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Run 1",
+                          },
+                          "ref": null,
+                          "rendered": "Run 1",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "93",
+                            "className": "h4-result",
+                          },
+                          "ref": null,
+                          "rendered": "93",
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            Run 2
+</h4>,
+                          <h4
+                            className="h4-result"
+>
+                            88
+</h4>,
+                        ],
+                        "className": "run2",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Run 2",
+                          },
+                          "ref": null,
+                          "rendered": "Run 2",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "88",
+                            "className": "h4-result",
+                          },
+                          "ref": null,
+                          "rendered": "88",
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            Run 3
+</h4>,
+                          <h4
+                            className="h4-result"
+>
+                            90
+</h4>,
+                        ],
+                        "className": "run3",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Run 3",
+                          },
+                          "ref": null,
+                          "rendered": "Run 3",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "90",
+                            "className": "h4-result",
+                          },
+                          "ref": null,
+                          "rendered": "90",
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            FINAL
+</h4>,
+                          <h4
+                            className="final-result"
+>
+                            90.3
+</h4>,
+                        ],
+                        "className": "final-score",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "FINAL",
+                          },
+                          "ref": null,
+                          "rendered": "FINAL",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 90.3,
+                            "className": "final-result",
+                          },
+                          "ref": null,
+                          "rendered": 90.3,
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "flag",
-                    "src": undefined,
+                    "allowFullScreen": true,
+                    "frameBorder": "0",
+                    "height": "360",
+                    "mozallowfullscreen": true,
+                    "src": "",
+                    "webkitallowfullscreen": true,
+                    "width": "640",
                   },
                   "ref": null,
                   "rendered": null,
-                  "type": "img",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "h1",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        Run 1
-</h4>,
-                      <h4
-                        className="h4-result"
->
-                        93
-</h4>,
-                    ],
-                    "className": "run1",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Run 1",
-                      },
-                      "ref": null,
-                      "rendered": "Run 1",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "93",
-                        "className": "h4-result",
-                      },
-                      "ref": null,
-                      "rendered": "93",
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        Run 2
-</h4>,
-                      <h4
-                        className="h4-result"
->
-                        88
-</h4>,
-                    ],
-                    "className": "run2",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Run 2",
-                      },
-                      "ref": null,
-                      "rendered": "Run 2",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "88",
-                        "className": "h4-result",
-                      },
-                      "ref": null,
-                      "rendered": "88",
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        Run 3
-</h4>,
-                      <h4
-                        className="h4-result"
->
-                        90
-</h4>,
-                    ],
-                    "className": "run3",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Run 3",
-                      },
-                      "ref": null,
-                      "rendered": "Run 3",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "90",
-                        "className": "h4-result",
-                      },
-                      "ref": null,
-                      "rendered": "90",
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        FINAL
-</h4>,
-                      <h4
-                        className="final-result"
->
-                        90.3
-</h4>,
-                    ],
-                    "className": "final-score",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "FINAL",
-                      },
-                      "ref": null,
-                      "rendered": "FINAL",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": 90.3,
-                        "className": "final-result",
-                      },
-                      "ref": null,
-                      "rendered": 90.3,
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
+                  "type": "iframe",
                 },
               ],
               "type": "div",
@@ -916,65 +1082,77 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h1>
-                    2
-</h1>,
-                  <img
-                    alt="flag"
-                    src={undefined}
+                  <div
+                    className="result"
+                    id={undefined}
+>
+                    <h1>
+                                        2
+                    </h1>
+                    <img
+                                        alt="flag"
+                                        src={undefined}
+                    />
+                    <h1 />
+                    <div
+                                        className="run1"
+                    >
+                                        <h4>
+                                                            Run 1
+                                        </h4>
+                                        <h4
+                                                            className="h4-result"
+                                        >
+                                                            90
+                                        </h4>
+                    </div>
+                    <div
+                                        className="run2"
+                    >
+                                        <h4>
+                                                            Run 2
+                                        </h4>
+                                        <h4
+                                                            className="h4-result"
+                                        >
+                                                            93
+                                        </h4>
+                    </div>
+                    <div
+                                        className="run3"
+                    >
+                                        <h4>
+                                                            Run 3
+                                        </h4>
+                                        <h4
+                                                            className="h4-result"
+                                        >
+                                                            88
+                                        </h4>
+                    </div>
+                    <div
+                                        className="final-score"
+                    >
+                                        <h4>
+                                                            FINAL
+                                        </h4>
+                                        <h4
+                                                            className="final-result"
+                                        >
+                                                            90.3
+                                        </h4>
+                    </div>
+</div>,
+                  <iframe
+                    allowFullScreen={true}
+                    frameBorder="0"
+                    height="360"
+                    mozallowfullscreen={true}
+                    src=""
+                    webkitallowfullscreen={true}
+                    width="640"
 />,
-                  <h1 />,
-                  <div
-                    className="run1"
->
-                    <h4>
-                                        Run 1
-                    </h4>
-                    <h4
-                                        className="h4-result"
-                    >
-                                        90
-                    </h4>
-</div>,
-                  <div
-                    className="run2"
->
-                    <h4>
-                                        Run 2
-                    </h4>
-                    <h4
-                                        className="h4-result"
-                    >
-                                        93
-                    </h4>
-</div>,
-                  <div
-                    className="run3"
->
-                    <h4>
-                                        Run 3
-                    </h4>
-                    <h4
-                                        className="h4-result"
-                    >
-                                        88
-                    </h4>
-</div>,
-                  <div
-                    className="final-score"
->
-                    <h4>
-                                        FINAL
-                    </h4>
-                    <h4
-                                        className="final-result"
-                    >
-                                        90.3
-                    </h4>
-</div>,
                 ],
-                "className": "result",
-                "id": undefined,
               },
               "ref": null,
               "rendered": Array [
@@ -983,214 +1161,302 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": 2,
+                    "children": Array [
+                      <h1>
+                        2
+</h1>,
+                      <img
+                        alt="flag"
+                        src={undefined}
+/>,
+                      <h1 />,
+                      <div
+                        className="run1"
+>
+                        <h4>
+                                                Run 1
+                        </h4>
+                        <h4
+                                                className="h4-result"
+                        >
+                                                90
+                        </h4>
+</div>,
+                      <div
+                        className="run2"
+>
+                        <h4>
+                                                Run 2
+                        </h4>
+                        <h4
+                                                className="h4-result"
+                        >
+                                                93
+                        </h4>
+</div>,
+                      <div
+                        className="run3"
+>
+                        <h4>
+                                                Run 3
+                        </h4>
+                        <h4
+                                                className="h4-result"
+                        >
+                                                88
+                        </h4>
+</div>,
+                      <div
+                        className="final-score"
+>
+                        <h4>
+                                                FINAL
+                        </h4>
+                        <h4
+                                                className="final-result"
+                        >
+                                                90.3
+                        </h4>
+</div>,
+                    ],
+                    "className": "result",
+                    "id": undefined,
                   },
                   "ref": null,
-                  "rendered": 2,
-                  "type": "h1",
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": 2,
+                      },
+                      "ref": null,
+                      "rendered": 2,
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "flag",
+                        "src": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            Run 1
+</h4>,
+                          <h4
+                            className="h4-result"
+>
+                            90
+</h4>,
+                        ],
+                        "className": "run1",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Run 1",
+                          },
+                          "ref": null,
+                          "rendered": "Run 1",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "90",
+                            "className": "h4-result",
+                          },
+                          "ref": null,
+                          "rendered": "90",
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            Run 2
+</h4>,
+                          <h4
+                            className="h4-result"
+>
+                            93
+</h4>,
+                        ],
+                        "className": "run2",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Run 2",
+                          },
+                          "ref": null,
+                          "rendered": "Run 2",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "93",
+                            "className": "h4-result",
+                          },
+                          "ref": null,
+                          "rendered": "93",
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            Run 3
+</h4>,
+                          <h4
+                            className="h4-result"
+>
+                            88
+</h4>,
+                        ],
+                        "className": "run3",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Run 3",
+                          },
+                          "ref": null,
+                          "rendered": "Run 3",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "88",
+                            "className": "h4-result",
+                          },
+                          "ref": null,
+                          "rendered": "88",
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h4>
+                            FINAL
+</h4>,
+                          <h4
+                            className="final-result"
+>
+                            90.3
+</h4>,
+                        ],
+                        "className": "final-score",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "FINAL",
+                          },
+                          "ref": null,
+                          "rendered": "FINAL",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 90.3,
+                            "className": "final-result",
+                          },
+                          "ref": null,
+                          "rendered": 90.3,
+                          "type": "h4",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "flag",
-                    "src": undefined,
+                    "allowFullScreen": true,
+                    "frameBorder": "0",
+                    "height": "360",
+                    "mozallowfullscreen": true,
+                    "src": "",
+                    "webkitallowfullscreen": true,
+                    "width": "640",
                   },
                   "ref": null,
                   "rendered": null,
-                  "type": "img",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "h1",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        Run 1
-</h4>,
-                      <h4
-                        className="h4-result"
->
-                        90
-</h4>,
-                    ],
-                    "className": "run1",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Run 1",
-                      },
-                      "ref": null,
-                      "rendered": "Run 1",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "90",
-                        "className": "h4-result",
-                      },
-                      "ref": null,
-                      "rendered": "90",
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        Run 2
-</h4>,
-                      <h4
-                        className="h4-result"
->
-                        93
-</h4>,
-                    ],
-                    "className": "run2",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Run 2",
-                      },
-                      "ref": null,
-                      "rendered": "Run 2",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "93",
-                        "className": "h4-result",
-                      },
-                      "ref": null,
-                      "rendered": "93",
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        Run 3
-</h4>,
-                      <h4
-                        className="h4-result"
->
-                        88
-</h4>,
-                    ],
-                    "className": "run3",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Run 3",
-                      },
-                      "ref": null,
-                      "rendered": "Run 3",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "88",
-                        "className": "h4-result",
-                      },
-                      "ref": null,
-                      "rendered": "88",
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h4>
-                        FINAL
-</h4>,
-                      <h4
-                        className="final-result"
->
-                        90.3
-</h4>,
-                    ],
-                    "className": "final-score",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "FINAL",
-                      },
-                      "ref": null,
-                      "rendered": "FINAL",
-                      "type": "h4",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": 90.3,
-                        "className": "final-result",
-                      },
-                      "ref": null,
-                      "rendered": 90.3,
-                      "type": "h4",
-                    },
-                  ],
-                  "type": "div",
+                  "type": "iframe",
                 },
               ],
               "type": "div",
@@ -1254,127 +1520,149 @@ ShallowWrapper {
                         typeName="div"
                         verticalAlignment="top"
             >
-                        <div
-                                    className="result"
-                                    id={undefined}
-                        >
-                                    <h1>
-                                                1
-                                    </h1>
-                                    <img
-                                                alt="flag"
-                                                src={undefined}
+                        <div>
+                                    <div
+                                                className="result"
+                                                id={undefined}
+                                    >
+                                                <h1>
+                                                            1
+                                                </h1>
+                                                <img
+                                                            alt="flag"
+                                                            src={undefined}
+                                                />
+                                                <h1 />
+                                                <div
+                                                            className="run1"
+                                                >
+                                                            <h4>
+                                                                        Run 1
+                                                            </h4>
+                                                            <h4
+                                                                        className="h4-result"
+                                                            >
+                                                                        93
+                                                            </h4>
+                                                </div>
+                                                <div
+                                                            className="run2"
+                                                >
+                                                            <h4>
+                                                                        Run 2
+                                                            </h4>
+                                                            <h4
+                                                                        className="h4-result"
+                                                            >
+                                                                        88
+                                                            </h4>
+                                                </div>
+                                                <div
+                                                            className="run3"
+                                                >
+                                                            <h4>
+                                                                        Run 3
+                                                            </h4>
+                                                            <h4
+                                                                        className="h4-result"
+                                                            >
+                                                                        90
+                                                            </h4>
+                                                </div>
+                                                <div
+                                                            className="final-score"
+                                                >
+                                                            <h4>
+                                                                        FINAL
+                                                            </h4>
+                                                            <h4
+                                                                        className="final-result"
+                                                            >
+                                                                        90.3
+                                                            </h4>
+                                                </div>
+                                    </div>
+                                    <iframe
+                                                allowFullScreen={true}
+                                                frameBorder="0"
+                                                height="360"
+                                                mozallowfullscreen={true}
+                                                src=""
+                                                webkitallowfullscreen={true}
+                                                width="640"
                                     />
-                                    <h1 />
-                                    <div
-                                                className="run1"
-                                    >
-                                                <h4>
-                                                            Run 1
-                                                </h4>
-                                                <h4
-                                                            className="h4-result"
-                                                >
-                                                            93
-                                                </h4>
-                                    </div>
-                                    <div
-                                                className="run2"
-                                    >
-                                                <h4>
-                                                            Run 2
-                                                </h4>
-                                                <h4
-                                                            className="h4-result"
-                                                >
-                                                            88
-                                                </h4>
-                                    </div>
-                                    <div
-                                                className="run3"
-                                    >
-                                                <h4>
-                                                            Run 3
-                                                </h4>
-                                                <h4
-                                                            className="h4-result"
-                                                >
-                                                            90
-                                                </h4>
-                                    </div>
-                                    <div
-                                                className="final-score"
-                                    >
-                                                <h4>
-                                                            FINAL
-                                                </h4>
-                                                <h4
-                                                            className="final-result"
-                                                >
-                                                            90.3
-                                                </h4>
-                                    </div>
                         </div>
-                        <div
-                                    className="result"
-                                    id={undefined}
-                        >
-                                    <h1>
-                                                2
-                                    </h1>
-                                    <img
-                                                alt="flag"
-                                                src={undefined}
+                        <div>
+                                    <div
+                                                className="result"
+                                                id={undefined}
+                                    >
+                                                <h1>
+                                                            2
+                                                </h1>
+                                                <img
+                                                            alt="flag"
+                                                            src={undefined}
+                                                />
+                                                <h1 />
+                                                <div
+                                                            className="run1"
+                                                >
+                                                            <h4>
+                                                                        Run 1
+                                                            </h4>
+                                                            <h4
+                                                                        className="h4-result"
+                                                            >
+                                                                        90
+                                                            </h4>
+                                                </div>
+                                                <div
+                                                            className="run2"
+                                                >
+                                                            <h4>
+                                                                        Run 2
+                                                            </h4>
+                                                            <h4
+                                                                        className="h4-result"
+                                                            >
+                                                                        93
+                                                            </h4>
+                                                </div>
+                                                <div
+                                                            className="run3"
+                                                >
+                                                            <h4>
+                                                                        Run 3
+                                                            </h4>
+                                                            <h4
+                                                                        className="h4-result"
+                                                            >
+                                                                        88
+                                                            </h4>
+                                                </div>
+                                                <div
+                                                            className="final-score"
+                                                >
+                                                            <h4>
+                                                                        FINAL
+                                                            </h4>
+                                                            <h4
+                                                                        className="final-result"
+                                                            >
+                                                                        90.3
+                                                            </h4>
+                                                </div>
+                                    </div>
+                                    <iframe
+                                                allowFullScreen={true}
+                                                frameBorder="0"
+                                                height="360"
+                                                mozallowfullscreen={true}
+                                                src=""
+                                                webkitallowfullscreen={true}
+                                                width="640"
                                     />
-                                    <h1 />
-                                    <div
-                                                className="run1"
-                                    >
-                                                <h4>
-                                                            Run 1
-                                                </h4>
-                                                <h4
-                                                            className="h4-result"
-                                                >
-                                                            90
-                                                </h4>
-                                    </div>
-                                    <div
-                                                className="run2"
-                                    >
-                                                <h4>
-                                                            Run 2
-                                                </h4>
-                                                <h4
-                                                            className="h4-result"
-                                                >
-                                                            93
-                                                </h4>
-                                    </div>
-                                    <div
-                                                className="run3"
-                                    >
-                                                <h4>
-                                                            Run 3
-                                                </h4>
-                                                <h4
-                                                            className="h4-result"
-                                                >
-                                                            88
-                                                </h4>
-                                    </div>
-                                    <div
-                                                className="final-score"
-                                    >
-                                                <h4>
-                                                            FINAL
-                                                </h4>
-                                                <h4
-                                                            className="final-result"
-                                                >
-                                                            90.3
-                                                </h4>
-                                    </div>
                         </div>
             </FlipMovePropConverter>
 </div>,
@@ -1524,127 +1812,149 @@ ShallowWrapper {
               typeName="div"
               verticalAlignment="top"
 >
-              <div
-                            className="result"
-                            id={undefined}
-              >
-                            <h1>
-                                          1
-                            </h1>
-                            <img
-                                          alt="flag"
-                                          src={undefined}
+              <div>
+                            <div
+                                          className="result"
+                                          id={undefined}
+                            >
+                                          <h1>
+                                                        1
+                                          </h1>
+                                          <img
+                                                        alt="flag"
+                                                        src={undefined}
+                                          />
+                                          <h1 />
+                                          <div
+                                                        className="run1"
+                                          >
+                                                        <h4>
+                                                                      Run 1
+                                                        </h4>
+                                                        <h4
+                                                                      className="h4-result"
+                                                        >
+                                                                      93
+                                                        </h4>
+                                          </div>
+                                          <div
+                                                        className="run2"
+                                          >
+                                                        <h4>
+                                                                      Run 2
+                                                        </h4>
+                                                        <h4
+                                                                      className="h4-result"
+                                                        >
+                                                                      88
+                                                        </h4>
+                                          </div>
+                                          <div
+                                                        className="run3"
+                                          >
+                                                        <h4>
+                                                                      Run 3
+                                                        </h4>
+                                                        <h4
+                                                                      className="h4-result"
+                                                        >
+                                                                      90
+                                                        </h4>
+                                          </div>
+                                          <div
+                                                        className="final-score"
+                                          >
+                                                        <h4>
+                                                                      FINAL
+                                                        </h4>
+                                                        <h4
+                                                                      className="final-result"
+                                                        >
+                                                                      90.3
+                                                        </h4>
+                                          </div>
+                            </div>
+                            <iframe
+                                          allowFullScreen={true}
+                                          frameBorder="0"
+                                          height="360"
+                                          mozallowfullscreen={true}
+                                          src=""
+                                          webkitallowfullscreen={true}
+                                          width="640"
                             />
-                            <h1 />
-                            <div
-                                          className="run1"
-                            >
-                                          <h4>
-                                                        Run 1
-                                          </h4>
-                                          <h4
-                                                        className="h4-result"
-                                          >
-                                                        93
-                                          </h4>
-                            </div>
-                            <div
-                                          className="run2"
-                            >
-                                          <h4>
-                                                        Run 2
-                                          </h4>
-                                          <h4
-                                                        className="h4-result"
-                                          >
-                                                        88
-                                          </h4>
-                            </div>
-                            <div
-                                          className="run3"
-                            >
-                                          <h4>
-                                                        Run 3
-                                          </h4>
-                                          <h4
-                                                        className="h4-result"
-                                          >
-                                                        90
-                                          </h4>
-                            </div>
-                            <div
-                                          className="final-score"
-                            >
-                                          <h4>
-                                                        FINAL
-                                          </h4>
-                                          <h4
-                                                        className="final-result"
-                                          >
-                                                        90.3
-                                          </h4>
-                            </div>
               </div>
-              <div
-                            className="result"
-                            id={undefined}
-              >
-                            <h1>
-                                          2
-                            </h1>
-                            <img
-                                          alt="flag"
-                                          src={undefined}
+              <div>
+                            <div
+                                          className="result"
+                                          id={undefined}
+                            >
+                                          <h1>
+                                                        2
+                                          </h1>
+                                          <img
+                                                        alt="flag"
+                                                        src={undefined}
+                                          />
+                                          <h1 />
+                                          <div
+                                                        className="run1"
+                                          >
+                                                        <h4>
+                                                                      Run 1
+                                                        </h4>
+                                                        <h4
+                                                                      className="h4-result"
+                                                        >
+                                                                      90
+                                                        </h4>
+                                          </div>
+                                          <div
+                                                        className="run2"
+                                          >
+                                                        <h4>
+                                                                      Run 2
+                                                        </h4>
+                                                        <h4
+                                                                      className="h4-result"
+                                                        >
+                                                                      93
+                                                        </h4>
+                                          </div>
+                                          <div
+                                                        className="run3"
+                                          >
+                                                        <h4>
+                                                                      Run 3
+                                                        </h4>
+                                                        <h4
+                                                                      className="h4-result"
+                                                        >
+                                                                      88
+                                                        </h4>
+                                          </div>
+                                          <div
+                                                        className="final-score"
+                                          >
+                                                        <h4>
+                                                                      FINAL
+                                                        </h4>
+                                                        <h4
+                                                                      className="final-result"
+                                                        >
+                                                                      90.3
+                                                        </h4>
+                                          </div>
+                            </div>
+                            <iframe
+                                          allowFullScreen={true}
+                                          frameBorder="0"
+                                          height="360"
+                                          mozallowfullscreen={true}
+                                          src=""
+                                          webkitallowfullscreen={true}
+                                          width="640"
                             />
-                            <h1 />
-                            <div
-                                          className="run1"
-                            >
-                                          <h4>
-                                                        Run 1
-                                          </h4>
-                                          <h4
-                                                        className="h4-result"
-                                          >
-                                                        90
-                                          </h4>
-                            </div>
-                            <div
-                                          className="run2"
-                            >
-                                          <h4>
-                                                        Run 2
-                                          </h4>
-                                          <h4
-                                                        className="h4-result"
-                                          >
-                                                        93
-                                          </h4>
-                            </div>
-                            <div
-                                          className="run3"
-                            >
-                                          <h4>
-                                                        Run 3
-                                          </h4>
-                                          <h4
-                                                        className="h4-result"
-                                          >
-                                                        88
-                                          </h4>
-                            </div>
-                            <div
-                                          className="final-score"
-                            >
-                                          <h4>
-                                                        FINAL
-                                          </h4>
-                                          <h4
-                                                        className="final-result"
-                                          >
-                                                        90.3
-                                          </h4>
-                            </div>
               </div>
 </FlipMovePropConverter>,
             "className": "results-container",
@@ -1656,127 +1966,149 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <div
-                  className="result"
-                  id={undefined}
->
-                  <h1>
-                                    1
-                  </h1>
-                  <img
-                                    alt="flag"
-                                    src={undefined}
+                <div>
+                  <div
+                                    className="result"
+                                    id={undefined}
+                  >
+                                    <h1>
+                                                      1
+                                    </h1>
+                                    <img
+                                                      alt="flag"
+                                                      src={undefined}
+                                    />
+                                    <h1 />
+                                    <div
+                                                      className="run1"
+                                    >
+                                                      <h4>
+                                                                        Run 1
+                                                      </h4>
+                                                      <h4
+                                                                        className="h4-result"
+                                                      >
+                                                                        93
+                                                      </h4>
+                                    </div>
+                                    <div
+                                                      className="run2"
+                                    >
+                                                      <h4>
+                                                                        Run 2
+                                                      </h4>
+                                                      <h4
+                                                                        className="h4-result"
+                                                      >
+                                                                        88
+                                                      </h4>
+                                    </div>
+                                    <div
+                                                      className="run3"
+                                    >
+                                                      <h4>
+                                                                        Run 3
+                                                      </h4>
+                                                      <h4
+                                                                        className="h4-result"
+                                                      >
+                                                                        90
+                                                      </h4>
+                                    </div>
+                                    <div
+                                                      className="final-score"
+                                    >
+                                                      <h4>
+                                                                        FINAL
+                                                      </h4>
+                                                      <h4
+                                                                        className="final-result"
+                                                      >
+                                                                        90.3
+                                                      </h4>
+                                    </div>
+                  </div>
+                  <iframe
+                                    allowFullScreen={true}
+                                    frameBorder="0"
+                                    height="360"
+                                    mozallowfullscreen={true}
+                                    src=""
+                                    webkitallowfullscreen={true}
+                                    width="640"
                   />
-                  <h1 />
-                  <div
-                                    className="run1"
-                  >
-                                    <h4>
-                                                      Run 1
-                                    </h4>
-                                    <h4
-                                                      className="h4-result"
-                                    >
-                                                      93
-                                    </h4>
-                  </div>
-                  <div
-                                    className="run2"
-                  >
-                                    <h4>
-                                                      Run 2
-                                    </h4>
-                                    <h4
-                                                      className="h4-result"
-                                    >
-                                                      88
-                                    </h4>
-                  </div>
-                  <div
-                                    className="run3"
-                  >
-                                    <h4>
-                                                      Run 3
-                                    </h4>
-                                    <h4
-                                                      className="h4-result"
-                                    >
-                                                      90
-                                    </h4>
-                  </div>
-                  <div
-                                    className="final-score"
-                  >
-                                    <h4>
-                                                      FINAL
-                                    </h4>
-                                    <h4
-                                                      className="final-result"
-                                    >
-                                                      90.3
-                                    </h4>
-                  </div>
 </div>,
-                <div
-                  className="result"
-                  id={undefined}
->
-                  <h1>
-                                    2
-                  </h1>
-                  <img
-                                    alt="flag"
-                                    src={undefined}
+                <div>
+                  <div
+                                    className="result"
+                                    id={undefined}
+                  >
+                                    <h1>
+                                                      2
+                                    </h1>
+                                    <img
+                                                      alt="flag"
+                                                      src={undefined}
+                                    />
+                                    <h1 />
+                                    <div
+                                                      className="run1"
+                                    >
+                                                      <h4>
+                                                                        Run 1
+                                                      </h4>
+                                                      <h4
+                                                                        className="h4-result"
+                                                      >
+                                                                        90
+                                                      </h4>
+                                    </div>
+                                    <div
+                                                      className="run2"
+                                    >
+                                                      <h4>
+                                                                        Run 2
+                                                      </h4>
+                                                      <h4
+                                                                        className="h4-result"
+                                                      >
+                                                                        93
+                                                      </h4>
+                                    </div>
+                                    <div
+                                                      className="run3"
+                                    >
+                                                      <h4>
+                                                                        Run 3
+                                                      </h4>
+                                                      <h4
+                                                                        className="h4-result"
+                                                      >
+                                                                        88
+                                                      </h4>
+                                    </div>
+                                    <div
+                                                      className="final-score"
+                                    >
+                                                      <h4>
+                                                                        FINAL
+                                                      </h4>
+                                                      <h4
+                                                                        className="final-result"
+                                                      >
+                                                                        90.3
+                                                      </h4>
+                                    </div>
+                  </div>
+                  <iframe
+                                    allowFullScreen={true}
+                                    frameBorder="0"
+                                    height="360"
+                                    mozallowfullscreen={true}
+                                    src=""
+                                    webkitallowfullscreen={true}
+                                    width="640"
                   />
-                  <h1 />
-                  <div
-                                    className="run1"
-                  >
-                                    <h4>
-                                                      Run 1
-                                    </h4>
-                                    <h4
-                                                      className="h4-result"
-                                    >
-                                                      90
-                                    </h4>
-                  </div>
-                  <div
-                                    className="run2"
-                  >
-                                    <h4>
-                                                      Run 2
-                                    </h4>
-                                    <h4
-                                                      className="h4-result"
-                                    >
-                                                      93
-                                    </h4>
-                  </div>
-                  <div
-                                    className="run3"
-                  >
-                                    <h4>
-                                                      Run 3
-                                    </h4>
-                                    <h4
-                                                      className="h4-result"
-                                    >
-                                                      88
-                                    </h4>
-                  </div>
-                  <div
-                                    className="final-score"
-                  >
-                                    <h4>
-                                                      FINAL
-                                    </h4>
-                                    <h4
-                                                      className="final-result"
-                                    >
-                                                      90.3
-                                    </h4>
-                  </div>
 </div>,
               ],
               "delay": 0,
@@ -1800,65 +2132,77 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h1>
-                      1
-</h1>,
-                    <img
-                      alt="flag"
-                      src={undefined}
+                    <div
+                      className="result"
+                      id={undefined}
+>
+                      <h1>
+                                            1
+                      </h1>
+                      <img
+                                            alt="flag"
+                                            src={undefined}
+                      />
+                      <h1 />
+                      <div
+                                            className="run1"
+                      >
+                                            <h4>
+                                                                  Run 1
+                                            </h4>
+                                            <h4
+                                                                  className="h4-result"
+                                            >
+                                                                  93
+                                            </h4>
+                      </div>
+                      <div
+                                            className="run2"
+                      >
+                                            <h4>
+                                                                  Run 2
+                                            </h4>
+                                            <h4
+                                                                  className="h4-result"
+                                            >
+                                                                  88
+                                            </h4>
+                      </div>
+                      <div
+                                            className="run3"
+                      >
+                                            <h4>
+                                                                  Run 3
+                                            </h4>
+                                            <h4
+                                                                  className="h4-result"
+                                            >
+                                                                  90
+                                            </h4>
+                      </div>
+                      <div
+                                            className="final-score"
+                      >
+                                            <h4>
+                                                                  FINAL
+                                            </h4>
+                                            <h4
+                                                                  className="final-result"
+                                            >
+                                                                  90.3
+                                            </h4>
+                      </div>
+</div>,
+                    <iframe
+                      allowFullScreen={true}
+                      frameBorder="0"
+                      height="360"
+                      mozallowfullscreen={true}
+                      src=""
+                      webkitallowfullscreen={true}
+                      width="640"
 />,
-                    <h1 />,
-                    <div
-                      className="run1"
->
-                      <h4>
-                                            Run 1
-                      </h4>
-                      <h4
-                                            className="h4-result"
-                      >
-                                            93
-                      </h4>
-</div>,
-                    <div
-                      className="run2"
->
-                      <h4>
-                                            Run 2
-                      </h4>
-                      <h4
-                                            className="h4-result"
-                      >
-                                            88
-                      </h4>
-</div>,
-                    <div
-                      className="run3"
->
-                      <h4>
-                                            Run 3
-                      </h4>
-                      <h4
-                                            className="h4-result"
-                      >
-                                            90
-                      </h4>
-</div>,
-                    <div
-                      className="final-score"
->
-                      <h4>
-                                            FINAL
-                      </h4>
-                      <h4
-                                            className="final-result"
-                      >
-                                            90.3
-                      </h4>
-</div>,
                   ],
-                  "className": "result",
-                  "id": undefined,
                 },
                 "ref": null,
                 "rendered": Array [
@@ -1867,214 +2211,302 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": 1,
+                      "children": Array [
+                        <h1>
+                          1
+</h1>,
+                        <img
+                          alt="flag"
+                          src={undefined}
+/>,
+                        <h1 />,
+                        <div
+                          className="run1"
+>
+                          <h4>
+                                                    Run 1
+                          </h4>
+                          <h4
+                                                    className="h4-result"
+                          >
+                                                    93
+                          </h4>
+</div>,
+                        <div
+                          className="run2"
+>
+                          <h4>
+                                                    Run 2
+                          </h4>
+                          <h4
+                                                    className="h4-result"
+                          >
+                                                    88
+                          </h4>
+</div>,
+                        <div
+                          className="run3"
+>
+                          <h4>
+                                                    Run 3
+                          </h4>
+                          <h4
+                                                    className="h4-result"
+                          >
+                                                    90
+                          </h4>
+</div>,
+                        <div
+                          className="final-score"
+>
+                          <h4>
+                                                    FINAL
+                          </h4>
+                          <h4
+                                                    className="final-result"
+                          >
+                                                    90.3
+                          </h4>
+</div>,
+                      ],
+                      "className": "result",
+                      "id": undefined,
                     },
                     "ref": null,
-                    "rendered": 1,
-                    "type": "h1",
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 1,
+                        },
+                        "ref": null,
+                        "rendered": 1,
+                        "type": "h1",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "flag",
+                          "src": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "h1",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              Run 1
+</h4>,
+                            <h4
+                              className="h4-result"
+>
+                              93
+</h4>,
+                          ],
+                          "className": "run1",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Run 1",
+                            },
+                            "ref": null,
+                            "rendered": "Run 1",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "93",
+                              "className": "h4-result",
+                            },
+                            "ref": null,
+                            "rendered": "93",
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              Run 2
+</h4>,
+                            <h4
+                              className="h4-result"
+>
+                              88
+</h4>,
+                          ],
+                          "className": "run2",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Run 2",
+                            },
+                            "ref": null,
+                            "rendered": "Run 2",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "88",
+                              "className": "h4-result",
+                            },
+                            "ref": null,
+                            "rendered": "88",
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              Run 3
+</h4>,
+                            <h4
+                              className="h4-result"
+>
+                              90
+</h4>,
+                          ],
+                          "className": "run3",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Run 3",
+                            },
+                            "ref": null,
+                            "rendered": "Run 3",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "90",
+                              "className": "h4-result",
+                            },
+                            "ref": null,
+                            "rendered": "90",
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              FINAL
+</h4>,
+                            <h4
+                              className="final-result"
+>
+                              90.3
+</h4>,
+                          ],
+                          "className": "final-score",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "FINAL",
+                            },
+                            "ref": null,
+                            "rendered": "FINAL",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": 90.3,
+                              "className": "final-result",
+                            },
+                            "ref": null,
+                            "rendered": 90.3,
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "alt": "flag",
-                      "src": undefined,
+                      "allowFullScreen": true,
+                      "frameBorder": "0",
+                      "height": "360",
+                      "mozallowfullscreen": true,
+                      "src": "",
+                      "webkitallowfullscreen": true,
+                      "width": "640",
                     },
                     "ref": null,
                     "rendered": null,
-                    "type": "img",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "h1",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          Run 1
-</h4>,
-                        <h4
-                          className="h4-result"
->
-                          93
-</h4>,
-                      ],
-                      "className": "run1",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Run 1",
-                        },
-                        "ref": null,
-                        "rendered": "Run 1",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "93",
-                          "className": "h4-result",
-                        },
-                        "ref": null,
-                        "rendered": "93",
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          Run 2
-</h4>,
-                        <h4
-                          className="h4-result"
->
-                          88
-</h4>,
-                      ],
-                      "className": "run2",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Run 2",
-                        },
-                        "ref": null,
-                        "rendered": "Run 2",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "88",
-                          "className": "h4-result",
-                        },
-                        "ref": null,
-                        "rendered": "88",
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          Run 3
-</h4>,
-                        <h4
-                          className="h4-result"
->
-                          90
-</h4>,
-                      ],
-                      "className": "run3",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Run 3",
-                        },
-                        "ref": null,
-                        "rendered": "Run 3",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "90",
-                          "className": "h4-result",
-                        },
-                        "ref": null,
-                        "rendered": "90",
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          FINAL
-</h4>,
-                        <h4
-                          className="final-result"
->
-                          90.3
-</h4>,
-                      ],
-                      "className": "final-score",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "FINAL",
-                        },
-                        "ref": null,
-                        "rendered": "FINAL",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": 90.3,
-                          "className": "final-result",
-                        },
-                        "ref": null,
-                        "rendered": 90.3,
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
+                    "type": "iframe",
                   },
                 ],
                 "type": "div",
@@ -2085,65 +2517,77 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h1>
-                      2
-</h1>,
-                    <img
-                      alt="flag"
-                      src={undefined}
+                    <div
+                      className="result"
+                      id={undefined}
+>
+                      <h1>
+                                            2
+                      </h1>
+                      <img
+                                            alt="flag"
+                                            src={undefined}
+                      />
+                      <h1 />
+                      <div
+                                            className="run1"
+                      >
+                                            <h4>
+                                                                  Run 1
+                                            </h4>
+                                            <h4
+                                                                  className="h4-result"
+                                            >
+                                                                  90
+                                            </h4>
+                      </div>
+                      <div
+                                            className="run2"
+                      >
+                                            <h4>
+                                                                  Run 2
+                                            </h4>
+                                            <h4
+                                                                  className="h4-result"
+                                            >
+                                                                  93
+                                            </h4>
+                      </div>
+                      <div
+                                            className="run3"
+                      >
+                                            <h4>
+                                                                  Run 3
+                                            </h4>
+                                            <h4
+                                                                  className="h4-result"
+                                            >
+                                                                  88
+                                            </h4>
+                      </div>
+                      <div
+                                            className="final-score"
+                      >
+                                            <h4>
+                                                                  FINAL
+                                            </h4>
+                                            <h4
+                                                                  className="final-result"
+                                            >
+                                                                  90.3
+                                            </h4>
+                      </div>
+</div>,
+                    <iframe
+                      allowFullScreen={true}
+                      frameBorder="0"
+                      height="360"
+                      mozallowfullscreen={true}
+                      src=""
+                      webkitallowfullscreen={true}
+                      width="640"
 />,
-                    <h1 />,
-                    <div
-                      className="run1"
->
-                      <h4>
-                                            Run 1
-                      </h4>
-                      <h4
-                                            className="h4-result"
-                      >
-                                            90
-                      </h4>
-</div>,
-                    <div
-                      className="run2"
->
-                      <h4>
-                                            Run 2
-                      </h4>
-                      <h4
-                                            className="h4-result"
-                      >
-                                            93
-                      </h4>
-</div>,
-                    <div
-                      className="run3"
->
-                      <h4>
-                                            Run 3
-                      </h4>
-                      <h4
-                                            className="h4-result"
-                      >
-                                            88
-                      </h4>
-</div>,
-                    <div
-                      className="final-score"
->
-                      <h4>
-                                            FINAL
-                      </h4>
-                      <h4
-                                            className="final-result"
-                      >
-                                            90.3
-                      </h4>
-</div>,
                   ],
-                  "className": "result",
-                  "id": undefined,
                 },
                 "ref": null,
                 "rendered": Array [
@@ -2152,214 +2596,302 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": 2,
+                      "children": Array [
+                        <h1>
+                          2
+</h1>,
+                        <img
+                          alt="flag"
+                          src={undefined}
+/>,
+                        <h1 />,
+                        <div
+                          className="run1"
+>
+                          <h4>
+                                                    Run 1
+                          </h4>
+                          <h4
+                                                    className="h4-result"
+                          >
+                                                    90
+                          </h4>
+</div>,
+                        <div
+                          className="run2"
+>
+                          <h4>
+                                                    Run 2
+                          </h4>
+                          <h4
+                                                    className="h4-result"
+                          >
+                                                    93
+                          </h4>
+</div>,
+                        <div
+                          className="run3"
+>
+                          <h4>
+                                                    Run 3
+                          </h4>
+                          <h4
+                                                    className="h4-result"
+                          >
+                                                    88
+                          </h4>
+</div>,
+                        <div
+                          className="final-score"
+>
+                          <h4>
+                                                    FINAL
+                          </h4>
+                          <h4
+                                                    className="final-result"
+                          >
+                                                    90.3
+                          </h4>
+</div>,
+                      ],
+                      "className": "result",
+                      "id": undefined,
                     },
                     "ref": null,
-                    "rendered": 2,
-                    "type": "h1",
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 2,
+                        },
+                        "ref": null,
+                        "rendered": 2,
+                        "type": "h1",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "flag",
+                          "src": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "h1",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              Run 1
+</h4>,
+                            <h4
+                              className="h4-result"
+>
+                              90
+</h4>,
+                          ],
+                          "className": "run1",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Run 1",
+                            },
+                            "ref": null,
+                            "rendered": "Run 1",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "90",
+                              "className": "h4-result",
+                            },
+                            "ref": null,
+                            "rendered": "90",
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              Run 2
+</h4>,
+                            <h4
+                              className="h4-result"
+>
+                              93
+</h4>,
+                          ],
+                          "className": "run2",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Run 2",
+                            },
+                            "ref": null,
+                            "rendered": "Run 2",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "93",
+                              "className": "h4-result",
+                            },
+                            "ref": null,
+                            "rendered": "93",
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              Run 3
+</h4>,
+                            <h4
+                              className="h4-result"
+>
+                              88
+</h4>,
+                          ],
+                          "className": "run3",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Run 3",
+                            },
+                            "ref": null,
+                            "rendered": "Run 3",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "88",
+                              "className": "h4-result",
+                            },
+                            "ref": null,
+                            "rendered": "88",
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h4>
+                              FINAL
+</h4>,
+                            <h4
+                              className="final-result"
+>
+                              90.3
+</h4>,
+                          ],
+                          "className": "final-score",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "FINAL",
+                            },
+                            "ref": null,
+                            "rendered": "FINAL",
+                            "type": "h4",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": 90.3,
+                              "className": "final-result",
+                            },
+                            "ref": null,
+                            "rendered": 90.3,
+                            "type": "h4",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "alt": "flag",
-                      "src": undefined,
+                      "allowFullScreen": true,
+                      "frameBorder": "0",
+                      "height": "360",
+                      "mozallowfullscreen": true,
+                      "src": "",
+                      "webkitallowfullscreen": true,
+                      "width": "640",
                     },
                     "ref": null,
                     "rendered": null,
-                    "type": "img",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "h1",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          Run 1
-</h4>,
-                        <h4
-                          className="h4-result"
->
-                          90
-</h4>,
-                      ],
-                      "className": "run1",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Run 1",
-                        },
-                        "ref": null,
-                        "rendered": "Run 1",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "90",
-                          "className": "h4-result",
-                        },
-                        "ref": null,
-                        "rendered": "90",
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          Run 2
-</h4>,
-                        <h4
-                          className="h4-result"
->
-                          93
-</h4>,
-                      ],
-                      "className": "run2",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Run 2",
-                        },
-                        "ref": null,
-                        "rendered": "Run 2",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "93",
-                          "className": "h4-result",
-                        },
-                        "ref": null,
-                        "rendered": "93",
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          Run 3
-</h4>,
-                        <h4
-                          className="h4-result"
->
-                          88
-</h4>,
-                      ],
-                      "className": "run3",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Run 3",
-                        },
-                        "ref": null,
-                        "rendered": "Run 3",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "88",
-                          "className": "h4-result",
-                        },
-                        "ref": null,
-                        "rendered": "88",
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h4>
-                          FINAL
-</h4>,
-                        <h4
-                          className="final-result"
->
-                          90.3
-</h4>,
-                      ],
-                      "className": "final-score",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "FINAL",
-                        },
-                        "ref": null,
-                        "rendered": "FINAL",
-                        "type": "h4",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": 90.3,
-                          "className": "final-result",
-                        },
-                        "ref": null,
-                        "rendered": 90.3,
-                        "type": "h4",
-                      },
-                    ],
-                    "type": "div",
+                    "type": "iframe",
                   },
                 ],
                 "type": "div",
