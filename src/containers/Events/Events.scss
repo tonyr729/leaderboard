@@ -23,6 +23,9 @@
       transition: height 2s ease-in-out;
       box-shadow: inset 0px 9px 8px -6px #3c3b3b;
     }
+    .expanded {
+      height: 360px;
+    }
     .event-div {
       display: flex;
       align-items: center;
