@@ -8,14 +8,7 @@ import './Admin.css';
 export class Admin extends Component {
   constructor() {
     super();
-    this.state = {
-      event_id: '',
-      division_id: '',
-      rider_id: '',
-      run_1: null,
-      run_2: null,
-      run_3: null
-    };
+    this.state = {};
   };
 
   componentDidMount() {
@@ -49,7 +42,7 @@ export class Admin extends Component {
       },
       body: JSON.stringify({result: results})
     });
-    const message = response.json().status;
+    const message = await response.json();
     return message;
   }
 
@@ -59,10 +52,11 @@ export class Admin extends Component {
 
   handleChange = (event) => {
     const { id, value } = event.target;
-    const intValue = parseInt(value, 10);
-    this.setState({
-      [id]: intValue
-    });
+    if (value) {
+      this.setState({
+        [id]: value
+      });
+    }
   }
 
   submitChanges = (event) => {
@@ -113,9 +107,9 @@ export class Admin extends Component {
             <div>
               <label className='runone-label'>
                 Run 1:
-                <input type="text" 
+                <input type="number" 
                   onChange={this.handleChange}
-                  value={this.state.runOne}
+                  value={this.state.run_1}
                   id="run_1"
                   className='admin-input'
                   placeholder="Score"/>
@@ -123,17 +117,17 @@ export class Admin extends Component {
               <label className='runone-label'>
                 <input type="text"
                   onChange={this.handleChange}
-                  value={this.state.runOne}
-                  id='media-url'
+                  value={this.state.run_1_media}
+                  id='run_1_media'
                   placeholder="Media URL" />
               </label>
             </div>
             <div>
               <label className='runtwo-label'>
                 Run 2:
-                <input type="text" 
+                <input type="number" 
                   onChange={this.handleChange}
-                  value={this.state.runTwo}
+                  value={this.state.run_2}
                   id="run_2"
                   className='admin-input'
                   placeholder="Score"/>
@@ -141,17 +135,17 @@ export class Admin extends Component {
               <label className='runone-label'>
                 <input type="text"
                   onChange={this.handleChange}
-                  value={this.state.runOne}
-                  id='media-url' 
+                  value={this.state.run_2_media}
+                  id='run_2_media' 
                   placeholder="Media URL"/>
               </label>
             </div>
             <div>
               <label className='runthree-label'>
                 Run 3:
-                <input type="text" 
+                <input type="number" 
                   onChange={this.handleChange}
-                  value={this.state.runThree}
+                  value={this.state.run_3}
                   id="run_3"
                   className='admin-input'
                   placeholder="Score"/>
@@ -159,8 +153,8 @@ export class Admin extends Component {
               <label className='runone-label'>
                 <input type="text"
                   onChange={this.handleChange}
-                  value={this.state.runOne}
-                  id='media-url'
+                  value={this.state.run_3_media}
+                  id='run_3_media'
                   placeholder="Media URL" />
               </label>
             </div>

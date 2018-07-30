@@ -144,7 +144,7 @@ ShallowWrapper {
                                                   id="run_1"
                                                   onChange={[Function]}
                                                   placeholder="Score"
-                                                  type="text"
+                                                  type="number"
                                                   value={undefined}
                                         />
                               </label>
@@ -152,7 +152,7 @@ ShallowWrapper {
                                         className="runone-label"
                               >
                                         <input
-                                                  id="media-url"
+                                                  id="run_1_media"
                                                   onChange={[Function]}
                                                   placeholder="Media URL"
                                                   type="text"
@@ -170,7 +170,7 @@ ShallowWrapper {
                                                   id="run_2"
                                                   onChange={[Function]}
                                                   placeholder="Score"
-                                                  type="text"
+                                                  type="number"
                                                   value={undefined}
                                         />
                               </label>
@@ -178,7 +178,7 @@ ShallowWrapper {
                                         className="runone-label"
                               >
                                         <input
-                                                  id="media-url"
+                                                  id="run_2_media"
                                                   onChange={[Function]}
                                                   placeholder="Media URL"
                                                   type="text"
@@ -196,7 +196,7 @@ ShallowWrapper {
                                                   id="run_3"
                                                   onChange={[Function]}
                                                   placeholder="Score"
-                                                  type="text"
+                                                  type="number"
                                                   value={undefined}
                                         />
                               </label>
@@ -204,7 +204,7 @@ ShallowWrapper {
                                         className="runone-label"
                               >
                                         <input
-                                                  id="media-url"
+                                                  id="run_3_media"
                                                   onChange={[Function]}
                                                   placeholder="Media URL"
                                                   type="text"
@@ -328,7 +328,7 @@ ShallowWrapper {
                                                         id="run_1"
                                                         onChange={[Function]}
                                                         placeholder="Score"
-                                                        type="text"
+                                                        type="number"
                                                         value={undefined}
                                           />
                             </label>
@@ -336,7 +336,7 @@ ShallowWrapper {
                                           className="runone-label"
                             >
                                           <input
-                                                        id="media-url"
+                                                        id="run_1_media"
                                                         onChange={[Function]}
                                                         placeholder="Media URL"
                                                         type="text"
@@ -354,7 +354,7 @@ ShallowWrapper {
                                                         id="run_2"
                                                         onChange={[Function]}
                                                         placeholder="Score"
-                                                        type="text"
+                                                        type="number"
                                                         value={undefined}
                                           />
                             </label>
@@ -362,7 +362,7 @@ ShallowWrapper {
                                           className="runone-label"
                             >
                                           <input
-                                                        id="media-url"
+                                                        id="run_2_media"
                                                         onChange={[Function]}
                                                         placeholder="Media URL"
                                                         type="text"
@@ -380,7 +380,7 @@ ShallowWrapper {
                                                         id="run_3"
                                                         onChange={[Function]}
                                                         placeholder="Score"
-                                                        type="text"
+                                                        type="number"
                                                         value={undefined}
                                           />
                             </label>
@@ -388,7 +388,7 @@ ShallowWrapper {
                                           className="runone-label"
                             >
                                           <input
-                                                        id="media-url"
+                                                        id="run_3_media"
                                                         onChange={[Function]}
                                                         placeholder="Media URL"
                                                         type="text"
@@ -705,7 +705,7 @@ ShallowWrapper {
                                                       id="run_1"
                                                       onChange={[Function]}
                                                       placeholder="Score"
-                                                      type="text"
+                                                      type="number"
                                                       value={undefined}
                                     />
                   </label>
@@ -713,7 +713,7 @@ ShallowWrapper {
                                     className="runone-label"
                   >
                                     <input
-                                                      id="media-url"
+                                                      id="run_1_media"
                                                       onChange={[Function]}
                                                       placeholder="Media URL"
                                                       type="text"
@@ -731,7 +731,7 @@ ShallowWrapper {
                                                       id="run_2"
                                                       onChange={[Function]}
                                                       placeholder="Score"
-                                                      type="text"
+                                                      type="number"
                                                       value={undefined}
                                     />
                   </label>
@@ -739,7 +739,7 @@ ShallowWrapper {
                                     className="runone-label"
                   >
                                     <input
-                                                      id="media-url"
+                                                      id="run_2_media"
                                                       onChange={[Function]}
                                                       placeholder="Media URL"
                                                       type="text"
@@ -757,7 +757,7 @@ ShallowWrapper {
                                                       id="run_3"
                                                       onChange={[Function]}
                                                       placeholder="Score"
-                                                      type="text"
+                                                      type="number"
                                                       value={undefined}
                                     />
                   </label>
@@ -765,7 +765,7 @@ ShallowWrapper {
                                     className="runone-label"
                   >
                                     <input
-                                                      id="media-url"
+                                                      id="run_3_media"
                                                       onChange={[Function]}
                                                       placeholder="Media URL"
                                                       type="text"
@@ -799,7 +799,7 @@ ShallowWrapper {
                                             id="run_1"
                                             onChange={[Function]}
                                             placeholder="Score"
-                                            type="text"
+                                            type="number"
                                             value={undefined}
                       />
 </label>,
@@ -807,7 +807,7 @@ ShallowWrapper {
                       className="runone-label"
 >
                       <input
-                                            id="media-url"
+                                            id="run_1_media"
                                             onChange={[Function]}
                                             placeholder="Media URL"
                                             type="text"
@@ -830,7 +830,7 @@ ShallowWrapper {
                           id="run_1"
                           onChange={[Function]}
                           placeholder="Score"
-                          type="text"
+                          type="number"
                           value={undefined}
 />,
                       ],
@@ -848,7 +848,7 @@ ShallowWrapper {
                           "id": "run_1",
                           "onChange": [Function],
                           "placeholder": "Score",
-                          "type": "text",
+                          "type": "number",
                           "value": undefined,
                         },
                         "ref": null,
@@ -864,7 +864,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <input
-                        id="media-url"
+                        id="run_1_media"
                         onChange={[Function]}
                         placeholder="Media URL"
                         type="text"
@@ -878,7 +878,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "id": "media-url",
+                        "id": "run_1_media",
                         "onChange": [Function],
                         "placeholder": "Media URL",
                         "type": "text",
@@ -908,7 +908,7 @@ ShallowWrapper {
                                             id="run_2"
                                             onChange={[Function]}
                                             placeholder="Score"
-                                            type="text"
+                                            type="number"
                                             value={undefined}
                       />
 </label>,
@@ -916,7 +916,7 @@ ShallowWrapper {
                       className="runone-label"
 >
                       <input
-                                            id="media-url"
+                                            id="run_2_media"
                                             onChange={[Function]}
                                             placeholder="Media URL"
                                             type="text"
@@ -939,7 +939,7 @@ ShallowWrapper {
                           id="run_2"
                           onChange={[Function]}
                           placeholder="Score"
-                          type="text"
+                          type="number"
                           value={undefined}
 />,
                       ],
@@ -957,7 +957,7 @@ ShallowWrapper {
                           "id": "run_2",
                           "onChange": [Function],
                           "placeholder": "Score",
-                          "type": "text",
+                          "type": "number",
                           "value": undefined,
                         },
                         "ref": null,
@@ -973,7 +973,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <input
-                        id="media-url"
+                        id="run_2_media"
                         onChange={[Function]}
                         placeholder="Media URL"
                         type="text"
@@ -987,7 +987,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "id": "media-url",
+                        "id": "run_2_media",
                         "onChange": [Function],
                         "placeholder": "Media URL",
                         "type": "text",
@@ -1017,7 +1017,7 @@ ShallowWrapper {
                                             id="run_3"
                                             onChange={[Function]}
                                             placeholder="Score"
-                                            type="text"
+                                            type="number"
                                             value={undefined}
                       />
 </label>,
@@ -1025,7 +1025,7 @@ ShallowWrapper {
                       className="runone-label"
 >
                       <input
-                                            id="media-url"
+                                            id="run_3_media"
                                             onChange={[Function]}
                                             placeholder="Media URL"
                                             type="text"
@@ -1048,7 +1048,7 @@ ShallowWrapper {
                           id="run_3"
                           onChange={[Function]}
                           placeholder="Score"
-                          type="text"
+                          type="number"
                           value={undefined}
 />,
                       ],
@@ -1066,7 +1066,7 @@ ShallowWrapper {
                           "id": "run_3",
                           "onChange": [Function],
                           "placeholder": "Score",
-                          "type": "text",
+                          "type": "number",
                           "value": undefined,
                         },
                         "ref": null,
@@ -1082,7 +1082,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <input
-                        id="media-url"
+                        id="run_3_media"
                         onChange={[Function]}
                         placeholder="Media URL"
                         type="text"
@@ -1096,7 +1096,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "id": "media-url",
+                        "id": "run_3_media",
                         "onChange": [Function],
                         "placeholder": "Media URL",
                         "type": "text",
@@ -1259,7 +1259,7 @@ ShallowWrapper {
                                                             id="run_1"
                                                             onChange={[Function]}
                                                             placeholder="Score"
-                                                            type="text"
+                                                            type="number"
                                                             value={undefined}
                                                 />
                                     </label>
@@ -1267,7 +1267,7 @@ ShallowWrapper {
                                                 className="runone-label"
                                     >
                                                 <input
-                                                            id="media-url"
+                                                            id="run_1_media"
                                                             onChange={[Function]}
                                                             placeholder="Media URL"
                                                             type="text"
@@ -1285,7 +1285,7 @@ ShallowWrapper {
                                                             id="run_2"
                                                             onChange={[Function]}
                                                             placeholder="Score"
-                                                            type="text"
+                                                            type="number"
                                                             value={undefined}
                                                 />
                                     </label>
@@ -1293,7 +1293,7 @@ ShallowWrapper {
                                                 className="runone-label"
                                     >
                                                 <input
-                                                            id="media-url"
+                                                            id="run_2_media"
                                                             onChange={[Function]}
                                                             placeholder="Media URL"
                                                             type="text"
@@ -1311,7 +1311,7 @@ ShallowWrapper {
                                                             id="run_3"
                                                             onChange={[Function]}
                                                             placeholder="Score"
-                                                            type="text"
+                                                            type="number"
                                                             value={undefined}
                                                 />
                                     </label>
@@ -1319,7 +1319,7 @@ ShallowWrapper {
                                                 className="runone-label"
                                     >
                                                 <input
-                                                            id="media-url"
+                                                            id="run_3_media"
                                                             onChange={[Function]}
                                                             placeholder="Media URL"
                                                             type="text"
@@ -1443,7 +1443,7 @@ ShallowWrapper {
                                                                 id="run_1"
                                                                 onChange={[Function]}
                                                                 placeholder="Score"
-                                                                type="text"
+                                                                type="number"
                                                                 value={undefined}
                                                 />
                                 </label>
@@ -1451,7 +1451,7 @@ ShallowWrapper {
                                                 className="runone-label"
                                 >
                                                 <input
-                                                                id="media-url"
+                                                                id="run_1_media"
                                                                 onChange={[Function]}
                                                                 placeholder="Media URL"
                                                                 type="text"
@@ -1469,7 +1469,7 @@ ShallowWrapper {
                                                                 id="run_2"
                                                                 onChange={[Function]}
                                                                 placeholder="Score"
-                                                                type="text"
+                                                                type="number"
                                                                 value={undefined}
                                                 />
                                 </label>
@@ -1477,7 +1477,7 @@ ShallowWrapper {
                                                 className="runone-label"
                                 >
                                                 <input
-                                                                id="media-url"
+                                                                id="run_2_media"
                                                                 onChange={[Function]}
                                                                 placeholder="Media URL"
                                                                 type="text"
@@ -1495,7 +1495,7 @@ ShallowWrapper {
                                                                 id="run_3"
                                                                 onChange={[Function]}
                                                                 placeholder="Score"
-                                                                type="text"
+                                                                type="number"
                                                                 value={undefined}
                                                 />
                                 </label>
@@ -1503,7 +1503,7 @@ ShallowWrapper {
                                                 className="runone-label"
                                 >
                                                 <input
-                                                                id="media-url"
+                                                                id="run_3_media"
                                                                 onChange={[Function]}
                                                                 placeholder="Media URL"
                                                                 type="text"
@@ -1820,7 +1820,7 @@ ShallowWrapper {
                                                             id="run_1"
                                                             onChange={[Function]}
                                                             placeholder="Score"
-                                                            type="text"
+                                                            type="number"
                                                             value={undefined}
                                         />
                     </label>
@@ -1828,7 +1828,7 @@ ShallowWrapper {
                                         className="runone-label"
                     >
                                         <input
-                                                            id="media-url"
+                                                            id="run_1_media"
                                                             onChange={[Function]}
                                                             placeholder="Media URL"
                                                             type="text"
@@ -1846,7 +1846,7 @@ ShallowWrapper {
                                                             id="run_2"
                                                             onChange={[Function]}
                                                             placeholder="Score"
-                                                            type="text"
+                                                            type="number"
                                                             value={undefined}
                                         />
                     </label>
@@ -1854,7 +1854,7 @@ ShallowWrapper {
                                         className="runone-label"
                     >
                                         <input
-                                                            id="media-url"
+                                                            id="run_2_media"
                                                             onChange={[Function]}
                                                             placeholder="Media URL"
                                                             type="text"
@@ -1872,7 +1872,7 @@ ShallowWrapper {
                                                             id="run_3"
                                                             onChange={[Function]}
                                                             placeholder="Score"
-                                                            type="text"
+                                                            type="number"
                                                             value={undefined}
                                         />
                     </label>
@@ -1880,7 +1880,7 @@ ShallowWrapper {
                                         className="runone-label"
                     >
                                         <input
-                                                            id="media-url"
+                                                            id="run_3_media"
                                                             onChange={[Function]}
                                                             placeholder="Media URL"
                                                             type="text"
@@ -1914,7 +1914,7 @@ ShallowWrapper {
                                                 id="run_1"
                                                 onChange={[Function]}
                                                 placeholder="Score"
-                                                type="text"
+                                                type="number"
                                                 value={undefined}
                         />
 </label>,
@@ -1922,7 +1922,7 @@ ShallowWrapper {
                         className="runone-label"
 >
                         <input
-                                                id="media-url"
+                                                id="run_1_media"
                                                 onChange={[Function]}
                                                 placeholder="Media URL"
                                                 type="text"
@@ -1945,7 +1945,7 @@ ShallowWrapper {
                             id="run_1"
                             onChange={[Function]}
                             placeholder="Score"
-                            type="text"
+                            type="number"
                             value={undefined}
 />,
                         ],
@@ -1963,7 +1963,7 @@ ShallowWrapper {
                             "id": "run_1",
                             "onChange": [Function],
                             "placeholder": "Score",
-                            "type": "text",
+                            "type": "number",
                             "value": undefined,
                           },
                           "ref": null,
@@ -1979,7 +1979,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <input
-                          id="media-url"
+                          id="run_1_media"
                           onChange={[Function]}
                           placeholder="Media URL"
                           type="text"
@@ -1993,7 +1993,7 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "id": "media-url",
+                          "id": "run_1_media",
                           "onChange": [Function],
                           "placeholder": "Media URL",
                           "type": "text",
@@ -2023,7 +2023,7 @@ ShallowWrapper {
                                                 id="run_2"
                                                 onChange={[Function]}
                                                 placeholder="Score"
-                                                type="text"
+                                                type="number"
                                                 value={undefined}
                         />
 </label>,
@@ -2031,7 +2031,7 @@ ShallowWrapper {
                         className="runone-label"
 >
                         <input
-                                                id="media-url"
+                                                id="run_2_media"
                                                 onChange={[Function]}
                                                 placeholder="Media URL"
                                                 type="text"
@@ -2054,7 +2054,7 @@ ShallowWrapper {
                             id="run_2"
                             onChange={[Function]}
                             placeholder="Score"
-                            type="text"
+                            type="number"
                             value={undefined}
 />,
                         ],
@@ -2072,7 +2072,7 @@ ShallowWrapper {
                             "id": "run_2",
                             "onChange": [Function],
                             "placeholder": "Score",
-                            "type": "text",
+                            "type": "number",
                             "value": undefined,
                           },
                           "ref": null,
@@ -2088,7 +2088,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <input
-                          id="media-url"
+                          id="run_2_media"
                           onChange={[Function]}
                           placeholder="Media URL"
                           type="text"
@@ -2102,7 +2102,7 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "id": "media-url",
+                          "id": "run_2_media",
                           "onChange": [Function],
                           "placeholder": "Media URL",
                           "type": "text",
@@ -2132,7 +2132,7 @@ ShallowWrapper {
                                                 id="run_3"
                                                 onChange={[Function]}
                                                 placeholder="Score"
-                                                type="text"
+                                                type="number"
                                                 value={undefined}
                         />
 </label>,
@@ -2140,7 +2140,7 @@ ShallowWrapper {
                         className="runone-label"
 >
                         <input
-                                                id="media-url"
+                                                id="run_3_media"
                                                 onChange={[Function]}
                                                 placeholder="Media URL"
                                                 type="text"
@@ -2163,7 +2163,7 @@ ShallowWrapper {
                             id="run_3"
                             onChange={[Function]}
                             placeholder="Score"
-                            type="text"
+                            type="number"
                             value={undefined}
 />,
                         ],
@@ -2181,7 +2181,7 @@ ShallowWrapper {
                             "id": "run_3",
                             "onChange": [Function],
                             "placeholder": "Score",
-                            "type": "text",
+                            "type": "number",
                             "value": undefined,
                           },
                           "ref": null,
@@ -2197,7 +2197,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <input
-                          id="media-url"
+                          id="run_3_media"
                           onChange={[Function]}
                           placeholder="Media URL"
                           type="text"
@@ -2211,7 +2211,7 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "id": "media-url",
+                          "id": "run_3_media",
                           "onChange": [Function],
                           "placeholder": "Media URL",
                           "type": "text",
