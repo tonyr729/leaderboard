@@ -113,6 +113,7 @@ export class Events extends Component {
 
     const results = this.props.results.map((result, index) => {
       currentUrl = result.run_3_media || result.run_2_media || result.run_1_media || '';
+      const iframeClass = currentUrl ? 'expanded' : '';
       return (
         <div key={result.id}>
           <div className="result" id={result.id} >
@@ -136,7 +137,7 @@ export class Events extends Component {
               <h4 className="final-result">{this.getScore(result)}</h4>
             </div>
           </div>
-          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen className={iframeClass}></iframe>
         </div>
       );
     });
