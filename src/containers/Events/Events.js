@@ -95,7 +95,6 @@ export class Events extends Component {
       const score = (run1 + run2 + run3) / 3;
       return Math.round( score * 10 ) / 10;
     } else if (run1 && run2 && !run3) {
-      console.log('hit')
       const score = (run1 + run2)/2;
       return Math.round(score * 10) / 10;
     } else {
@@ -105,28 +104,34 @@ export class Events extends Component {
   }
 
   render() {
+    let currentUrl = '';
+
     const results = this.props.results.map((result, index) => {
+      currentUrl = result.run_3_media || result.run_2_media || result.run_1_media || '';
       return (
-        <div className="result" id={result.id} key={result.id}>
-          <h1>{index+1}</h1>
-          <img src={result.image} alt="flag"/>
-          <h1>{result.name}</h1>
-          <div className="run1">
-            <h4>Run 1</h4>
-            <h4 className="h4-result">{result.run_1}</h4>
+        <div key={result.id}>
+          <div className="result" id={result.id} >
+            <h1>{index+1}</h1>
+            <img src={result.image} alt="flag"/>
+            <h1>{result.name}</h1>
+            <div className="run1">
+              <h4>Run 1</h4>
+              <h4 className="h4-result">{result.run_1}</h4>
+            </div>
+            <div className="run2">
+              <h4>Run 2</h4>
+              <h4 className="h4-result">{result.run_2}</h4>
+            </div>
+            <div className="run3">
+              <h4>Run 3</h4>
+              <h4 className="h4-result">{result.run_3}</h4>
+            </div>
+            <div className="final-score">
+              <h4>FINAL</h4>
+              <h4 className="final-result">{this.getScore(result)}</h4>
+            </div>
           </div>
-          <div className="run2">
-            <h4>Run 2</h4>
-            <h4 className="h4-result">{result.run_2}</h4>
-          </div>
-          <div className="run3">
-            <h4>Run 3</h4>
-            <h4 className="h4-result">{result.run_3}</h4>
-          </div>
-          <div className="final-score">
-            <h4>FINAL</h4>
-            <h4 className="final-result">{this.getScore(result)}</h4>
-          </div>
+          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       );
     });
