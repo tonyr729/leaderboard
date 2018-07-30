@@ -43,6 +43,7 @@ export class Events extends Component {
   }
 
   storeNewResult = (newResult) => {
+    console.log(newResult)
     if (newResult) {
       const updatedResults = this.changeScore(newResult);
       const newResults = this.orderResults(updatedResults);
@@ -55,9 +56,9 @@ export class Events extends Component {
 
   orderResults = (updatedResults) => {
     const newResults = updatedResults.map(result => {
-      const run1 = parseInt(result.run_1, 10)
-      const run2 = parseInt(result.run_2, 10)
-      const run3 = parseInt(result.run_3, 10)
+      const run1 = parseInt(result.run_1, 10);
+      const run2 = parseInt(result.run_2, 10);
+      const run3 = parseInt(result.run_3, 10);
       if (run1 && run2 && run3) {
         result.final =  (run1 + run2 + run3) / 3;
       } else if (run1 && run2 && !run3) {
@@ -73,9 +74,9 @@ export class Events extends Component {
   changeScore = (newResult) => {
     const updatedResults = this.props.results.map(result => {
       if (
-        result.rider_id === newResult.rider_id &&
-        result.event_id === newResult.event_id &&
-        result.division_id === newResult.division_id
+        result.rider_id === parseInt(newResult.rider_id, 10) &&
+        result.event_id === parseInt(newResult.event_id, 10) &&
+        result.division_id === parseInt(newResult.division_id, 10)
       ) {
         const { run_1, run_2, run_3 } = newResult;
         !run_1 || (result.run_1 = run_1);
@@ -88,9 +89,10 @@ export class Events extends Component {
   }
 
   getScore = (result) => {
-    const run1 = parseInt(result.run_1, 10)
-    const run2 = parseInt(result.run_2, 10)
-    const run3 = parseInt(result.run_3, 10)
+    const run1 = parseInt(result.run_1, 10);
+    const run2 = parseInt(result.run_2, 10);
+    const run3 = parseInt(result.run_3, 10);
+    console.log(run1, run2, run3)
     if (run1 && run2 && run3) {
       const score = (run1 + run2 + run3) / 3;
       return Math.round( score * 10 ) / 10;
@@ -131,7 +133,7 @@ export class Events extends Component {
               <h4 className="final-result">{this.getScore(result)}</h4>
             </div>
           </div>
-          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
         </div>
       );
     });
