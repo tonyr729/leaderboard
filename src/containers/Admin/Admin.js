@@ -8,14 +8,7 @@ import './Admin.css';
 export class Admin extends Component {
   constructor() {
     super();
-    this.state = {
-      event_id: '',
-      division_id: '',
-      rider_id: '',
-      run_1: null,
-      run_2: null,
-      run_3: null
-    };
+    this.state = {};
   };
 
   componentDidMount() {
@@ -60,9 +53,11 @@ export class Admin extends Component {
   handleChange = (event) => {
     const { id, value } = event.target;
     const intValue = parseInt(value, 10);
-    this.setState({
-      [id]: intValue
-    });
+    if (intValue) {
+      this.setState({
+        [id]: intValue
+      });
+    }
   }
 
   submitChanges = (event) => {
