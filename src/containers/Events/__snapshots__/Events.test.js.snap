@@ -58,13 +58,13 @@ ShallowWrapper {
                               data-divisionid="8"
                               value="halfpipe"
                     >
-                              Halfpipe
+                              Mens Big Air
                     </option>
                     <option
                               data-divisionid="6"
                               value="big-air"
                     >
-                              Big Air
+                              Womens Big Air
                     </option>
           </select>
 </div>,
@@ -257,13 +257,13 @@ ShallowWrapper {
                             data-divisionid="8"
                             value="halfpipe"
               >
-                            Halfpipe
+                            Mens Big Air
               </option>
               <option
                             data-divisionid="6"
                             value="big-air"
               >
-                            Big Air
+                            Womens Big Air
               </option>
 </select>,
           ],
@@ -292,13 +292,13 @@ ShallowWrapper {
                   data-divisionid="8"
                   value="halfpipe"
 >
-                  Halfpipe
+                  Mens Big Air
 </option>,
                 <option
                   data-divisionid="6"
                   value="big-air"
 >
-                  Big Air
+                  Womens Big Air
 </option>,
               ],
             },
@@ -309,12 +309,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Halfpipe",
+                  "children": "Mens Big Air",
                   "data-divisionid": "8",
                   "value": "halfpipe",
                 },
                 "ref": null,
-                "rendered": "Halfpipe",
+                "rendered": "Mens Big Air",
                 "type": "option",
               },
               Object {
@@ -322,12 +322,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Big Air",
+                  "children": "Womens Big Air",
                   "data-divisionid": "6",
                   "value": "big-air",
                 },
                 "ref": null,
-                "rendered": "Big Air",
+                "rendered": "Womens Big Air",
                 "type": "option",
               },
             ],
@@ -1227,13 +1227,13 @@ ShallowWrapper {
                                     data-divisionid="8"
                                     value="halfpipe"
                         >
-                                    Halfpipe
+                                    Mens Big Air
                         </option>
                         <option
                                     data-divisionid="6"
                                     value="big-air"
                         >
-                                    Big Air
+                                    Womens Big Air
                         </option>
             </select>
 </div>,
@@ -1426,13 +1426,13 @@ ShallowWrapper {
                                 data-divisionid="8"
                                 value="halfpipe"
                 >
-                                Halfpipe
+                                Mens Big Air
                 </option>
                 <option
                                 data-divisionid="6"
                                 value="big-air"
                 >
-                                Big Air
+                                Womens Big Air
                 </option>
 </select>,
             ],
@@ -1461,13 +1461,13 @@ ShallowWrapper {
                     data-divisionid="8"
                     value="halfpipe"
 >
-                    Halfpipe
+                    Mens Big Air
 </option>,
                   <option
                     data-divisionid="6"
                     value="big-air"
 >
-                    Big Air
+                    Womens Big Air
 </option>,
                 ],
               },
@@ -1478,12 +1478,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Halfpipe",
+                    "children": "Mens Big Air",
                     "data-divisionid": "8",
                     "value": "halfpipe",
                   },
                   "ref": null,
-                  "rendered": "Halfpipe",
+                  "rendered": "Mens Big Air",
                   "type": "option",
                 },
                 Object {
@@ -1491,12 +1491,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Big Air",
+                    "children": "Womens Big Air",
                     "data-divisionid": "6",
                     "value": "big-air",
                   },
                   "ref": null,
-                  "rendered": "Big Air",
+                  "rendered": "Womens Big Air",
                   "type": "option",
                 },
               ],

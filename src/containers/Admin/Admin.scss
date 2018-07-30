@@ -29,6 +29,12 @@ form {
     font-size: 2rem;
     text-align: center;
   }
+  #media-url {
+    width: 27rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 .form-submit {
