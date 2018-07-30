@@ -43,7 +43,6 @@ export class Events extends Component {
   }
 
   storeNewResult = (newResult) => {
-    console.log(newResult)
     if (newResult) {
       const updatedResults = this.changeScore(newResult);
       const newResults = this.orderResults(updatedResults);
@@ -82,6 +81,11 @@ export class Events extends Component {
         !run_1 || (result.run_1 = run_1);
         !run_2 || (result.run_2 = run_2);
         !run_3 || (result.run_3 = run_3);
+
+        const { run_1_media, run_2_media, run_3_media } = newResult;
+        !run_1_media || (result.run_1_media = run_1_media);
+        !run_2_media || (result.run_2_media = run_2_media);
+        !run_3_media || (result.run_3_media = run_3_media);
       }
       return result;
     });
@@ -92,7 +96,6 @@ export class Events extends Component {
     const run1 = parseInt(result.run_1, 10);
     const run2 = parseInt(result.run_2, 10);
     const run3 = parseInt(result.run_3, 10);
-    console.log(run1, run2, run3)
     if (run1 && run2 && run3) {
       const score = (run1 + run2 + run3) / 3;
       return Math.round( score * 10 ) / 10;
