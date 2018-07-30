@@ -43,7 +43,6 @@ export class Events extends Component {
   }
 
   storeNewResult = (newResult) => {
-    console.log(newResult)
     if (newResult) {
       const updatedResults = this.changeScore(newResult);
       const newResults = this.orderResults(updatedResults);
