@@ -12,3 +12,8 @@ export const addRiders = (riders) => ({
   type: 'ADD_RIDERS',
   riders
 });
+
+export const addVideo = (video) => ({
+  type: 'ADD_VIDEO',
+  video
+})
