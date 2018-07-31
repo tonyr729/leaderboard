@@ -41,6 +41,9 @@
 .events .hidden {
   display: none; }
 
+.events .expanded {
+  height: 360px; }
+
 .events .event-div {
   display: flex;
   align-items: center;
