@@ -116,6 +116,13 @@ export class Events extends Component {
     return {rider, url}
   }
 
+  closeVideo = () => {
+    this.setState({
+      rider_id: '',
+      currentUrl: ''
+    })
+  }
+
   render() {
     let videoInfo = this.getUrl()
     const results = this.props.results.map((result, index) => {
@@ -149,11 +156,12 @@ export class Events extends Component {
             </div>
           </div>
           <iframe src={`${currentUrl}?autoplay=1&muted=1`} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen className={iframeClass}></iframe>
+          <button className={iframeClass ? 'visible' : 'hidden'} onClick={this.closeVideo}>
+            <img src="https://i.imgur.com/xiG1Odn.png" alt="close button" />
+          </button>
         </div>
       );
     });
-
-    // make results cards a component??!?!?!?!?!
 
     return (
       <div className="events">
