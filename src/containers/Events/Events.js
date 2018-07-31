@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { subscribeToChange } from '../../timer';
-import { addResults, updateResult } from '../../actions';
+import { addResults, updateResult, addVideo } from '../../actions';
 import FlipMove from 'react-flip-move';
 import { connect } from 'react-redux';
 import './Events.css';
@@ -48,16 +48,18 @@ export class Events extends Component {
       const newResults = this.orderResults(updatedResults);
       this.props.updateResults(newResults);
       this.setState({
-        lastUpdated: Date.now()
+        lastUpdated: Date.now(),
+        rider_id: newResult.rider_id,
+        currentUrl: newResult.run_3_media || newResult.run_2_media || newResult.run_1_media || ''
       });
     }
   }
 
   orderResults = (updatedResults) => {
     const newResults = updatedResults.map(result => {
-      const run1 = parseInt(result.run_1, 10)
-      const run2 = parseInt(result.run_2, 10)
-      const run3 = parseInt(result.run_3, 10)
+      const run1 = parseInt(result.run_1, 10);
+      const run2 = parseInt(result.run_2, 10);
+      const run3 = parseInt(result.run_3, 10);
       if (run1 && run2 && run3) {
         result.final =  (run1 + run2 + run3) / 3;
       } else if (run1 && run2 && !run3) {
@@ -73,14 +75,19 @@ export class Events extends Component {
   changeScore = (newResult) => {
     const updatedResults = this.props.results.map(result => {
       if (
-        result.rider_id === newResult.rider_id &&
-        result.event_id === newResult.event_id &&
-        result.division_id === newResult.division_id
+        result.rider_id === parseInt(newResult.rider_id, 10) &&
+        result.event_id === parseInt(newResult.event_id, 10) &&
+        result.division_id === parseInt(newResult.division_id, 10)
       ) {
         const { run_1, run_2, run_3 } = newResult;
         !run_1 || (result.run_1 = run_1);
         !run_2 || (result.run_2 = run_2);
         !run_3 || (result.run_3 = run_3);
+
+        const { run_1_media, run_2_media, run_3_media } = newResult;
+        !run_1_media || (result.run_1_media = run_1_media);
+        !run_2_media || (result.run_2_media = run_2_media);
+        !run_3_media || (result.run_3_media = run_3_media);
       }
       return result;
     });
@@ -88,9 +95,9 @@ export class Events extends Component {
   }
 
   getScore = (result) => {
-    const run1 = parseInt(result.run_1, 10)
-    const run2 = parseInt(result.run_2, 10)
-    const run3 = parseInt(result.run_3, 10)
+    const run1 = parseInt(result.run_1, 10);
+    const run2 = parseInt(result.run_2, 10);
+    const run3 = parseInt(result.run_3, 10);
     if (run1 && run2 && run3) {
       const score = (run1 + run2 + run3) / 3;
       return Math.round( score * 10 ) / 10;
@@ -103,11 +110,28 @@ export class Events extends Component {
     }
   }
 
-  render() {
-    let currentUrl = '';
+  getUrl = () => {
+    const url = this.state.currentUrl;
+    const rider = this.state.rider_id;
+    return {rider, url}
+  }
 
+  closeVideo = () => {
+    this.setState({
+      rider_id: '',
+      currentUrl: ''
+    })
+  }
+
+  render() {
+    let videoInfo = this.getUrl()
     const results = this.props.results.map((result, index) => {
-      currentUrl = result.run_3_media || result.run_2_media || result.run_1_media || '';
+      let currentUrl;
+      let iframeClass = ''
+      if (videoInfo.url !== '' && parseInt(videoInfo.rider, 10) === result.id) {
+        currentUrl = videoInfo.url
+        iframeClass = 'expanded';
+      }
       return (
         <div key={result.id}>
           <div className="result" id={result.id} >
@@ -131,7 +155,10 @@ export class Events extends Component {
               <h4 className="final-result">{this.getScore(result)}</h4>
             </div>
           </div>
-          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe src={`${currentUrl}?autoplay=1&muted=1`} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen className={iframeClass}></iframe>
+          <button className={iframeClass ? 'visible' : 'hidden'} onClick={this.closeVideo}>
+            <img src="https://i.imgur.com/xiG1Odn.png" alt="close button" />
+          </button>
         </div>
       );
     });
@@ -157,12 +184,14 @@ export class Events extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  results: state.results
+  results: state.results,
+  watchedVideos: state.watchedVideos
 });
 
 export const mapDispatchToProps = (dispatch) => ({
   addAllResults: (results) => dispatch(addResults(results)),
-  updateResults: (results) => dispatch(updateResult(results))
+  updateResults: (results) => dispatch(updateResult(results)),
+  addWatchedVideo: (video) => dispatch(addVideo(video))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Events);

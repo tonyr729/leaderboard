@@ -12,6 +12,10 @@
       color: #666666;
       font-weight: 300;
     }
+    img {
+      height: 25px;
+      width: 25px;
+    }
     iframe {
       height: 0;
       margin: 0 auto;
@@ -22,6 +26,24 @@
       bottom: 25px;
       transition: height 2s ease-in-out;
       box-shadow: inset 0px 9px 8px -6px #3c3b3b;
+    }
+    .expanded {
+      height: 315px;
+      padding: 5px 0px;
+    }
+    .visible {
+      position: relative;
+      bottom: 63px;
+      background: none;
+      display: inherit;
+      left: 718px;
+      border: none;
+    }
+    .hidden {
+      display: none;
+    }
+    .expanded {
+      height: 360px;
     }
     .event-div {
       display: flex;
