@@ -148,7 +148,7 @@ export class Events extends Component {
               <h4 className="final-result">{this.getScore(result)}</h4>
             </div>
           </div>
-          <iframe src={currentUrl} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen className={iframeClass}></iframe>
+          <iframe src={`${currentUrl}?autoplay=1&muted=1`} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen className={iframeClass}></iframe>
         </div>
       );
     });
