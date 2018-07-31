@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { subscribeToChange } from '../../timer';
-import { addResults, updateResult } from '../../actions';
+import { addResults, updateResult, addVideo } from '../../actions';
 import FlipMove from 'react-flip-move';
 import { connect } from 'react-redux';
 import './Events.css';
@@ -48,7 +48,9 @@ export class Events extends Component {
       const newResults = this.orderResults(updatedResults);
       this.props.updateResults(newResults);
       this.setState({
-        lastUpdated: Date.now()
+        lastUpdated: Date.now(),
+        rider_id: newResult.rider_id,
+        currentUrl: newResult.run_3_media || newResult.run_2_media || newResult.run_1_media || ''
       });
     }
   }
@@ -108,12 +110,21 @@ export class Events extends Component {
     }
   }
 
-  render() {
-    let currentUrl = '';
+  getUrl = () => {
+    const url = this.state.currentUrl;
+    const rider = this.state.rider_id;
+    return {rider, url}
+  }
 
+  render() {
+    let videoInfo = this.getUrl()
     const results = this.props.results.map((result, index) => {
-      currentUrl = result.run_3_media || result.run_2_media || result.run_1_media || '';
-      const iframeClass = currentUrl ? 'expanded' : '';
+      let currentUrl;
+      let iframeClass = ''
+      if (videoInfo.url !== '' && parseInt(videoInfo.rider, 10) === result.id) {
+        currentUrl = videoInfo.url
+        iframeClass = 'expanded';
+      }
       return (
         <div key={result.id}>
           <div className="result" id={result.id} >
@@ -142,6 +153,8 @@ export class Events extends Component {
       );
     });
 
+    // make results cards a component??!?!?!?!?!
+
     return (
       <div className="events">
         <h2>Leaderboard<span> for</span></h2>
@@ -163,12 +176,14 @@ export class Events extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  results: state.results
+  results: state.results,
+  watchedVideos: state.watchedVideos
 });
 
 export const mapDispatchToProps = (dispatch) => ({
   addAllResults: (results) => dispatch(addResults(results)),
-  updateResults: (results) => dispatch(updateResult(results))
+  updateResults: (results) => dispatch(updateResult(results)),
+  addWatchedVideo: (video) => dispatch(addVideo(video))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Events);
