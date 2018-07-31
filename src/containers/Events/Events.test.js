@@ -23,10 +23,12 @@ describe('Events', () => {
         { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
       ];
       const mockUpdateResults = jest.fn();
+      const mockAddResults = jest.fn();
       wrapper = shallow(<Events
         results={mockResults}
         updateResults={mockUpdateResults}
-      />);
+        addAllResults={mockAddResults}
+      />, { disableLifecycleMethods: true });
       wrapper.changeValues = jest.fn();
       wrapper.getResults = jest.fn()
     });
@@ -60,9 +62,11 @@ describe('Events', () => {
         results={mockResults}
       />, { disableLifecycleMethods: true });
       wrapper.orderResults = jest.fn();
+      
     });
 
     it('should call fetch with the correct arguments', async () => {
+      
       const expectedUrl = 'https://leaderboard-byob.herokuapp.com/api/v1/events/1/division/8/results';
       const spy = jest.spyOn(window, 'fetch');
 
