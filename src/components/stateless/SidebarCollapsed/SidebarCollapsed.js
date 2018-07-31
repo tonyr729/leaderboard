@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import iconLogo from '../../assets/logo.svg';
-import '../../fontello/css/fontello.css';
+import iconLogo from '../../../assets/logo.svg';
+import '../../../fontello/css/fontello.css';
 import './SidebarCollapsed.css';
 
 const SidebarCollapsed = () => {

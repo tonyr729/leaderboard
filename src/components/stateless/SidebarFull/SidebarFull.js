@@ -1,6 +1,6 @@
 import React from 'react';
-import titleLogo from '../../assets/Leaderboard-Type-Logo-FLAT.svg';
-import '../../fontello/css/fontello.css';
+import titleLogo from '../../../assets/Leaderboard-Type-Logo-FLAT.svg';
+import '../../../fontello/css/fontello.css';
 import './SidebarFull.css';
 
 const SidebarFull = () => {
