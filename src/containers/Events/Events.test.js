@@ -16,6 +16,40 @@ describe('Events', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('componentDidMount', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      const mockUpdateResults = jest.fn();
+      const mockAddResults = jest.fn();
+      wrapper = shallow(<Events
+        results={mockResults}
+        updateResults={mockUpdateResults}
+        addAllResults={mockAddResults}
+      />, { disableLifecycleMethods: true });
+      wrapper.changeValues = jest.fn();
+      wrapper.getResults = jest.fn()
+    });
+
+    it('should call changeValues', () => {
+      wrapper.changeValues = jest.fn();
+      wrapper.getResults = jest.fn()
+      const spy = jest.spyOn(wrapper.instance(), 'changeValues');
+      wrapper.instance().componentDidMount()
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it('should call getResults', () => {
+      wrapper.changeValues = jest.fn();
+      wrapper.getResults = jest.fn()
+      const spy = jest.spyOn(wrapper.instance(), 'getResults');
+      wrapper.instance().componentDidMount()
+      expect(spy).toHaveBeenCalled();
+    });
+  });
+
   describe('getResults', () => {
     let wrapper;
     beforeEach(() => {
@@ -28,9 +62,11 @@ describe('Events', () => {
         results={mockResults}
       />, { disableLifecycleMethods: true });
       wrapper.orderResults = jest.fn();
+      
     });
 
     it('should call fetch with the correct arguments', async () => {
+      
       const expectedUrl = 'https://leaderboard-byob.herokuapp.com/api/v1/events/1/division/8/results';
       const spy = jest.spyOn(window, 'fetch');
 
@@ -168,6 +204,23 @@ describe('Events', () => {
       expect(spy2).not.toHaveBeenCalled();
       expect(spy3).not.toHaveBeenCalled();
     });
+
+    it('should set state with the newResult rider_id and media', () => {
+      wrapper.changeScore = jest.fn;
+      const mockResult = {
+        rider_id: 25,
+        event_id: 1,
+        division_id: 8,
+        run_1: 96,
+        run_1_media: 'www.youtube.com/test',
+        run_2: 0,
+        run_3: 0
+      };
+
+      wrapper.instance().storeNewResult(mockResult)
+      expect(wrapper.state('rider_id')).toEqual(25);
+      expect(wrapper.state('currentUrl')).toEqual('www.youtube.com/test');
+    })
   });
 
   describe('orderResults', () => {
@@ -267,7 +320,8 @@ describe('Events', () => {
         rider_id: 1,
         event_id: 1,
         division_id: 3,
-        run_3: 96
+        run_3: 96,
+        run_3_media: 'www.youtube.com/test'
       }
       const expected = {
         event_id: 1,
@@ -276,6 +330,7 @@ describe('Events', () => {
         run_1: '93',
         run_2: '88',
         run_3: 96,
+        run_3_media: 'www.youtube.com/test',
         final: '1'
       }
 
@@ -335,6 +390,75 @@ describe('Events', () => {
 
       const result = wrapper.instance().getScore(mockResult)
       expect(result).toEqual(92)
+    });
+  });
+
+  describe('getUrl', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should return an object with the current rider and url from state', () => {
+      wrapper.instance().setState({
+        currentUrl: 'www.youtube.com/test',
+        rider_id: 23
+      });
+      const expected = {
+        rider: 23,
+        url: 'www.youtube.com/test'
+      }
+
+      const result = wrapper.instance().getUrl();
+      expect(result).toEqual(expected)
+    });
+  });
+
+  describe('closeVideo', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should set rider_id and currentUrl in state to empty strings', () => {
+      wrapper.instance().setState({
+        currentUrl: 'www.youtube.com/test',
+        rider_id: 23
+      });
+
+      const result = wrapper.instance().closeVideo();
+      expect(wrapper.state('currentUrl')).toEqual('')
+      expect(wrapper.state('rider_id')).toEqual('')
+    });
+  });
+
+  describe('render', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should call getUrl', () => {
+      wrapper.getUrl = jest.fn()
+      const spy = jest.spyOn(wrapper.instance(), 'getUrl');
+      
+      wrapper.instance().render()
+      expect(spy).toHaveBeenCalled();
     });
   });
 
