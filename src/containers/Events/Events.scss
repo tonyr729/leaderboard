@@ -32,11 +32,11 @@
       padding: 5px 0px;
     }
     .visible {
-      position: relative;
-      bottom: 63px;
+      position: absolute;
+      top: 424px;
       background: none;
       display: inherit;
-      left: 718px;
+      z-index: 100;
       border: none;
     }
     .hidden {
@@ -68,14 +68,30 @@
       margin: 10px auto;
       text-align: center;
       .result {
-        display: flex;
+        display: grid;
+        position: relative;
+        height: 100%;
+        grid-template-columns: 0.2fr 0.5fr 2fr 1.3fr;
+        grid-template-areas: "placement picture name scores";
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
         background-color: white;
         width: 75%;
-        margin: 10px auto;
+        margin: 0 auto;
         box-shadow: 2px 2px 10px lightgrey;
+        .placement { grid-area: placement; }
+        .picture { grid-area: picture; }
+        .name { grid-area: name; }
+        .scores {
+          grid-area: scores;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .close-img {
+          width: 30px;
+          height: 30px;
+        }
         h1 {
           color: #666666;
         }
@@ -83,6 +99,7 @@
           color: #666666;
         }
         img {
+          margin: 0 auto;
           width: 55px;
           height: 55px;
           border-radius: 50%;

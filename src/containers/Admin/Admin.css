@@ -22,10 +22,10 @@ form {
   form input {
     display: block;
     margin-top: 1rem;
-    width: 5rem;
+    width: 7rem;
     font-size: 2rem;
     text-align: center; }
-  form #media-url {
+  form .media-input {
     width: 27rem;
     text-overflow: ellipsis;
     overflow: hidden;

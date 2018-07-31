@@ -119,7 +119,8 @@ export class Admin extends Component {
                   onChange={this.handleChange}
                   value={this.state.run_1_media}
                   id='run_1_media'
-                  placeholder="Media URL" />
+                  placeholder="Media URL"
+                  className="media-input" />
               </label>
             </div>
             <div>
@@ -137,7 +138,8 @@ export class Admin extends Component {
                   onChange={this.handleChange}
                   value={this.state.run_2_media}
                   id='run_2_media' 
-                  placeholder="Media URL"/>
+                  placeholder="Media URL"
+                  className="media-input"/>
               </label>
             </div>
             <div>
@@ -155,14 +157,12 @@ export class Admin extends Component {
                   onChange={this.handleChange}
                   value={this.state.run_3_media}
                   id='run_3_media'
-                  placeholder="Media URL" />
+                  placeholder="Media URL"
+                  className="media-input" />
               </label>
             </div>
             <input type="submit" value="Update" className="form-submit" />
           </form>
-        </div>
-        <div className="add-media">
-          <p className="coming-soon">Feature Coming Soon</p>
         </div>
       </div>
     );
