@@ -149,13 +149,23 @@ ShallowWrapper {
                               </div>
                               <iframe
                                         allowFullScreen={true}
+                                        className=""
                                         frameBorder="0"
                                         height="360"
-                                        mozallowfullscreen={true}
-                                        src=""
-                                        webkitallowfullscreen={true}
+                                        mozallowfullscreen="true"
+                                        src="undefined?autoplay=1&muted=1"
+                                        webkitallowfullscreen="true"
                                         width="640"
                               />
+                              <button
+                                        className="hidden"
+                                        onClick={[Function]}
+                              >
+                                        <img
+                                                  alt="close button"
+                                                  src="https://i.imgur.com/xiG1Odn.png"
+                                        />
+                              </button>
                     </div>
                     <div>
                               <div
@@ -221,13 +231,23 @@ ShallowWrapper {
                               </div>
                               <iframe
                                         allowFullScreen={true}
+                                        className=""
                                         frameBorder="0"
                                         height="360"
-                                        mozallowfullscreen={true}
-                                        src=""
-                                        webkitallowfullscreen={true}
+                                        mozallowfullscreen="true"
+                                        src="undefined?autoplay=1&muted=1"
+                                        webkitallowfullscreen="true"
                                         width="640"
                               />
+                              <button
+                                        className="hidden"
+                                        onClick={[Function]}
+                              >
+                                        <img
+                                                  alt="close button"
+                                                  src="https://i.imgur.com/xiG1Odn.png"
+                                        />
+                              </button>
                     </div>
           </FlipMovePropConverter>
 </div>,
@@ -441,13 +461,23 @@ ShallowWrapper {
                         </div>
                         <iframe
                                     allowFullScreen={true}
+                                    className=""
                                     frameBorder="0"
                                     height="360"
-                                    mozallowfullscreen={true}
-                                    src=""
-                                    webkitallowfullscreen={true}
+                                    mozallowfullscreen="true"
+                                    src="undefined?autoplay=1&muted=1"
+                                    webkitallowfullscreen="true"
                                     width="640"
                         />
+                        <button
+                                    className="hidden"
+                                    onClick={[Function]}
+                        >
+                                    <img
+                                                alt="close button"
+                                                src="https://i.imgur.com/xiG1Odn.png"
+                                    />
+                        </button>
             </div>
             <div>
                         <div
@@ -513,13 +543,23 @@ ShallowWrapper {
                         </div>
                         <iframe
                                     allowFullScreen={true}
+                                    className=""
                                     frameBorder="0"
                                     height="360"
-                                    mozallowfullscreen={true}
-                                    src=""
-                                    webkitallowfullscreen={true}
+                                    mozallowfullscreen="true"
+                                    src="undefined?autoplay=1&muted=1"
+                                    webkitallowfullscreen="true"
                                     width="640"
                         />
+                        <button
+                                    className="hidden"
+                                    onClick={[Function]}
+                        >
+                                    <img
+                                                alt="close button"
+                                                src="https://i.imgur.com/xiG1Odn.png"
+                                    />
+                        </button>
             </div>
 </FlipMovePropConverter>,
           "className": "results-container",
@@ -595,13 +635,23 @@ ShallowWrapper {
                 </div>
                 <iframe
                                 allowFullScreen={true}
+                                className=""
                                 frameBorder="0"
                                 height="360"
-                                mozallowfullscreen={true}
-                                src=""
-                                webkitallowfullscreen={true}
+                                mozallowfullscreen="true"
+                                src="undefined?autoplay=1&muted=1"
+                                webkitallowfullscreen="true"
                                 width="640"
                 />
+                <button
+                                className="hidden"
+                                onClick={[Function]}
+                >
+                                <img
+                                                alt="close button"
+                                                src="https://i.imgur.com/xiG1Odn.png"
+                                />
+                </button>
 </div>,
               <div>
                 <div
@@ -667,13 +717,23 @@ ShallowWrapper {
                 </div>
                 <iframe
                                 allowFullScreen={true}
+                                className=""
                                 frameBorder="0"
                                 height="360"
-                                mozallowfullscreen={true}
-                                src=""
-                                webkitallowfullscreen={true}
+                                mozallowfullscreen="true"
+                                src="undefined?autoplay=1&muted=1"
+                                webkitallowfullscreen="true"
                                 width="640"
                 />
+                <button
+                                className="hidden"
+                                onClick={[Function]}
+                >
+                                <img
+                                                alt="close button"
+                                                src="https://i.imgur.com/xiG1Odn.png"
+                                />
+                </button>
 </div>,
             ],
             "delay": 0,
@@ -760,13 +820,23 @@ ShallowWrapper {
 </div>,
                   <iframe
                     allowFullScreen={true}
+                    className=""
                     frameBorder="0"
                     height="360"
-                    mozallowfullscreen={true}
-                    src=""
-                    webkitallowfullscreen={true}
+                    mozallowfullscreen="true"
+                    src="undefined?autoplay=1&muted=1"
+                    webkitallowfullscreen="true"
                     width="640"
 />,
+                  <button
+                    className="hidden"
+                    onClick={[Function]}
+>
+                    <img
+                                        alt="close button"
+                                        src="https://i.imgur.com/xiG1Odn.png"
+                    />
+</button>,
                 ],
               },
               "ref": null,
@@ -1062,16 +1132,44 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "allowFullScreen": true,
+                    "className": "",
                     "frameBorder": "0",
                     "height": "360",
-                    "mozallowfullscreen": true,
-                    "src": "",
-                    "webkitallowfullscreen": true,
+                    "mozallowfullscreen": "true",
+                    "src": "undefined?autoplay=1&muted=1",
+                    "webkitallowfullscreen": "true",
                     "width": "640",
                   },
                   "ref": null,
                   "rendered": null,
                   "type": "iframe",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="close button"
+                      src="https://i.imgur.com/xiG1Odn.png"
+/>,
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "close button",
+                      "src": "https://i.imgur.com/xiG1Odn.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "button",
                 },
               ],
               "type": "div",
@@ -1145,13 +1243,23 @@ ShallowWrapper {
 </div>,
                   <iframe
                     allowFullScreen={true}
+                    className=""
                     frameBorder="0"
                     height="360"
-                    mozallowfullscreen={true}
-                    src=""
-                    webkitallowfullscreen={true}
+                    mozallowfullscreen="true"
+                    src="undefined?autoplay=1&muted=1"
+                    webkitallowfullscreen="true"
                     width="640"
 />,
+                  <button
+                    className="hidden"
+                    onClick={[Function]}
+>
+                    <img
+                                        alt="close button"
+                                        src="https://i.imgur.com/xiG1Odn.png"
+                    />
+</button>,
                 ],
               },
               "ref": null,
@@ -1447,16 +1555,44 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "allowFullScreen": true,
+                    "className": "",
                     "frameBorder": "0",
                     "height": "360",
-                    "mozallowfullscreen": true,
-                    "src": "",
-                    "webkitallowfullscreen": true,
+                    "mozallowfullscreen": "true",
+                    "src": "undefined?autoplay=1&muted=1",
+                    "webkitallowfullscreen": "true",
                     "width": "640",
                   },
                   "ref": null,
                   "rendered": null,
                   "type": "iframe",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="close button"
+                      src="https://i.imgur.com/xiG1Odn.png"
+/>,
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "close button",
+                      "src": "https://i.imgur.com/xiG1Odn.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "button",
                 },
               ],
               "type": "div",
@@ -1584,13 +1720,23 @@ ShallowWrapper {
                                     </div>
                                     <iframe
                                                 allowFullScreen={true}
+                                                className=""
                                                 frameBorder="0"
                                                 height="360"
-                                                mozallowfullscreen={true}
-                                                src=""
-                                                webkitallowfullscreen={true}
+                                                mozallowfullscreen="true"
+                                                src="undefined?autoplay=1&muted=1"
+                                                webkitallowfullscreen="true"
                                                 width="640"
                                     />
+                                    <button
+                                                className="hidden"
+                                                onClick={[Function]}
+                                    >
+                                                <img
+                                                            alt="close button"
+                                                            src="https://i.imgur.com/xiG1Odn.png"
+                                                />
+                                    </button>
                         </div>
                         <div>
                                     <div
@@ -1656,13 +1802,23 @@ ShallowWrapper {
                                     </div>
                                     <iframe
                                                 allowFullScreen={true}
+                                                className=""
                                                 frameBorder="0"
                                                 height="360"
-                                                mozallowfullscreen={true}
-                                                src=""
-                                                webkitallowfullscreen={true}
+                                                mozallowfullscreen="true"
+                                                src="undefined?autoplay=1&muted=1"
+                                                webkitallowfullscreen="true"
                                                 width="640"
                                     />
+                                    <button
+                                                className="hidden"
+                                                onClick={[Function]}
+                                    >
+                                                <img
+                                                            alt="close button"
+                                                            src="https://i.imgur.com/xiG1Odn.png"
+                                                />
+                                    </button>
                         </div>
             </FlipMovePropConverter>
 </div>,
@@ -1876,13 +2032,23 @@ ShallowWrapper {
                             </div>
                             <iframe
                                           allowFullScreen={true}
+                                          className=""
                                           frameBorder="0"
                                           height="360"
-                                          mozallowfullscreen={true}
-                                          src=""
-                                          webkitallowfullscreen={true}
+                                          mozallowfullscreen="true"
+                                          src="undefined?autoplay=1&muted=1"
+                                          webkitallowfullscreen="true"
                                           width="640"
                             />
+                            <button
+                                          className="hidden"
+                                          onClick={[Function]}
+                            >
+                                          <img
+                                                        alt="close button"
+                                                        src="https://i.imgur.com/xiG1Odn.png"
+                                          />
+                            </button>
               </div>
               <div>
                             <div
@@ -1948,13 +2114,23 @@ ShallowWrapper {
                             </div>
                             <iframe
                                           allowFullScreen={true}
+                                          className=""
                                           frameBorder="0"
                                           height="360"
-                                          mozallowfullscreen={true}
-                                          src=""
-                                          webkitallowfullscreen={true}
+                                          mozallowfullscreen="true"
+                                          src="undefined?autoplay=1&muted=1"
+                                          webkitallowfullscreen="true"
                                           width="640"
                             />
+                            <button
+                                          className="hidden"
+                                          onClick={[Function]}
+                            >
+                                          <img
+                                                        alt="close button"
+                                                        src="https://i.imgur.com/xiG1Odn.png"
+                                          />
+                            </button>
               </div>
 </FlipMovePropConverter>,
             "className": "results-container",
@@ -2030,13 +2206,23 @@ ShallowWrapper {
                   </div>
                   <iframe
                                     allowFullScreen={true}
+                                    className=""
                                     frameBorder="0"
                                     height="360"
-                                    mozallowfullscreen={true}
-                                    src=""
-                                    webkitallowfullscreen={true}
+                                    mozallowfullscreen="true"
+                                    src="undefined?autoplay=1&muted=1"
+                                    webkitallowfullscreen="true"
                                     width="640"
                   />
+                  <button
+                                    className="hidden"
+                                    onClick={[Function]}
+                  >
+                                    <img
+                                                      alt="close button"
+                                                      src="https://i.imgur.com/xiG1Odn.png"
+                                    />
+                  </button>
 </div>,
                 <div>
                   <div
@@ -2102,13 +2288,23 @@ ShallowWrapper {
                   </div>
                   <iframe
                                     allowFullScreen={true}
+                                    className=""
                                     frameBorder="0"
                                     height="360"
-                                    mozallowfullscreen={true}
-                                    src=""
-                                    webkitallowfullscreen={true}
+                                    mozallowfullscreen="true"
+                                    src="undefined?autoplay=1&muted=1"
+                                    webkitallowfullscreen="true"
                                     width="640"
                   />
+                  <button
+                                    className="hidden"
+                                    onClick={[Function]}
+                  >
+                                    <img
+                                                      alt="close button"
+                                                      src="https://i.imgur.com/xiG1Odn.png"
+                                    />
+                  </button>
 </div>,
               ],
               "delay": 0,
@@ -2195,13 +2391,23 @@ ShallowWrapper {
 </div>,
                     <iframe
                       allowFullScreen={true}
+                      className=""
                       frameBorder="0"
                       height="360"
-                      mozallowfullscreen={true}
-                      src=""
-                      webkitallowfullscreen={true}
+                      mozallowfullscreen="true"
+                      src="undefined?autoplay=1&muted=1"
+                      webkitallowfullscreen="true"
                       width="640"
 />,
+                    <button
+                      className="hidden"
+                      onClick={[Function]}
+>
+                      <img
+                                            alt="close button"
+                                            src="https://i.imgur.com/xiG1Odn.png"
+                      />
+</button>,
                   ],
                 },
                 "ref": null,
@@ -2497,16 +2703,44 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "allowFullScreen": true,
+                      "className": "",
                       "frameBorder": "0",
                       "height": "360",
-                      "mozallowfullscreen": true,
-                      "src": "",
-                      "webkitallowfullscreen": true,
+                      "mozallowfullscreen": "true",
+                      "src": "undefined?autoplay=1&muted=1",
+                      "webkitallowfullscreen": "true",
                       "width": "640",
                     },
                     "ref": null,
                     "rendered": null,
                     "type": "iframe",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="close button"
+                        src="https://i.imgur.com/xiG1Odn.png"
+/>,
+                      "className": "hidden",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "close button",
+                        "src": "https://i.imgur.com/xiG1Odn.png",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "button",
                   },
                 ],
                 "type": "div",
@@ -2580,13 +2814,23 @@ ShallowWrapper {
 </div>,
                     <iframe
                       allowFullScreen={true}
+                      className=""
                       frameBorder="0"
                       height="360"
-                      mozallowfullscreen={true}
-                      src=""
-                      webkitallowfullscreen={true}
+                      mozallowfullscreen="true"
+                      src="undefined?autoplay=1&muted=1"
+                      webkitallowfullscreen="true"
                       width="640"
 />,
+                    <button
+                      className="hidden"
+                      onClick={[Function]}
+>
+                      <img
+                                            alt="close button"
+                                            src="https://i.imgur.com/xiG1Odn.png"
+                      />
+</button>,
                   ],
                 },
                 "ref": null,
@@ -2882,16 +3126,44 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "allowFullScreen": true,
+                      "className": "",
                       "frameBorder": "0",
                       "height": "360",
-                      "mozallowfullscreen": true,
-                      "src": "",
-                      "webkitallowfullscreen": true,
+                      "mozallowfullscreen": "true",
+                      "src": "undefined?autoplay=1&muted=1",
+                      "webkitallowfullscreen": "true",
                       "width": "640",
                     },
                     "ref": null,
                     "rendered": null,
                     "type": "iframe",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="close button"
+                        src="https://i.imgur.com/xiG1Odn.png"
+/>,
+                      "className": "hidden",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "close button",
+                        "src": "https://i.imgur.com/xiG1Odn.png",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "button",
                   },
                 ],
                 "type": "div",
