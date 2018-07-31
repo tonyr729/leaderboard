@@ -7,4 +7,17 @@ describe('Sidebar', () => {
     const wrapper = shallow(<Sidebar />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should have a default collapsed value of false in state', () => {
+    const wrapper = shallow(<Sidebar />);
+    expect(wrapper.state('collapsed')).toEqual(false)
+  });
+
+  describe('toggleSidebar', () => {
+    it('should change the value of collapsed in state to the opposite value', () => {
+      const wrapper = shallow(<Sidebar />);
+      wrapper.instance().toggleSidebar();
+      expect(wrapper.state('collapsed')).toEqual(true)
+    });
+  });
 });
