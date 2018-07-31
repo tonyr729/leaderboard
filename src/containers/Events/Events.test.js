@@ -357,6 +357,32 @@ describe('Events', () => {
     });
   });
 
+  describe('getUrl', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should return an object with the current rider and url from state', () => {
+      wrapper.instance().setState({
+        currentUrl: 'www.youtube.com/test',
+        rider_id: 23
+      });
+      const expected = {
+        rider: 23,
+        url: 'www.youtube.com/test'
+      }
+
+      const result = wrapper.instance().getUrl();
+      expect(result).toEqual(expected)
+    });
+  });
+
   describe('mapStateToProps', () => {
 
     it('should map results to props', () => {
