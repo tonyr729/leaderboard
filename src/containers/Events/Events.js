@@ -191,8 +191,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   addAllResults: (results) => dispatch(addResults(results)),
-  updateResults: (results) => dispatch(updateResult(results)),
-  addWatchedVideo: (video) => dispatch(addVideo(video))
+  updateResults: (results) => dispatch(updateResult(results))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Events);

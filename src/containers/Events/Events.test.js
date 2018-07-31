@@ -16,6 +16,38 @@ describe('Events', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('componentDidMount', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      const mockUpdateResults = jest.fn();
+      wrapper = shallow(<Events
+        results={mockResults}
+        updateResults={mockUpdateResults}
+      />);
+      wrapper.changeValues = jest.fn();
+      wrapper.getResults = jest.fn()
+    });
+
+    it('should call changeValues', () => {
+      wrapper.changeValues = jest.fn();
+      wrapper.getResults = jest.fn()
+      const spy = jest.spyOn(wrapper.instance(), 'changeValues');
+      wrapper.instance().componentDidMount()
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it('should call getResults', () => {
+      wrapper.changeValues = jest.fn();
+      wrapper.getResults = jest.fn()
+      const spy = jest.spyOn(wrapper.instance(), 'getResults');
+      wrapper.instance().componentDidMount()
+      expect(spy).toHaveBeenCalled();
+    });
+  });
+
   describe('getResults', () => {
     let wrapper;
     beforeEach(() => {
