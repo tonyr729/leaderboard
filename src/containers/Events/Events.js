@@ -135,30 +135,32 @@ export class Events extends Component {
       return (
         <div key={result.id}>
           <div className="result" id={result.id} >
-            <h1>{index+1}</h1>
-            <img src={result.image} alt="flag"/>
-            <h1>{result.name}</h1>
-            <div className="run1">
-              <h4>Run 1</h4>
-              <h4 className="h4-result">{result.run_1}</h4>
+            <h1 className="placement">{index+1}</h1>
+            <img className="picture" src={result.image} alt="flag"/>
+            <h1 className="rider-name">{result.name}</h1>
+            <div className="scores">
+              <div className="run1">
+                <h4>Run 1</h4>
+                <h4 className="h4-result">{result.run_1}</h4>
+              </div>
+              <div className="run2">
+                <h4>Run 2</h4>
+                <h4 className="h4-result">{result.run_2}</h4>
+              </div>
+              <div className="run3">
+                <h4>Run 3</h4>
+                <h4 className="h4-result">{result.run_3}</h4>
+              </div>
+              <div className="final-score">
+                <h4>FINAL</h4>
+                <h4 className="final-result">{this.getScore(result)}</h4>
+              </div>
             </div>
-            <div className="run2">
-              <h4>Run 2</h4>
-              <h4 className="h4-result">{result.run_2}</h4>
-            </div>
-            <div className="run3">
-              <h4>Run 3</h4>
-              <h4 className="h4-result">{result.run_3}</h4>
-            </div>
-            <div className="final-score">
-              <h4>FINAL</h4>
-              <h4 className="final-result">{this.getScore(result)}</h4>
-            </div>
+            <button className={iframeClass ? 'visible' : 'hidden'} onClick={this.closeVideo}>
+              <img className="close-img"src="https://i.imgur.com/xiG1Odn.png" alt="close button" />
+            </button>
           </div>
           <iframe src={`${currentUrl}?autoplay=1&muted=1`} width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen className={iframeClass}></iframe>
-          <button className={iframeClass ? 'visible' : 'hidden'} onClick={this.closeVideo}>
-            <img src="https://i.imgur.com/xiG1Odn.png" alt="close button" />
-          </button>
         </div>
       );
     });
