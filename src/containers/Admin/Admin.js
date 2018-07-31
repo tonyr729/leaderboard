@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { addRiders } from '../../actions';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
 import { subscribeToChange } from '../../timer';
+
 import './Admin.css';
 
 export class Admin extends Component {
@@ -176,5 +179,10 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   addAllRiders: (riders) => dispatch(addRiders(riders))
 });
+
+Admin.propTypes = {
+  riders: PropTypes.array,
+  addAllRiders: PropTypes.func
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Admin));

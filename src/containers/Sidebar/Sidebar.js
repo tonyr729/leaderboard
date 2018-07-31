@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import SidebarFull from '../SidebarFull/SidebarFull';
 import SidebarCollapsed from '../SidebarCollapsed/SidebarCollapsed';
 import '../../fontello/css/fontello.css';
