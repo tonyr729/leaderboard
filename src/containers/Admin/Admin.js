@@ -12,7 +12,7 @@ export class Admin extends Component {
   constructor() {
     super();
     this.state = {};
-  };
+  }
 
   componentDidMount() {
     this.getRiders();
@@ -22,14 +22,19 @@ export class Admin extends Component {
   getRiders = async () => {
     const url = 'https://leaderboard-byob.herokuapp.com/api/v1/riders';
     const response = await fetch(url);
-    const data = await response.json();
-    this.props.addAllRiders(data.riders);
+    const riderData = await response.json();
+    this.props.addAllRiders(riderData.riders);
   }
 
   listRiders = () => {
     const ridersList = this.props.riders.map(rider => {
       return (
-        <option id="rider_id" value={rider.id}>{rider.name}</option>
+        <option 
+          id="rider_id" 
+          value={rider.id} 
+          key={`option${rider.id}`}>
+          {rider.name}
+        </option>
       );
     });
 
@@ -43,14 +48,14 @@ export class Admin extends Component {
       headers: {
         "Content-Type": "application/json; charset=utf-8"
       },
-      body: JSON.stringify({result: results})
+      body: JSON.stringify({ result: results })
     });
     const message = await response.json();
     return message;
   }
 
   sendResultToSocket = (results) => {
-    subscribeToChange((error, changeAfter) => console.log(changeAfter), results);
+    subscribeToChange((error, changeAfter) => changeAfter, results);
   };
 
   handleChange = (event) => {
@@ -67,17 +72,17 @@ export class Admin extends Component {
     this.sendResultToDb(this.state);
     this.sendResultToSocket(this.state);
   };
- 
+
   render() {
     return (
       <div className="admin">
         <div className="admin-update">
           <label htmlFor="event-names" className="choose-event">
             Choose Event
-            <select 
-              onChange={this.handleChange} 
-              id="event_id" 
-              className="event-names" 
+            <select
+              onChange={this.handleChange}
+              id="event_id"
+              className="event-names"
               value={this.state.event} >
               <option value="">Choose a Event</option>
               <option value="1">Olympics</option>
@@ -85,10 +90,10 @@ export class Admin extends Component {
           </label>
           <label htmlFor="division-names" className="choose-division">
             Choose Division
-            <select 
-              onChange={this.handleChange} 
-              id="division_id" 
-              className="division-names" 
+            <select
+              onChange={this.handleChange}
+              id="division_id"
+              className="division-names"
               value={this.state.division} >
               <option value="">Choose a Division</option>
               <option value="3">Womens Halfpipe</option>
@@ -97,10 +102,10 @@ export class Admin extends Component {
           </label>
           <label htmlFor="rider-names" className="choose-rider">
             Choose Rider
-            <select 
-              onChange={this.handleChange} 
-              id="rider_id" 
-              className="rider-names" 
+            <select
+              onChange={this.handleChange}
+              id="rider_id"
+              className="rider-names"
               value={this.state.value} >
               <option value="">Choose a Rider</option>
               {this.listRiders()}
@@ -110,12 +115,12 @@ export class Admin extends Component {
             <div>
               <label className='runone-label'>
                 Run 1:
-                <input type="number" 
+                <input type="number"
                   onChange={this.handleChange}
                   value={this.state.run_1}
                   id="run_1"
                   className='admin-input'
-                  placeholder="Score"/>
+                  placeholder="Score" />
               </label>
               <label className='runone-label'>
                 <input type="text"
@@ -129,31 +134,31 @@ export class Admin extends Component {
             <div>
               <label className='runtwo-label'>
                 Run 2:
-                <input type="number" 
+                <input type="number"
                   onChange={this.handleChange}
                   value={this.state.run_2}
                   id="run_2"
                   className='admin-input'
-                  placeholder="Score"/>
+                  placeholder="Score" />
               </label>
               <label className='runone-label'>
                 <input type="text"
                   onChange={this.handleChange}
                   value={this.state.run_2_media}
-                  id='run_2_media' 
+                  id='run_2_media'
                   placeholder="Media URL"
-                  className="media-input"/>
+                  className="media-input" />
               </label>
             </div>
             <div>
               <label className='runthree-label'>
                 Run 3:
-                <input type="number" 
+                <input type="number"
                   onChange={this.handleChange}
                   value={this.state.run_3}
                   id="run_3"
                   className='admin-input'
-                  placeholder="Score"/>
+                  placeholder="Score" />
               </label>
               <label className='runone-label'>
                 <input type="text"

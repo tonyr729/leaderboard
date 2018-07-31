@@ -30,22 +30,22 @@ describe('Events', () => {
         addAllResults={mockAddResults}
       />, { disableLifecycleMethods: true });
       wrapper.changeValues = jest.fn();
-      wrapper.getResults = jest.fn()
+      wrapper.getResults = jest.fn();
     });
 
     it('should call changeValues', () => {
       wrapper.changeValues = jest.fn();
-      wrapper.getResults = jest.fn()
+      wrapper.getResults = jest.fn();
       const spy = jest.spyOn(wrapper.instance(), 'changeValues');
-      wrapper.instance().componentDidMount()
+      wrapper.instance().componentDidMount();
       expect(spy).toHaveBeenCalled();
     });
 
     it('should call getResults', () => {
       wrapper.changeValues = jest.fn();
-      wrapper.getResults = jest.fn()
+      wrapper.getResults = jest.fn();
       const spy = jest.spyOn(wrapper.instance(), 'getResults');
-      wrapper.instance().componentDidMount()
+      wrapper.instance().componentDidMount();
       expect(spy).toHaveBeenCalled();
     });
   });
@@ -57,16 +57,16 @@ describe('Events', () => {
         { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
       ];
       const mockAddAllResults = jest.fn();
-      wrapper = shallow(<Events 
+      wrapper = shallow(<Events
         addAllResults={mockAddAllResults}
         results={mockResults}
       />, { disableLifecycleMethods: true });
       wrapper.orderResults = jest.fn();
-      
+
     });
 
     it('should call fetch with the correct arguments', async () => {
-      
+
       const expectedUrl = 'https://leaderboard-byob.herokuapp.com/api/v1/events/1/division/8/results';
       const spy = jest.spyOn(window, 'fetch');
 
@@ -217,10 +217,10 @@ describe('Events', () => {
         run_3: 0
       };
 
-      wrapper.instance().storeNewResult(mockResult)
+      wrapper.instance().storeNewResult(mockResult);
       expect(wrapper.state('rider_id')).toEqual(25);
       expect(wrapper.state('currentUrl')).toEqual('www.youtube.com/test');
-    })
+    });
   });
 
   describe('orderResults', () => {
@@ -247,7 +247,7 @@ describe('Events', () => {
       ];
 
       const result = wrapper.instance().orderResults(initialResults);
-      expect(result).toEqual(expected)
+      expect(result).toEqual(expected);
     });
 
     it('should order the results from largest to smallest final score with two run values', () => {
@@ -263,7 +263,7 @@ describe('Events', () => {
       ];
 
       const result = wrapper.instance().orderResults(initialResults);
-      expect(result).toEqual(expected)
+      expect(result).toEqual(expected);
     });
 
     it('should order the results from largest to smallest final score with only one run value', () => {
@@ -279,7 +279,7 @@ describe('Events', () => {
       ];
 
       const result = wrapper.instance().orderResults(initialResults);
-      expect(result).toEqual(expected)
+      expect(result).toEqual(expected);
     });
   });
 
@@ -300,19 +300,19 @@ describe('Events', () => {
         event_id: 1,
         division_id: 3,
         run_1: 96
-      }
-      const expected = { 
-        event_id: 1, 
-        division_id: 3, 
-        rider_id: 1, 
-        run_1: 96, 
-        run_2: '88', 
-        run_3: '90', 
-        final: '1' 
-      }
+      };
+      const expected = {
+        event_id: 1,
+        division_id: 3,
+        rider_id: 1,
+        run_1: 96,
+        run_2: '88',
+        run_3: '90',
+        final: '1'
+      };
 
-      const result = wrapper.instance().changeScore(mockResult)
-      expect(result[0]).toEqual(expected)
+      const result = wrapper.instance().changeScore(mockResult);
+      expect(result[0]).toEqual(expected);
     });
 
     it('should be able to change any result', () => {
@@ -322,7 +322,7 @@ describe('Events', () => {
         division_id: 3,
         run_3: 96,
         run_3_media: 'www.youtube.com/test'
-      }
+      };
       const expected = {
         event_id: 1,
         division_id: 3,
@@ -332,10 +332,10 @@ describe('Events', () => {
         run_3: 96,
         run_3_media: 'www.youtube.com/test',
         final: '1'
-      }
+      };
 
-      const result = wrapper.instance().changeScore(mockResult)
-      expect(result[0]).toEqual(expected)
+      const result = wrapper.instance().changeScore(mockResult);
+      expect(result[0]).toEqual(expected);
     });
 
     it('should not change a result if there is not an exact match', () => {
@@ -344,7 +344,7 @@ describe('Events', () => {
         event_id: 1,
         division_id: 3,
         run_3: 96
-      }
+      };
       const expected = {
         event_id: 1,
         division_id: 3,
@@ -353,10 +353,10 @@ describe('Events', () => {
         run_2: '88',
         run_3: '90',
         final: '1'
-      }
+      };
 
-      const result = wrapper.instance().changeScore(mockResult)
-      expect(result[0]).toEqual(expected)
+      const result = wrapper.instance().changeScore(mockResult);
+      expect(result[0]).toEqual(expected);
     });
   });
 
@@ -372,24 +372,24 @@ describe('Events', () => {
     });
 
     it('should return the same score if there is only one result', () => {
-      const mockResult = { run_1: 90}
+      const mockResult = { run_1: 90 };
 
-      const result = wrapper.instance().getScore(mockResult)
-      expect(result).toEqual(90)
+      const result = wrapper.instance().getScore(mockResult);
+      expect(result).toEqual(90);
     });
 
     it('should return the average score if there are only two scores', () => {
-      const mockResult = { run_1: 100, run_2: 90 }
+      const mockResult = { run_1: 100, run_2: 90 };
 
-      const result = wrapper.instance().getScore(mockResult)
-      expect(result).toEqual(95)
+      const result = wrapper.instance().getScore(mockResult);
+      expect(result).toEqual(95);
     });
 
     it('should return the average score if there are three scores', () => {
-      const mockResult = { run_1: 90, run_2: 92, run_3: 94 }
+      const mockResult = { run_1: 90, run_2: 92, run_3: 94 };
 
-      const result = wrapper.instance().getScore(mockResult)
-      expect(result).toEqual(92)
+      const result = wrapper.instance().getScore(mockResult);
+      expect(result).toEqual(92);
     });
   });
 
@@ -412,10 +412,10 @@ describe('Events', () => {
       const expected = {
         rider: 23,
         url: 'www.youtube.com/test'
-      }
+      };
 
       const result = wrapper.instance().getUrl();
-      expect(result).toEqual(expected)
+      expect(result).toEqual(expected);
     });
   });
 
@@ -437,8 +437,8 @@ describe('Events', () => {
       });
 
       const result = wrapper.instance().closeVideo();
-      expect(wrapper.state('currentUrl')).toEqual('')
-      expect(wrapper.state('rider_id')).toEqual('')
+      expect(wrapper.state('currentUrl')).toEqual('');
+      expect(wrapper.state('rider_id')).toEqual('');
     });
   });
 
@@ -454,10 +454,10 @@ describe('Events', () => {
     });
 
     it('should call getUrl', () => {
-      wrapper.getUrl = jest.fn()
+      wrapper.getUrl = jest.fn();
       const spy = jest.spyOn(wrapper.instance(), 'getUrl');
-      
-      wrapper.instance().render()
+
+      wrapper.instance().render();
       expect(spy).toHaveBeenCalled();
     });
   });
@@ -475,7 +475,7 @@ describe('Events', () => {
       };
       const expected = {
         results: mockResults
-      }
+      };
 
       const mappedProps = mapStateToProps(mockState);
       expect(mappedProps).toEqual(expected);
