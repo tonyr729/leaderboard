@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import SidebarFull from '../SidebarFull/SidebarFull';
-import SidebarCollapsed from '../SidebarCollapsed/SidebarCollapsed';
-import '../../fontello/css/fontello.css';
+import SidebarFull from '../../stateless/SidebarFull/SidebarFull';
+import SidebarCollapsed from '../../stateless/SidebarCollapsed/SidebarCollapsed';
+import '../../../fontello/css/fontello.css';
 import './Sidebar.css';
 
 class Sidebar extends Component {
