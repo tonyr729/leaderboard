@@ -666,7 +666,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "option1",
                   "nodeType": "host",
                   "props": Object {
                     "children": "tony",
@@ -1759,7 +1759,7 @@ ShallowWrapper {
                   },
                   Object {
                     "instance": null,
-                    "key": undefined,
+                    "key": "option1",
                     "nodeType": "host",
                     "props": Object {
                       "children": "tony",
