@@ -184,8 +184,7 @@ export class Events extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  results: state.results,
-  watchedVideos: state.watchedVideos
+  results: state.results
 });
 
 export const mapDispatchToProps = (dispatch) => ({
