@@ -442,6 +442,26 @@ describe('Events', () => {
     });
   });
 
+  describe('render', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should call getUrl', () => {
+      wrapper.getUrl = jest.fn()
+      const spy = jest.spyOn(wrapper.instance(), 'getUrl');
+      
+      wrapper.instance().render()
+      expect(spy).toHaveBeenCalled();
+    });
+  });
+
   describe('mapStateToProps', () => {
 
     it('should map results to props', () => {
