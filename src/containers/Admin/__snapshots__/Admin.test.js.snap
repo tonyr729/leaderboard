@@ -51,8 +51,1100 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <div
+      "children": <div
+        className="admin-update"
+>
+        <label
+                className="choose-event"
+                htmlFor="event-names"
+        >
+                Choose Event
+                <select
+                        className="event-names"
+                        id="event_id"
+                        onChange={[Function]}
+                        value={undefined}
+                >
+                        <option
+                                value=""
+                        >
+                                Choose a Event
+                        </option>
+                        <option
+                                value="1"
+                        >
+                                Olympics
+                        </option>
+                </select>
+        </label>
+        <label
+                className="choose-division"
+                htmlFor="division-names"
+        >
+                Choose Division
+                <select
+                        className="division-names"
+                        id="division_id"
+                        onChange={[Function]}
+                        value={undefined}
+                >
+                        <option
+                                value=""
+                        >
+                                Choose a Division
+                        </option>
+                        <option
+                                value="3"
+                        >
+                                Womens Halfpipe
+                        </option>
+                        <option
+                                value="8"
+                        >
+                                Mens Halfpipe
+                        </option>
+                </select>
+        </label>
+        <label
+                className="choose-rider"
+                htmlFor="rider-names"
+        >
+                Choose Rider
+                <select
+                        className="rider-names"
+                        id="rider_id"
+                        onChange={[Function]}
+                        value={undefined}
+                >
+                        <option
+                                value=""
+                        >
+                                Choose a Rider
+                        </option>
+                        <option
+                                id="rider_id"
+                                value={1}
+                        >
+                                tony
+                        </option>
+                </select>
+        </label>
+        <form
+                id="updateForm"
+                onSubmit={[Function]}
+        >
+                <div>
+                        <label
+                                className="runone-label"
+                        >
+                                Run 1:
+                                <input
+                                        className="admin-input"
+                                        id="run_1"
+                                        onChange={[Function]}
+                                        placeholder="Score"
+                                        type="number"
+                                        value={undefined}
+                                />
+                        </label>
+                        <label
+                                className="runone-label"
+                        >
+                                <input
+                                        className="media-input"
+                                        id="run_1_media"
+                                        onChange={[Function]}
+                                        placeholder="Media URL"
+                                        type="text"
+                                        value={undefined}
+                                />
+                        </label>
+                </div>
+                <div>
+                        <label
+                                className="runtwo-label"
+                        >
+                                Run 2:
+                                <input
+                                        className="admin-input"
+                                        id="run_2"
+                                        onChange={[Function]}
+                                        placeholder="Score"
+                                        type="number"
+                                        value={undefined}
+                                />
+                        </label>
+                        <label
+                                className="runone-label"
+                        >
+                                <input
+                                        className="media-input"
+                                        id="run_2_media"
+                                        onChange={[Function]}
+                                        placeholder="Media URL"
+                                        type="text"
+                                        value={undefined}
+                                />
+                        </label>
+                </div>
+                <div>
+                        <label
+                                className="runthree-label"
+                        >
+                                Run 3:
+                                <input
+                                        className="admin-input"
+                                        id="run_3"
+                                        onChange={[Function]}
+                                        placeholder="Score"
+                                        type="number"
+                                        value={undefined}
+                                />
+                        </label>
+                        <label
+                                className="runone-label"
+                        >
+                                <input
+                                        className="media-input"
+                                        id="run_3_media"
+                                        onChange={[Function]}
+                                        placeholder="Media URL"
+                                        type="text"
+                                        value={undefined}
+                                />
+                        </label>
+                </div>
+                <input
+                        className="form-submit"
+                        type="submit"
+                        value="Update"
+                />
+        </form>
+</div>,
+      "className": "admin",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label
+            className="choose-event"
+            htmlFor="event-names"
+>
+            Choose Event
+            <select
+                        className="event-names"
+                        id="event_id"
+                        onChange={[Function]}
+                        value={undefined}
+            >
+                        <option
+                                    value=""
+                        >
+                                    Choose a Event
+                        </option>
+                        <option
+                                    value="1"
+                        >
+                                    Olympics
+                        </option>
+            </select>
+</label>,
+          <label
+            className="choose-division"
+            htmlFor="division-names"
+>
+            Choose Division
+            <select
+                        className="division-names"
+                        id="division_id"
+                        onChange={[Function]}
+                        value={undefined}
+            >
+                        <option
+                                    value=""
+                        >
+                                    Choose a Division
+                        </option>
+                        <option
+                                    value="3"
+                        >
+                                    Womens Halfpipe
+                        </option>
+                        <option
+                                    value="8"
+                        >
+                                    Mens Halfpipe
+                        </option>
+            </select>
+</label>,
+          <label
+            className="choose-rider"
+            htmlFor="rider-names"
+>
+            Choose Rider
+            <select
+                        className="rider-names"
+                        id="rider_id"
+                        onChange={[Function]}
+                        value={undefined}
+            >
+                        <option
+                                    value=""
+                        >
+                                    Choose a Rider
+                        </option>
+                        <option
+                                    id="rider_id"
+                                    value={1}
+                        >
+                                    tony
+                        </option>
+            </select>
+</label>,
+          <form
+            id="updateForm"
+            onSubmit={[Function]}
+>
+            <div>
+                        <label
+                                    className="runone-label"
+                        >
+                                    Run 1:
+                                    <input
+                                                className="admin-input"
+                                                id="run_1"
+                                                onChange={[Function]}
+                                                placeholder="Score"
+                                                type="number"
+                                                value={undefined}
+                                    />
+                        </label>
+                        <label
+                                    className="runone-label"
+                        >
+                                    <input
+                                                className="media-input"
+                                                id="run_1_media"
+                                                onChange={[Function]}
+                                                placeholder="Media URL"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </label>
+            </div>
+            <div>
+                        <label
+                                    className="runtwo-label"
+                        >
+                                    Run 2:
+                                    <input
+                                                className="admin-input"
+                                                id="run_2"
+                                                onChange={[Function]}
+                                                placeholder="Score"
+                                                type="number"
+                                                value={undefined}
+                                    />
+                        </label>
+                        <label
+                                    className="runone-label"
+                        >
+                                    <input
+                                                className="media-input"
+                                                id="run_2_media"
+                                                onChange={[Function]}
+                                                placeholder="Media URL"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </label>
+            </div>
+            <div>
+                        <label
+                                    className="runthree-label"
+                        >
+                                    Run 3:
+                                    <input
+                                                className="admin-input"
+                                                id="run_3"
+                                                onChange={[Function]}
+                                                placeholder="Score"
+                                                type="number"
+                                                value={undefined}
+                                    />
+                        </label>
+                        <label
+                                    className="runone-label"
+                        >
+                                    <input
+                                                className="media-input"
+                                                id="run_3_media"
+                                                onChange={[Function]}
+                                                placeholder="Media URL"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </label>
+            </div>
+            <input
+                        className="form-submit"
+                        type="submit"
+                        value="Update"
+            />
+</form>,
+        ],
+        "className": "admin-update",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Choose Event",
+              <select
+                className="event-names"
+                id="event_id"
+                onChange={[Function]}
+                value={undefined}
+>
+                <option
+                                value=""
+                >
+                                Choose a Event
+                </option>
+                <option
+                                value="1"
+                >
+                                Olympics
+                </option>
+</select>,
+            ],
+            "className": "choose-event",
+            "htmlFor": "event-names",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Choose Event",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value=""
+>
+                    Choose a Event
+</option>,
+                  <option
+                    value="1"
+>
+                    Olympics
+</option>,
+                ],
+                "className": "event-names",
+                "id": "event_id",
+                "onChange": [Function],
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Choose a Event",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": "Choose a Event",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Olympics",
+                    "value": "1",
+                  },
+                  "ref": null,
+                  "rendered": "Olympics",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Choose Division",
+              <select
+                className="division-names"
+                id="division_id"
+                onChange={[Function]}
+                value={undefined}
+>
+                <option
+                                value=""
+                >
+                                Choose a Division
+                </option>
+                <option
+                                value="3"
+                >
+                                Womens Halfpipe
+                </option>
+                <option
+                                value="8"
+                >
+                                Mens Halfpipe
+                </option>
+</select>,
+            ],
+            "className": "choose-division",
+            "htmlFor": "division-names",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Choose Division",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value=""
+>
+                    Choose a Division
+</option>,
+                  <option
+                    value="3"
+>
+                    Womens Halfpipe
+</option>,
+                  <option
+                    value="8"
+>
+                    Mens Halfpipe
+</option>,
+                ],
+                "className": "division-names",
+                "id": "division_id",
+                "onChange": [Function],
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Choose a Division",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": "Choose a Division",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Womens Halfpipe",
+                    "value": "3",
+                  },
+                  "ref": null,
+                  "rendered": "Womens Halfpipe",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mens Halfpipe",
+                    "value": "8",
+                  },
+                  "ref": null,
+                  "rendered": "Mens Halfpipe",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Choose Rider",
+              <select
+                className="rider-names"
+                id="rider_id"
+                onChange={[Function]}
+                value={undefined}
+>
+                <option
+                                value=""
+                >
+                                Choose a Rider
+                </option>
+                <option
+                                id="rider_id"
+                                value={1}
+                >
+                                tony
+                </option>
+</select>,
+            ],
+            "className": "choose-rider",
+            "htmlFor": "rider-names",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Choose Rider",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value=""
+>
+                    Choose a Rider
+</option>,
+                  Array [
+                    <option
+                      id="rider_id"
+                      value={1}
+>
+                      tony
+</option>,
+                  ],
+                ],
+                "className": "rider-names",
+                "id": "rider_id",
+                "onChange": [Function],
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Choose a Rider",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": "Choose a Rider",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "tony",
+                    "id": "rider_id",
+                    "value": 1,
+                  },
+                  "ref": null,
+                  "rendered": "tony",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <label
+                                className="runone-label"
+                >
+                                Run 1:
+                                <input
+                                                className="admin-input"
+                                                id="run_1"
+                                                onChange={[Function]}
+                                                placeholder="Score"
+                                                type="number"
+                                                value={undefined}
+                                />
+                </label>
+                <label
+                                className="runone-label"
+                >
+                                <input
+                                                className="media-input"
+                                                id="run_1_media"
+                                                onChange={[Function]}
+                                                placeholder="Media URL"
+                                                type="text"
+                                                value={undefined}
+                                />
+                </label>
+</div>,
+              <div>
+                <label
+                                className="runtwo-label"
+                >
+                                Run 2:
+                                <input
+                                                className="admin-input"
+                                                id="run_2"
+                                                onChange={[Function]}
+                                                placeholder="Score"
+                                                type="number"
+                                                value={undefined}
+                                />
+                </label>
+                <label
+                                className="runone-label"
+                >
+                                <input
+                                                className="media-input"
+                                                id="run_2_media"
+                                                onChange={[Function]}
+                                                placeholder="Media URL"
+                                                type="text"
+                                                value={undefined}
+                                />
+                </label>
+</div>,
+              <div>
+                <label
+                                className="runthree-label"
+                >
+                                Run 3:
+                                <input
+                                                className="admin-input"
+                                                id="run_3"
+                                                onChange={[Function]}
+                                                placeholder="Score"
+                                                type="number"
+                                                value={undefined}
+                                />
+                </label>
+                <label
+                                className="runone-label"
+                >
+                                <input
+                                                className="media-input"
+                                                id="run_3_media"
+                                                onChange={[Function]}
+                                                placeholder="Media URL"
+                                                type="text"
+                                                value={undefined}
+                                />
+                </label>
+</div>,
+              <input
+                className="form-submit"
+                type="submit"
+                value="Update"
+/>,
+            ],
+            "id": "updateForm",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    className="runone-label"
+>
+                    Run 1:
+                    <input
+                                        className="admin-input"
+                                        id="run_1"
+                                        onChange={[Function]}
+                                        placeholder="Score"
+                                        type="number"
+                                        value={undefined}
+                    />
+</label>,
+                  <label
+                    className="runone-label"
+>
+                    <input
+                                        className="media-input"
+                                        id="run_1_media"
+                                        onChange={[Function]}
+                                        placeholder="Media URL"
+                                        type="text"
+                                        value={undefined}
+                    />
+</label>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Run 1:",
+                      <input
+                        className="admin-input"
+                        id="run_1"
+                        onChange={[Function]}
+                        placeholder="Score"
+                        type="number"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "runone-label",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Run 1:",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "admin-input",
+                        "id": "run_1",
+                        "onChange": [Function],
+                        "placeholder": "Score",
+                        "type": "number",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <input
+                      className="media-input"
+                      id="run_1_media"
+                      onChange={[Function]}
+                      placeholder="Media URL"
+                      type="text"
+                      value={undefined}
+/>,
+                    "className": "runone-label",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "media-input",
+                      "id": "run_1_media",
+                      "onChange": [Function],
+                      "placeholder": "Media URL",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    className="runtwo-label"
+>
+                    Run 2:
+                    <input
+                                        className="admin-input"
+                                        id="run_2"
+                                        onChange={[Function]}
+                                        placeholder="Score"
+                                        type="number"
+                                        value={undefined}
+                    />
+</label>,
+                  <label
+                    className="runone-label"
+>
+                    <input
+                                        className="media-input"
+                                        id="run_2_media"
+                                        onChange={[Function]}
+                                        placeholder="Media URL"
+                                        type="text"
+                                        value={undefined}
+                    />
+</label>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Run 2:",
+                      <input
+                        className="admin-input"
+                        id="run_2"
+                        onChange={[Function]}
+                        placeholder="Score"
+                        type="number"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "runtwo-label",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Run 2:",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "admin-input",
+                        "id": "run_2",
+                        "onChange": [Function],
+                        "placeholder": "Score",
+                        "type": "number",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <input
+                      className="media-input"
+                      id="run_2_media"
+                      onChange={[Function]}
+                      placeholder="Media URL"
+                      type="text"
+                      value={undefined}
+/>,
+                    "className": "runone-label",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "media-input",
+                      "id": "run_2_media",
+                      "onChange": [Function],
+                      "placeholder": "Media URL",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    className="runthree-label"
+>
+                    Run 3:
+                    <input
+                                        className="admin-input"
+                                        id="run_3"
+                                        onChange={[Function]}
+                                        placeholder="Score"
+                                        type="number"
+                                        value={undefined}
+                    />
+</label>,
+                  <label
+                    className="runone-label"
+>
+                    <input
+                                        className="media-input"
+                                        id="run_3_media"
+                                        onChange={[Function]}
+                                        placeholder="Media URL"
+                                        type="text"
+                                        value={undefined}
+                    />
+</label>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Run 3:",
+                      <input
+                        className="admin-input"
+                        id="run_3"
+                        onChange={[Function]}
+                        placeholder="Score"
+                        type="number"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "runthree-label",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Run 3:",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "admin-input",
+                        "id": "run_3",
+                        "onChange": [Function],
+                        "placeholder": "Score",
+                        "type": "number",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <input
+                      className="media-input"
+                      id="run_3_media"
+                      onChange={[Function]}
+                      placeholder="Media URL"
+                      type="text"
+                      value={undefined}
+/>,
+                    "className": "runone-label",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "media-input",
+                      "id": "run_3_media",
+                      "onChange": [Function],
+                      "placeholder": "Media URL",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "form-submit",
+                "type": "submit",
+                "value": "Update",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
           className="admin-update"
 >
           <label
@@ -152,6 +1244,7 @@ ShallowWrapper {
                                         className="runone-label"
                               >
                                         <input
+                                                  className="media-input"
                                                   id="run_1_media"
                                                   onChange={[Function]}
                                                   placeholder="Media URL"
@@ -178,6 +1271,7 @@ ShallowWrapper {
                                         className="runone-label"
                               >
                                         <input
+                                                  className="media-input"
                                                   id="run_2_media"
                                                   onChange={[Function]}
                                                   placeholder="Media URL"
@@ -204,6 +1298,7 @@ ShallowWrapper {
                                         className="runone-label"
                               >
                                         <input
+                                                  className="media-input"
                                                   id="run_3_media"
                                                   onChange={[Function]}
                                                   placeholder="Media URL"
@@ -219,21 +1314,10 @@ ShallowWrapper {
                     />
           </form>
 </div>,
-        <div
-          className="add-media"
->
-          <p
-                    className="coming-soon"
-          >
-                    Feature Coming Soon
-          </p>
-</div>,
-      ],
-      "className": "admin",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
+        "className": "admin",
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -336,6 +1420,7 @@ ShallowWrapper {
                                           className="runone-label"
                             >
                                           <input
+                                                        className="media-input"
                                                         id="run_1_media"
                                                         onChange={[Function]}
                                                         placeholder="Media URL"
@@ -362,6 +1447,7 @@ ShallowWrapper {
                                           className="runone-label"
                             >
                                           <input
+                                                        className="media-input"
                                                         id="run_2_media"
                                                         onChange={[Function]}
                                                         placeholder="Media URL"
@@ -388,6 +1474,7 @@ ShallowWrapper {
                                           className="runone-label"
                             >
                                           <input
+                                                        className="media-input"
                                                         id="run_3_media"
                                                         onChange={[Function]}
                                                         placeholder="Media URL"
@@ -713,6 +1800,7 @@ ShallowWrapper {
                                     className="runone-label"
                   >
                                     <input
+                                                      className="media-input"
                                                       id="run_1_media"
                                                       onChange={[Function]}
                                                       placeholder="Media URL"
@@ -739,6 +1827,7 @@ ShallowWrapper {
                                     className="runone-label"
                   >
                                     <input
+                                                      className="media-input"
                                                       id="run_2_media"
                                                       onChange={[Function]}
                                                       placeholder="Media URL"
@@ -765,6 +1854,7 @@ ShallowWrapper {
                                     className="runone-label"
                   >
                                     <input
+                                                      className="media-input"
                                                       id="run_3_media"
                                                       onChange={[Function]}
                                                       placeholder="Media URL"
@@ -807,6 +1897,7 @@ ShallowWrapper {
                       className="runone-label"
 >
                       <input
+                                            className="media-input"
                                             id="run_1_media"
                                             onChange={[Function]}
                                             placeholder="Media URL"
@@ -864,6 +1955,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <input
+                        className="media-input"
                         id="run_1_media"
                         onChange={[Function]}
                         placeholder="Media URL"
@@ -878,6 +1970,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "className": "media-input",
                         "id": "run_1_media",
                         "onChange": [Function],
                         "placeholder": "Media URL",
@@ -916,6 +2009,7 @@ ShallowWrapper {
                       className="runone-label"
 >
                       <input
+                                            className="media-input"
                                             id="run_2_media"
                                             onChange={[Function]}
                                             placeholder="Media URL"
@@ -973,6 +2067,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <input
+                        className="media-input"
                         id="run_2_media"
                         onChange={[Function]}
                         placeholder="Media URL"
@@ -987,6 +2082,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "className": "media-input",
                         "id": "run_2_media",
                         "onChange": [Function],
                         "placeholder": "Media URL",
@@ -1025,6 +2121,7 @@ ShallowWrapper {
                       className="runone-label"
 >
                       <input
+                                            className="media-input"
                                             id="run_3_media"
                                             onChange={[Function]}
                                             placeholder="Media URL"
@@ -1082,6 +2179,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <input
+                        className="media-input"
                         id="run_3_media"
                         onChange={[Function]}
                         placeholder="Media URL"
@@ -1096,6 +2194,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "className": "media-input",
                         "id": "run_3_media",
                         "onChange": [Function],
                         "placeholder": "Media URL",
@@ -1130,1149 +2229,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <p
-            className="coming-soon"
->
-            Feature Coming Soon
-</p>,
-          "className": "add-media",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Feature Coming Soon",
-            "className": "coming-soon",
-          },
-          "ref": null,
-          "rendered": "Feature Coming Soon",
-          "type": "p",
-        },
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div
-            className="admin-update"
->
-            <label
-                        className="choose-event"
-                        htmlFor="event-names"
-            >
-                        Choose Event
-                        <select
-                                    className="event-names"
-                                    id="event_id"
-                                    onChange={[Function]}
-                                    value={undefined}
-                        >
-                                    <option
-                                                value=""
-                                    >
-                                                Choose a Event
-                                    </option>
-                                    <option
-                                                value="1"
-                                    >
-                                                Olympics
-                                    </option>
-                        </select>
-            </label>
-            <label
-                        className="choose-division"
-                        htmlFor="division-names"
-            >
-                        Choose Division
-                        <select
-                                    className="division-names"
-                                    id="division_id"
-                                    onChange={[Function]}
-                                    value={undefined}
-                        >
-                                    <option
-                                                value=""
-                                    >
-                                                Choose a Division
-                                    </option>
-                                    <option
-                                                value="3"
-                                    >
-                                                Womens Halfpipe
-                                    </option>
-                                    <option
-                                                value="8"
-                                    >
-                                                Mens Halfpipe
-                                    </option>
-                        </select>
-            </label>
-            <label
-                        className="choose-rider"
-                        htmlFor="rider-names"
-            >
-                        Choose Rider
-                        <select
-                                    className="rider-names"
-                                    id="rider_id"
-                                    onChange={[Function]}
-                                    value={undefined}
-                        >
-                                    <option
-                                                value=""
-                                    >
-                                                Choose a Rider
-                                    </option>
-                                    <option
-                                                id="rider_id"
-                                                value={1}
-                                    >
-                                                tony
-                                    </option>
-                        </select>
-            </label>
-            <form
-                        id="updateForm"
-                        onSubmit={[Function]}
-            >
-                        <div>
-                                    <label
-                                                className="runone-label"
-                                    >
-                                                Run 1:
-                                                <input
-                                                            className="admin-input"
-                                                            id="run_1"
-                                                            onChange={[Function]}
-                                                            placeholder="Score"
-                                                            type="number"
-                                                            value={undefined}
-                                                />
-                                    </label>
-                                    <label
-                                                className="runone-label"
-                                    >
-                                                <input
-                                                            id="run_1_media"
-                                                            onChange={[Function]}
-                                                            placeholder="Media URL"
-                                                            type="text"
-                                                            value={undefined}
-                                                />
-                                    </label>
-                        </div>
-                        <div>
-                                    <label
-                                                className="runtwo-label"
-                                    >
-                                                Run 2:
-                                                <input
-                                                            className="admin-input"
-                                                            id="run_2"
-                                                            onChange={[Function]}
-                                                            placeholder="Score"
-                                                            type="number"
-                                                            value={undefined}
-                                                />
-                                    </label>
-                                    <label
-                                                className="runone-label"
-                                    >
-                                                <input
-                                                            id="run_2_media"
-                                                            onChange={[Function]}
-                                                            placeholder="Media URL"
-                                                            type="text"
-                                                            value={undefined}
-                                                />
-                                    </label>
-                        </div>
-                        <div>
-                                    <label
-                                                className="runthree-label"
-                                    >
-                                                Run 3:
-                                                <input
-                                                            className="admin-input"
-                                                            id="run_3"
-                                                            onChange={[Function]}
-                                                            placeholder="Score"
-                                                            type="number"
-                                                            value={undefined}
-                                                />
-                                    </label>
-                                    <label
-                                                className="runone-label"
-                                    >
-                                                <input
-                                                            id="run_3_media"
-                                                            onChange={[Function]}
-                                                            placeholder="Media URL"
-                                                            type="text"
-                                                            value={undefined}
-                                                />
-                                    </label>
-                        </div>
-                        <input
-                                    className="form-submit"
-                                    type="submit"
-                                    value="Update"
-                        />
-            </form>
-</div>,
-          <div
-            className="add-media"
->
-            <p
-                        className="coming-soon"
-            >
-                        Feature Coming Soon
-            </p>
-</div>,
-        ],
-        "className": "admin",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <label
-                className="choose-event"
-                htmlFor="event-names"
->
-                Choose Event
-                <select
-                                className="event-names"
-                                id="event_id"
-                                onChange={[Function]}
-                                value={undefined}
-                >
-                                <option
-                                                value=""
-                                >
-                                                Choose a Event
-                                </option>
-                                <option
-                                                value="1"
-                                >
-                                                Olympics
-                                </option>
-                </select>
-</label>,
-              <label
-                className="choose-division"
-                htmlFor="division-names"
->
-                Choose Division
-                <select
-                                className="division-names"
-                                id="division_id"
-                                onChange={[Function]}
-                                value={undefined}
-                >
-                                <option
-                                                value=""
-                                >
-                                                Choose a Division
-                                </option>
-                                <option
-                                                value="3"
-                                >
-                                                Womens Halfpipe
-                                </option>
-                                <option
-                                                value="8"
-                                >
-                                                Mens Halfpipe
-                                </option>
-                </select>
-</label>,
-              <label
-                className="choose-rider"
-                htmlFor="rider-names"
->
-                Choose Rider
-                <select
-                                className="rider-names"
-                                id="rider_id"
-                                onChange={[Function]}
-                                value={undefined}
-                >
-                                <option
-                                                value=""
-                                >
-                                                Choose a Rider
-                                </option>
-                                <option
-                                                id="rider_id"
-                                                value={1}
-                                >
-                                                tony
-                                </option>
-                </select>
-</label>,
-              <form
-                id="updateForm"
-                onSubmit={[Function]}
->
-                <div>
-                                <label
-                                                className="runone-label"
-                                >
-                                                Run 1:
-                                                <input
-                                                                className="admin-input"
-                                                                id="run_1"
-                                                                onChange={[Function]}
-                                                                placeholder="Score"
-                                                                type="number"
-                                                                value={undefined}
-                                                />
-                                </label>
-                                <label
-                                                className="runone-label"
-                                >
-                                                <input
-                                                                id="run_1_media"
-                                                                onChange={[Function]}
-                                                                placeholder="Media URL"
-                                                                type="text"
-                                                                value={undefined}
-                                                />
-                                </label>
-                </div>
-                <div>
-                                <label
-                                                className="runtwo-label"
-                                >
-                                                Run 2:
-                                                <input
-                                                                className="admin-input"
-                                                                id="run_2"
-                                                                onChange={[Function]}
-                                                                placeholder="Score"
-                                                                type="number"
-                                                                value={undefined}
-                                                />
-                                </label>
-                                <label
-                                                className="runone-label"
-                                >
-                                                <input
-                                                                id="run_2_media"
-                                                                onChange={[Function]}
-                                                                placeholder="Media URL"
-                                                                type="text"
-                                                                value={undefined}
-                                                />
-                                </label>
-                </div>
-                <div>
-                                <label
-                                                className="runthree-label"
-                                >
-                                                Run 3:
-                                                <input
-                                                                className="admin-input"
-                                                                id="run_3"
-                                                                onChange={[Function]}
-                                                                placeholder="Score"
-                                                                type="number"
-                                                                value={undefined}
-                                                />
-                                </label>
-                                <label
-                                                className="runone-label"
-                                >
-                                                <input
-                                                                id="run_3_media"
-                                                                onChange={[Function]}
-                                                                placeholder="Media URL"
-                                                                type="text"
-                                                                value={undefined}
-                                                />
-                                </label>
-                </div>
-                <input
-                                className="form-submit"
-                                type="submit"
-                                value="Update"
-                />
-</form>,
-            ],
-            "className": "admin-update",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Choose Event",
-                  <select
-                    className="event-names"
-                    id="event_id"
-                    onChange={[Function]}
-                    value={undefined}
->
-                    <option
-                                        value=""
-                    >
-                                        Choose a Event
-                    </option>
-                    <option
-                                        value="1"
-                    >
-                                        Olympics
-                    </option>
-</select>,
-                ],
-                "className": "choose-event",
-                "htmlFor": "event-names",
-              },
-              "ref": null,
-              "rendered": Array [
-                "Choose Event",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <option
-                        value=""
->
-                        Choose a Event
-</option>,
-                      <option
-                        value="1"
->
-                        Olympics
-</option>,
-                    ],
-                    "className": "event-names",
-                    "id": "event_id",
-                    "onChange": [Function],
-                    "value": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Choose a Event",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": "Choose a Event",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Olympics",
-                        "value": "1",
-                      },
-                      "ref": null,
-                      "rendered": "Olympics",
-                      "type": "option",
-                    },
-                  ],
-                  "type": "select",
-                },
-              ],
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Choose Division",
-                  <select
-                    className="division-names"
-                    id="division_id"
-                    onChange={[Function]}
-                    value={undefined}
->
-                    <option
-                                        value=""
-                    >
-                                        Choose a Division
-                    </option>
-                    <option
-                                        value="3"
-                    >
-                                        Womens Halfpipe
-                    </option>
-                    <option
-                                        value="8"
-                    >
-                                        Mens Halfpipe
-                    </option>
-</select>,
-                ],
-                "className": "choose-division",
-                "htmlFor": "division-names",
-              },
-              "ref": null,
-              "rendered": Array [
-                "Choose Division",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <option
-                        value=""
->
-                        Choose a Division
-</option>,
-                      <option
-                        value="3"
->
-                        Womens Halfpipe
-</option>,
-                      <option
-                        value="8"
->
-                        Mens Halfpipe
-</option>,
-                    ],
-                    "className": "division-names",
-                    "id": "division_id",
-                    "onChange": [Function],
-                    "value": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Choose a Division",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": "Choose a Division",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Womens Halfpipe",
-                        "value": "3",
-                      },
-                      "ref": null,
-                      "rendered": "Womens Halfpipe",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Mens Halfpipe",
-                        "value": "8",
-                      },
-                      "ref": null,
-                      "rendered": "Mens Halfpipe",
-                      "type": "option",
-                    },
-                  ],
-                  "type": "select",
-                },
-              ],
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Choose Rider",
-                  <select
-                    className="rider-names"
-                    id="rider_id"
-                    onChange={[Function]}
-                    value={undefined}
->
-                    <option
-                                        value=""
-                    >
-                                        Choose a Rider
-                    </option>
-                    <option
-                                        id="rider_id"
-                                        value={1}
-                    >
-                                        tony
-                    </option>
-</select>,
-                ],
-                "className": "choose-rider",
-                "htmlFor": "rider-names",
-              },
-              "ref": null,
-              "rendered": Array [
-                "Choose Rider",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <option
-                        value=""
->
-                        Choose a Rider
-</option>,
-                      Array [
-                        <option
-                          id="rider_id"
-                          value={1}
->
-                          tony
-</option>,
-                      ],
-                    ],
-                    "className": "rider-names",
-                    "id": "rider_id",
-                    "onChange": [Function],
-                    "value": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Choose a Rider",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": "Choose a Rider",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "tony",
-                        "id": "rider_id",
-                        "value": 1,
-                      },
-                      "ref": null,
-                      "rendered": "tony",
-                      "type": "option",
-                    },
-                  ],
-                  "type": "select",
-                },
-              ],
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <div>
-                    <label
-                                        className="runone-label"
-                    >
-                                        Run 1:
-                                        <input
-                                                            className="admin-input"
-                                                            id="run_1"
-                                                            onChange={[Function]}
-                                                            placeholder="Score"
-                                                            type="number"
-                                                            value={undefined}
-                                        />
-                    </label>
-                    <label
-                                        className="runone-label"
-                    >
-                                        <input
-                                                            id="run_1_media"
-                                                            onChange={[Function]}
-                                                            placeholder="Media URL"
-                                                            type="text"
-                                                            value={undefined}
-                                        />
-                    </label>
-</div>,
-                  <div>
-                    <label
-                                        className="runtwo-label"
-                    >
-                                        Run 2:
-                                        <input
-                                                            className="admin-input"
-                                                            id="run_2"
-                                                            onChange={[Function]}
-                                                            placeholder="Score"
-                                                            type="number"
-                                                            value={undefined}
-                                        />
-                    </label>
-                    <label
-                                        className="runone-label"
-                    >
-                                        <input
-                                                            id="run_2_media"
-                                                            onChange={[Function]}
-                                                            placeholder="Media URL"
-                                                            type="text"
-                                                            value={undefined}
-                                        />
-                    </label>
-</div>,
-                  <div>
-                    <label
-                                        className="runthree-label"
-                    >
-                                        Run 3:
-                                        <input
-                                                            className="admin-input"
-                                                            id="run_3"
-                                                            onChange={[Function]}
-                                                            placeholder="Score"
-                                                            type="number"
-                                                            value={undefined}
-                                        />
-                    </label>
-                    <label
-                                        className="runone-label"
-                    >
-                                        <input
-                                                            id="run_3_media"
-                                                            onChange={[Function]}
-                                                            placeholder="Media URL"
-                                                            type="text"
-                                                            value={undefined}
-                                        />
-                    </label>
-</div>,
-                  <input
-                    className="form-submit"
-                    type="submit"
-                    value="Update"
-/>,
-                ],
-                "id": "updateForm",
-                "onSubmit": [Function],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <label
-                        className="runone-label"
->
-                        Run 1:
-                        <input
-                                                className="admin-input"
-                                                id="run_1"
-                                                onChange={[Function]}
-                                                placeholder="Score"
-                                                type="number"
-                                                value={undefined}
-                        />
-</label>,
-                      <label
-                        className="runone-label"
->
-                        <input
-                                                id="run_1_media"
-                                                onChange={[Function]}
-                                                placeholder="Media URL"
-                                                type="text"
-                                                value={undefined}
-                        />
-</label>,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Run 1:",
-                          <input
-                            className="admin-input"
-                            id="run_1"
-                            onChange={[Function]}
-                            placeholder="Score"
-                            type="number"
-                            value={undefined}
-/>,
-                        ],
-                        "className": "runone-label",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Run 1:",
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "admin-input",
-                            "id": "run_1",
-                            "onChange": [Function],
-                            "placeholder": "Score",
-                            "type": "number",
-                            "value": undefined,
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "input",
-                        },
-                      ],
-                      "type": "label",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <input
-                          id="run_1_media"
-                          onChange={[Function]}
-                          placeholder="Media URL"
-                          type="text"
-                          value={undefined}
-/>,
-                        "className": "runone-label",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "id": "run_1_media",
-                          "onChange": [Function],
-                          "placeholder": "Media URL",
-                          "type": "text",
-                          "value": undefined,
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "input",
-                      },
-                      "type": "label",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <label
-                        className="runtwo-label"
->
-                        Run 2:
-                        <input
-                                                className="admin-input"
-                                                id="run_2"
-                                                onChange={[Function]}
-                                                placeholder="Score"
-                                                type="number"
-                                                value={undefined}
-                        />
-</label>,
-                      <label
-                        className="runone-label"
->
-                        <input
-                                                id="run_2_media"
-                                                onChange={[Function]}
-                                                placeholder="Media URL"
-                                                type="text"
-                                                value={undefined}
-                        />
-</label>,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Run 2:",
-                          <input
-                            className="admin-input"
-                            id="run_2"
-                            onChange={[Function]}
-                            placeholder="Score"
-                            type="number"
-                            value={undefined}
-/>,
-                        ],
-                        "className": "runtwo-label",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Run 2:",
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "admin-input",
-                            "id": "run_2",
-                            "onChange": [Function],
-                            "placeholder": "Score",
-                            "type": "number",
-                            "value": undefined,
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "input",
-                        },
-                      ],
-                      "type": "label",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <input
-                          id="run_2_media"
-                          onChange={[Function]}
-                          placeholder="Media URL"
-                          type="text"
-                          value={undefined}
-/>,
-                        "className": "runone-label",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "id": "run_2_media",
-                          "onChange": [Function],
-                          "placeholder": "Media URL",
-                          "type": "text",
-                          "value": undefined,
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "input",
-                      },
-                      "type": "label",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <label
-                        className="runthree-label"
->
-                        Run 3:
-                        <input
-                                                className="admin-input"
-                                                id="run_3"
-                                                onChange={[Function]}
-                                                placeholder="Score"
-                                                type="number"
-                                                value={undefined}
-                        />
-</label>,
-                      <label
-                        className="runone-label"
->
-                        <input
-                                                id="run_3_media"
-                                                onChange={[Function]}
-                                                placeholder="Media URL"
-                                                type="text"
-                                                value={undefined}
-                        />
-</label>,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Run 3:",
-                          <input
-                            className="admin-input"
-                            id="run_3"
-                            onChange={[Function]}
-                            placeholder="Score"
-                            type="number"
-                            value={undefined}
-/>,
-                        ],
-                        "className": "runthree-label",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Run 3:",
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "admin-input",
-                            "id": "run_3",
-                            "onChange": [Function],
-                            "placeholder": "Score",
-                            "type": "number",
-                            "value": undefined,
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "input",
-                        },
-                      ],
-                      "type": "label",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <input
-                          id="run_3_media"
-                          onChange={[Function]}
-                          placeholder="Media URL"
-                          type="text"
-                          value={undefined}
-/>,
-                        "className": "runone-label",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "id": "run_3_media",
-                          "onChange": [Function],
-                          "placeholder": "Media URL",
-                          "type": "text",
-                          "value": undefined,
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "input",
-                      },
-                      "type": "label",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "form-submit",
-                    "type": "submit",
-                    "value": "Update",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "input",
-                },
-              ],
-              "type": "form",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <p
-              className="coming-soon"
->
-              Feature Coming Soon
-</p>,
-            "className": "add-media",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Feature Coming Soon",
-              "className": "coming-soon",
-            },
-            "ref": null,
-            "rendered": "Feature Coming Soon",
-            "type": "p",
-          },
-          "type": "div",
-        },
-      ],
       "type": "div",
     },
   ],
