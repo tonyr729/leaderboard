@@ -1,8 +1,8 @@
 import openSocket from 'socket.io-client';
 const socket = openSocket('https://leaderboard-byob.herokuapp.com/');
 
-function subscribeToChange(cb, change) {
-  socket.on('change', changeAfter => cb(null, changeAfter));
+function subscribeToChange(callbackFunction, change) {
+  socket.on('change', changeAfter => callbackFunction(null, changeAfter));
   socket.emit('subscribeToChange', change);
 }
 
