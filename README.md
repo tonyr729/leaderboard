@@ -1,4 +1,7 @@
-![screenshot](https://github.com/EricMellow/leaderboard/blob/master/src/assets/Screen%20Shot.png)
+[![Build Status](https://travis-ci.org/EricMellow/leaderboard.svg?branch=master)](https://travis-ci.org/EricMellow/leaderboard)
+
+![leaderboard screen](https://user-images.githubusercontent.com/34175382/43432322-761654e4-942f-11e8-8c9c-eb91eb42164b.png)
+
 
 # Leaderboard
 
@@ -6,7 +9,7 @@ If you're a fan of a sport that doesn't get a lot of television coverage, or one
 
 ## Getting Started
 
-You can view Leaderboard at http://leaderboard-co.surge.sh/
+You can view Leaderboard at https://leaderboard-co.herokuapp.com/
 
 Should you want to run Leaderboard locally, follow these steps:
 
