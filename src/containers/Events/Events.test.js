@@ -383,6 +383,29 @@ describe('Events', () => {
     });
   });
 
+  describe('closeVideo', () => {
+    let wrapper;
+    beforeEach(() => {
+      const mockResults = [
+        { event_id: 1, division_id: 3, rider_id: 1, run_1: '93', run_2: '88', run_3: '90', final: '1' }
+      ];
+      wrapper = shallow(<Events
+        results={mockResults}
+      />, { disableLifecycleMethods: true });
+    });
+
+    it('should set rider_id and currentUrl in state to empty strings', () => {
+      wrapper.instance().setState({
+        currentUrl: 'www.youtube.com/test',
+        rider_id: 23
+      });
+
+      const result = wrapper.instance().closeVideo();
+      expect(wrapper.state('currentUrl')).toEqual('')
+      expect(wrapper.state('rider_id')).toEqual('')
+    });
+  });
+
   describe('mapStateToProps', () => {
 
     it('should map results to props', () => {
