@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/EricMellow/leaderboard.svg?branch=master)](https://travis-ci.org/EricMellow/leaderboard)
 
-![leaderboard screen](https://user-images.githubusercontent.com/34175382/43432322-761654e4-942f-11e8-8c9c-eb91eb42164b.png)
+![leaderboard screen](https://media.giphy.com/media/NU9KLK17orDnEoCPL4/giphy.gif)
 
 
 # Leaderboard
