@@ -168,6 +168,23 @@ describe('Events', () => {
       expect(spy2).not.toHaveBeenCalled();
       expect(spy3).not.toHaveBeenCalled();
     });
+
+    it('should set state with the newResult rider_id and media', () => {
+      wrapper.changeScore = jest.fn;
+      const mockResult = {
+        rider_id: 25,
+        event_id: 1,
+        division_id: 8,
+        run_1: 96,
+        run_1_media: 'www.youtube.com/test',
+        run_2: 0,
+        run_3: 0
+      };
+
+      wrapper.instance().storeNewResult(mockResult)
+      expect(wrapper.state('rider_id')).toEqual(25);
+      expect(wrapper.state('currentUrl')).toEqual('www.youtube.com/test');
+    })
   });
 
   describe('orderResults', () => {
@@ -267,7 +284,8 @@ describe('Events', () => {
         rider_id: 1,
         event_id: 1,
         division_id: 3,
-        run_3: 96
+        run_3: 96,
+        run_3_media: 'www.youtube.com/test'
       }
       const expected = {
         event_id: 1,
@@ -276,6 +294,7 @@ describe('Events', () => {
         run_1: '93',
         run_2: '88',
         run_3: 96,
+        run_3_media: 'www.youtube.com/test',
         final: '1'
       }
 
