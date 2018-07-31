@@ -6,10 +6,6 @@ import Admin from '../Admin/Admin';
 import './App.css';
 
 class App extends Component {
-
-  async componentDidMount() {
-  
-  }
   render() {
     return (
       <div className="App">

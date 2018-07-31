@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { subscribeToChange } from '../../timer';
-import { addResults, updateResult, addVideo } from '../../actions';
 import FlipMove from 'react-flip-move';
 import { connect } from 'react-redux';
+import { addResults, updateResult, addVideo } from '../../actions';
+import PropTypes from 'prop-types';
+
+import { subscribeToChange } from '../../timer';
 import './Events.css';
 
 export class Events extends Component {
@@ -193,5 +195,11 @@ export const mapDispatchToProps = (dispatch) => ({
   addAllResults: (results) => dispatch(addResults(results)),
   updateResults: (results) => dispatch(updateResult(results))
 });
+
+Events.propTypes = {
+  results: PropTypes.array,
+  addAllResults: PropTypes.func,
+  updatedResults: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Events);
