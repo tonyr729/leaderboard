@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 deploy:
   provider: heroku
   api_key:
-    secure: s4kWVIqxPtrlsHDNboXsuggb4Qj1mWaBw/0m2DbnFtFUH3th3P2CftG2ynHPhQZGScxMXmfiZ611gVlzUius/DcT40N0fEEGAM/++MftmkDtO+zWlVbcCCjsk7x7AmJCTzX23psqsMrq5ztxsXu68xbIbzlI3RzXMGhSDEdG3Gv9/grt20dftXUMqnCj2H8XttjinbyoPHH594WrGEIq2n+E+t5SBQ3/g074IiJW61gYqgBoHc7RxjQyzUzKpuOdeefELnvt4sMULaEwzMBIdQZbX0EtOanlOxzgUygWnvCPAuXlCGp0dbjW2LpUmyNu543TuqGphPMH9cEfT/wnm3/JYQPKE6W5v1HmikQvrXXNYzuoVqWgmk30JWxcFzF3CP4yMlMumNC6qSqXkqdS1oTXDU+6pcj1rSndX4X1zfBGXP34pUIOb4LZ67FWd7KpEAjLtHEG96K4sw9qz3XevcPDiSOthMBgIesVMP+vO8XU8T6o/LKeduLcA/WUE5kFWUw2ezCY1xiSpjrrfR3rdlXH1y3rWUL2MsN1cvmrYr4NUhlOE6mIvgJTec4JM6WXlmvf9elB26OMkR4U8q8baq253lDBC8o6OdH3+2hwE5GG+GItFecsmjbIgLdD+lb+igT+d23GF0VMj5Zl/qQRV7X+zi1931LWKgZtsE8hYfo=
+    secure: TQprAZAn7S7hRV49kzM161M3oYFLFj3l0yMBB6yFNlFa8+Ly8pFSeqPiQNhrMj67T1FRY5D56aP/8GQ+Qz2jaJQMmCoHQ77HaE6S3VN+hk0hdKNqsHU137AAQ3nwBzEvVMNp6A4Hq6KGfJrlJNpM37dLgHmWZJwDaqVEFpWa+BWEnWIUIzZXx6EEJqD9pPf2zwyQVXhV37TCvEir2TP9+xsKlB0Y5/N9fRSsX2Kwj00fL6oXWUn0sgkZhx+MTpbVgFOG+rLZAo1uBZ1jJPS5mKVPw23lTOL6ClklgWW+Up8vexMbx1KhFCMujqcMJJkJofw4LNDO1yD6nriPIU6ZbRS6wTHBeeFRDuiLLEdffesB57RAZhjbc+qZrCoAFz/a0igRp9JphdzOmOayKBSfMpX/KAoC3IravpZHEc2Cp/fb8bb5gUZFdfpKY4isrIvtILOsWz6jiV1AKJ19zOTtwLjr2qbWsj9E2g1uk9uKqmRsHyfcjmmxPSMJK6GuTP2/70nzkWpjGLAQCn+uwBDjNyfljBoGevJ5rK4Jf8UStXE+rRNHYrk1Q8LE3sUoWP9LquvpgQQGNqtlEDzYx1TBsNs/WgbHF+557x4k9vZQxMub2q1VP0yrPdKDngxCA+c0MFB+iIaM0LCo7H2WA9XqdjTLYb81RP1lFTIFRKJOaTA=
   app: leaderboard-co
   skip_cleanup: true
 notifications:
   email: false
-script: 
-    - npm test
+script:
+- npm test
